@@ -15,7 +15,7 @@ export class EntityUtils {
     }
 
     sulphurVariant() {
-        if (this.typeId !== 'betterend:end_fish' && this.typeId !== 'betterend:cubozoa') return;
+        if (this.typeId !== 'betterend:cubozoa'/*&& this.typeId !== 'betterend:end_fish'*/) return;
         const events = {
             normal: "betterend:normal",
             sulphur: "betterend:sulphur"
