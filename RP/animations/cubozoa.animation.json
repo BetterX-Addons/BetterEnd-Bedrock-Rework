@@ -5,79 +5,19 @@
 			"loop": true,
 			"bones": {
 				"bone": {
-					"scale": [
-						1,
-						"1+math.cos(query.anim_time*140)*0.1",
-						1
-					]
+					"scale": [1, "1 + math.cos(query.anim_time * 100) * -0.15", 1]
 				},
-				"bone7": {
-					"rotation": [
-						0,
-						0,
-						"math.sin(query.anim_time*117)*10"
-					],
-					"position": [
-						0,
-						1,
-						0
-					],
-					"scale": [
-						1,
-						1.2,
-						1
-					]
+				"bone3": {
+					"rotation": ["-1 - math.cos(query.anim_time * 100) * 12.5", 0, 0]
 				},
 				"bone4": {
-					"rotation": [
-						"math.sin(query.anim_time*117)*-10",
-						0,
-						0
-					],
-					"position": [
-						0,
-						1,
-						0
-					],
-					"scale": [
-						1,
-						1.2,
-						1
-					]
+					"rotation": [0, 0, "1 + math.cos(query.anim_time * 100) * 12.5"]
 				},
 				"bone5": {
-					"rotation": [
-						0,
-						0,
-						"math.sin(query.anim_time*117)*-10"
-					],
-					"position": [
-						0,
-						1,
-						0
-					],
-					"scale": [
-						1,
-						1.2,
-						1
-					]
+					"rotation": [0, 0, "1 + math.cos(query.anim_time * 100) * -12.5"]
 				},
 				"bone6": {
-					"rotation": [
-						"2.5+math.sin(query.anim_time*117)*10",
-						0,
-						0
-					],
-					"position": [
-						0,
-						1,
-						0
-					],
-					"scale": [
-						1,
-						1.2,
-						1
-					]
+					"rotation": ["-1 - math.cos(query.anim_time * 100) * -12.5", 0, 0]
 				}
 			}
 		}

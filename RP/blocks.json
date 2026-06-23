@@ -72,5 +72,11 @@
   "betterend:ender_ore": {
     "sound": "stone",
     "textures": "betterend:ender_ore"
+  },
+  "betterend:endstone_dust": {
+    "sound": "sand",
+    "textures": "betterend:endstone_dust",
+    "isotropic": true,
+    "brightness_gamma": 0.55
   }
 }
