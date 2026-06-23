@@ -40,6 +40,9 @@
     "betterend:glowing_pillar_roots_both": {
       "textures": "textures/blocks/glowing_pillar_roots_both"
     },
+    "betterend:glowing_pillar_leaves": {
+      "textures": "textures/blocks/glowing_pillar_leaves"
+    },
     "betterend:amber_root_0": {
       "textures": "textures/blocks/amber_root_0"
     },
@@ -174,6 +177,10 @@
     },
     "betterend:umbrella_tree_membrane_7": {
       "textures": "textures/blocks/umbrella_tree_membrane_7"
+    },
+    // Lake
+    "betterend:endstone_dust": {
+      "textures": "textures/blocks/endstone_dust"
     }
   }
 }
