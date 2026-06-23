@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "betterend:custom/lakes/endstone_dust_material"
+    },
+    "places_block": {
+      "name": "betterend:endstone_dust",
+      "states": {
+        "betterend:biomes": "none"
+      }
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "betterend:helix_tree_3"
+    },
+    "structure_name": "mystructure:amber_land/helix_tree3",
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:air",
+          "betterend:amber_moss",
+          "betterend:amber_grass",
+          "betterend:amber_root_seed",
+          "betterend:bulb_moss",
+          "betterend:glowing_pillar_luminophor",
+          "betterend:glowing_pillar_leaves",
+          "betterend:lanceleaf_seed",
+          "betterend:glowing_pillar_seed"
+        ]
+      }
+    }
+  }
+}

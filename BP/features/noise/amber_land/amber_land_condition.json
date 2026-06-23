@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:amber_land/amber_land_condition"
+    },
+    "distribution": {
+      "iterations": "temp.index == 0",
+      "x": 0,
+      "y": -1,
+      "z": 0
+    },
+    "places_feature": "betterend:amber_land/amber_moss"
+  }
+}

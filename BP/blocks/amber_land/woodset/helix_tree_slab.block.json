@@ -1,0 +1,117 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_slab",
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.slab"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [ "minecraft:vertical_half" ]
+        }
+      },
+      "states": {
+        "betterend:block_bit": [ false, true ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Helix Tree Slab",
+      "minecraft:map_color": "#7c3d2d",
+      "minecraft:geometry": {
+        "identifier": "geometry.slab",
+        "bone_visibility": {
+          "bottom": "q.block_state('minecraft:vertical_half') == 'bottom' || q.block_state('betterend:block_bit') == true",
+          "top": "q.block_state('minecraft:vertical_half') == 'top' || q.block_state('betterend:block_bit') == true",
+          "inventory": false
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_planks",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.slab",
+          "bone_visibility": {
+            "bottom": false,
+            "top": false,
+            "inventory": true
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "betterend:helix_tree_planks",
+            "ambient_occlusion": true,
+            "face_dimming": true,
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.75
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "tag:minecraft:is_axe_item_destructible": {},
+      "betterend:slab_config": {},
+      "nearbear:events": {
+        "betterend:slab":{
+          "placing_sound": "use.wood"
+        }
+      },
+      "tag:wood": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 8, 16 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 8, 16 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'top'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 8, -8 ],
+            "size": [ 16, 8, 16 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -8, 8, -8 ],
+            "size": [ 16, 8, 16 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:block_bit') == true",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 16 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 16 ]
+          }
+        }
+      }
+    ]
+  }
+}

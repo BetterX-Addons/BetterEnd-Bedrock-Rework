@@ -1,0 +1,135 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "betterend:shadow_walker",
+			"is_experimental": false,
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:spawn_entity": {
+				"entities": [
+					{
+						"spawn_entity": "phantom",
+						"min_wait_time": 0,
+						"max_wait_time": 20,
+						"num_to_spawn": 2,
+						"single_use": true
+					}
+				]
+			},
+			"minecraft:spell_effects": {
+				"add_effects": [
+					{
+						"effect": "blindness",
+						"duration": 10000,
+						"visible": true
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 30
+			},
+			"minecraft:behavior.float": {},
+			"minecraft:jump.static": {},
+			"minecraft:collision_box": {
+				"height": 1.8,
+				"width": 0.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.melee_attack": {},
+			"minecraft:attack": {
+				"damage": 4,
+				"effect_name": "blindness",
+				"effect_duration": 4
+			},
+			"minecraft:behavior.look_at_entity": {},
+			"minecraft:behavior.random_stroll": {},
+			"minecraft:movement.basic": {},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:navigation.walk": {},
+			"minecraft:behavior.nearest_attackable_target": {
+				"set_persistent": true,
+				"priority": 2,
+				"reselect_targets": false,
+				"within_radius": 100,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "villager"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "wandering_trader"
+								}
+							]
+						},
+						"max_dist": 100,
+						"must_see": false
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "baby_turtle"
+								},
+								{
+									"test": "in_water",
+									"subject": "other",
+									"operator": "!=",
+									"value": true
+								}
+							]
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "tamed"
+						},
+						"max_dist": 100
+					}
+				]
+			}
+		}
+	}
+}

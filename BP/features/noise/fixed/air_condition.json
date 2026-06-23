@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:fixed/air_condition"
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": -1,
+      "z": 0
+    },
+    "places_feature": "betterend:fixed/chorus_replacer_p1"
+  }
+}

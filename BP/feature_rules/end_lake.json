@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:end_lake",
+      "places_feature": "betterend:custom/lakes/end_lake"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "the_end"
+      }
+    },
+    "distribution": {
+      "iterations": "temp.index == 0 ? math.random_integer(1, 40) == 1 ? 1 : 0 : 0",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, 15 ]
+      },
+      "y": "t.size = math.random_integer(5, 10); t.a = q.heightmap(v.worldx, v.worldz); t.s1 = math.abs(q.heightmap(v.worldx - 4, v.worldz - 4) - t.a); t.s2 = math.abs(q.heightmap(v.worldx - 4, v.worldz + 4) - t.a); t.s3 = math.abs(q.heightmap(v.worldx + 4, v.worldz - 4) - t.a); t.s4 = math.abs(q.heightmap(v.worldx + 4, v.worldz + 4) - t.a); (t.s1 <= 2 && t.s2 <= 2 && t.s3 <= 2 && t.s4 <= 2 && t.a > 59) ? { return t.a - t.size / 2 + 1; } : { return -64; };",
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, 15 ]
+      }
+    }
+  }
+}

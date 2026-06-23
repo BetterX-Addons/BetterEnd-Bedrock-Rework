@@ -1,0 +1,258 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_seed",
+      "states": {
+        "betterend:growth": [ 0, 1, 2, 3, 4, 5, 6 ]
+      }
+    },
+    "components": {
+      "tag:minecraft:is_shears_item_destructible": {},
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/blocks/amber_grass.json",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:collision_box": false,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:movable": {
+        "movement_type": "popped"
+      },
+      "minecraft:replaceable": {},
+      "minecraft:random_offset": {
+        "x": { 
+          "range": {
+            "min": -1,
+            "max": 1
+          },
+          "steps": 0
+        },
+        "y": { 
+          "range": {
+            "min": 0,
+            "max": 0
+          },
+          "steps": 0
+        },
+        "z": {
+          "range": { 
+            "min": -1,
+            "max": 1
+          }, 
+          "steps": 0
+        }
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      },
+      "betterend:growing_plant": {
+        "max_size": 4,
+        "random_chance": 0.5,
+        "bone_meal_chance": 0.5,
+        "feature": "betterend:glowing_pillar_weight"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:growth') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:amber_moss" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -3, 0, -3 ],
+            "size": [ 6, 11, 6 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_seed_0",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:amber_moss" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -3.5, 0, -3.5 ],
+            "size": [ 7, 12, 7 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_seed_1",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:amber_moss" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 14, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_seed_2",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:amber_moss" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -4.5, 0, -4.5 ],
+            "size": [ 9, 16, 9 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_seed_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:amber_moss" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 16, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_roots_both",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 5",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:amber_moss" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 16, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_roots_bottom",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 6",
+        "components": {
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": [ "up" ],
+                "block_filter": [ "betterend:glowing_pillar_seed" ]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 16, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:glowing_pillar_roots_top",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      }
+    ]
+  }
+}

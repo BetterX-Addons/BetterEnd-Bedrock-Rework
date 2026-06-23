@@ -1,0 +1,132 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_fence_gate",
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.fenceGate"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [ "minecraft:cardinal_direction" ]
+        }
+      },
+      "states": {
+        "betterend:open_bit": [ false, true ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Helix Tree Fence Gate",
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:map_color": "#7c3d2d",
+      "minecraft:geometry": {
+        "identifier": "geometry.nb_fence_gate",
+        "bone_visibility": {
+          "close_1": "query.block_state('betterend:open_bit') == false",
+          "close_2": "query.block_state('betterend:open_bit') == false",
+          "open_north_1": "query.block_state('betterend:open_bit') == true && (query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'east')",
+          "open_north_2": "query.block_state('betterend:open_bit') == true && (query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'east')",
+          "open_south_1": "query.block_state('betterend:open_bit') == true && (query.block_state('minecraft:cardinal_direction') == 'south' || query.block_state('minecraft:cardinal_direction') == 'west')",
+          "open_south_2": "query.block_state('betterend:open_bit') == true  && (query.block_state('minecraft:cardinal_direction') == 'south' || query.block_state('minecraft:cardinal_direction') == 'west')",
+          "inventory_close_1": false,
+          "inventory_close_2": false
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.nb_fence_gate",
+          "bone_visibility": {
+            "close_1": false,
+            "close_2": false,
+            "open_north_1": false,
+            "open_north_2": false,
+            "open_south_1": false,
+            "open_south_2": false,
+            "inventory_close_1": true,
+            "inventory_close_2": true
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "betterend:helix_tree_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [ -8, 0, -2 ],
+        "size": [ 16, 16, 4 ]
+      },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.75
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "betterend:fence_gate_config": {
+        "open_sound": "open.cherry_wood_door",
+        "close_sound": "close.cherry_wood_door"
+      },
+      "minecraft:redstone_consumer": {
+        "min_power": 0,
+        "propogates_power": false
+      },
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          },
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "all",
+            "enabled_directions": [ "east", "west" ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east' || query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 270, 0 ]
+          },
+          "minecraft:connection_rule": {
+            "accepts_connections_from": "all",
+            "enabled_directions": [ "north", "south" ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:open_bit') == false",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [ -8, 0, -2 ],
+            "size": [ 16, 24, 4 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:open_bit') == true",
+        "components": {
+          "minecraft:collision_box": false
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:custom/lakes/endstone_dust_area"
+    },
+    "places_feature": "betterend:custom/lakes/endstone_dust_check",
+    "distribution": {
+      "iterations": "temp.radius = temp.size + 2; temp.height = temp.radius; temp.length = temp.radius * 2 + 1; temp.x = v.originx; temp.y = v.originy; temp.z = v.originz; return temp.length * temp.length * temp.length;",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      },
+      "y": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      },
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      }
+    }
+  }
+}

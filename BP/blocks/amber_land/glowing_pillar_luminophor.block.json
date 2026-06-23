@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_luminophor",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:map_color": "#ffb300",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:glowing_pillar_luminophor",
+          "render_method": "opaque",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        }
+      },
+      "minecraft:light_emission": 15,
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      }
+    }
+  }
+}

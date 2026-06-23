@@ -1,0 +1,15 @@
+{ 
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:custom/lakes/endstone_dust_check"
+    },
+    "places_feature": "betterend:custom/lakes/endstone_dust_material",
+    "distribution": {
+      "iterations": "temp.rx = (v.originx - temp.radius) - temp.x; temp.ry = (v.originy - temp.radius) - temp.y; temp.rz = (v.originz - temp.radius) - temp.z; temp.dx = temp.rx / temp.radius; temp.dy = temp.ry / temp.radius; temp.dz = temp.rz / temp.radius; return (temp.dx * temp.dx + temp.dy * temp.dy + temp.dz * temp.dz < 1 + q.noise(v.originx / 8, v.originz / 8) * 0.4) && temp.ry <= 0;",
+      "x": "-temp.radius",
+      "y": "-temp.radius",
+      "z": "-temp.radius"
+    } 
+  }
+}

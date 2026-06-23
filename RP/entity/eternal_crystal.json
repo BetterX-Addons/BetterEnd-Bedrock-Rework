@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "betterend:eternal_crystal_entity",
+			"materials": {
+				"default": "slime_outer"
+			},
+			"geometry": {
+				"default": "geometry.eternal_crystal_floating"
+			},
+			"textures": {
+				"frame_1": "textures/entity/crystal/eternal_crystal",
+				"frame_2": "textures/entity/crystal/eternal_crystal2",
+				"frame_3": "textures/entity/crystal/eternal_crystal3",
+				"frame_4": "textures/entity/crystal/eternal_crystal4",
+				"frame_5": "textures/entity/crystal/eternal_crystal5"
+			},
+			"render_controllers": [
+				"controller.render.eternal_crystal"
+			],
+			"animations": {
+				"rotate": "animation.eternal_crystal_floating.rotate"
+			},
+			"scripts": {
+				"animate": [
+					"rotate"
+				]
+			}
+		}
+	}
+}

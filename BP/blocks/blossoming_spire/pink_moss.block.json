@@ -1,0 +1,49 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:pink_moss",
+      "menu_category": {
+        "category": "nature"
+      },
+      "states": {
+        "betterend:biomes": [
+          "none",
+          "blossoming_spire"
+        ]
+      }      
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:biomes') == 'none'",
+        "components": {
+          "tag:none": {}
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:biomes') == 'blossoming_spire'",
+        "components": {
+          "tag:blossoming_spire": {}
+        }
+      }
+    ],
+    "components": {
+      "betterend:grass_block": {
+        "feature": "betterend:bonemeal_amber_moss",
+        "shovel_block": "betterend:pink_moss_path"
+      },
+      "minecraft:display_name": "Pink Moss",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/blocks/pink_moss.json",
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:stone": {}
+    }
+  }
+}

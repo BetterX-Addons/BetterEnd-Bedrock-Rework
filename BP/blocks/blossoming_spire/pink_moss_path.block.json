@@ -1,0 +1,49 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:pink_moss_path",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:pink_moss_side",
+          "render_method": "opaque"
+        },
+        "up": {
+          "texture": "betterend:pink_moss_path_top",
+          "render_method": "opaque",
+          "isotropic": true
+        },
+        "down": {
+          "texture": "end_stone",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:geometry": "geometry.path",
+      "minecraft:display_name": "Pink Moss Path",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:collision_box": {
+        "size": [ 16, 15, 16 ],
+        "origin": [ -8, 0, -8 ]
+      },
+      "minecraft:selection_box": {
+        "size": [ 16, 15, 16 ],
+        "origin": [ -8, 0, -8 ]
+      },
+      "minecraft:flammable": false,
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/blocks/pink_moss_path.json",
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:stone": {}
+    }
+  }
+}

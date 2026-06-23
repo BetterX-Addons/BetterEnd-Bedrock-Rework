@@ -1,0 +1,42 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "BetterEnd BP",
+    "description": "By BetterX Addons",
+    "min_engine_version": [ 1, 26, 0 ],
+    "uuid": "ee3b63c5-87df-4f29-bec1-4222e5cc5c26",
+    "version": [ 1, 0, 0 ],
+    "pack_scope": "world"
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "c4d502ac-4f1d-4a3c-9f76-c2453612c000",
+      "version": [ 1, 0, 0 ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "73697174-12b6-426c-9243-d074aa5f82dd",
+      "entry": "scripts/main.js",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "8a783070-0728-4fc5-bc07-81738a9a8079",
+      "version": [ 1, 0, 0 ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.7.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "blank": {
+      "textures": "textures/blocks/blank"
+    },
+    "betterend:amber_ore": {
+      "textures": "textures/blocks/amber_ore"
+    },
+    "betterend:bulb_moss_leaves": {
+      "textures": "textures/blocks/bulb_moss_leaves"
+    },
+    "betterend:bulb_moss_bulbs": {
+      "textures": "textures/blocks/bulb_moss_bulbs"
+    },
+    "betterend:amber_grass": {
+      "textures": "textures/blocks/amber_grass"
+    },
+    "betterend:glowing_pillar_seed_0": {
+      "textures": "textures/blocks/glowing_pillar_seed_0"
+    },
+    "betterend:glowing_pillar_seed_1": {
+      "textures": "textures/blocks/glowing_pillar_seed_1"
+    },
+    "betterend:glowing_pillar_seed_2": {
+      "textures": "textures/blocks/glowing_pillar_seed_2"
+    },
+    "betterend:glowing_pillar_seed_3": {
+      "textures": "textures/blocks/glowing_pillar_seed_3"
+    },
+    "betterend:glowing_pillar_roots_top": {
+      "textures": "textures/blocks/glowing_pillar_roots_top"
+    },
+    "betterend:glowing_pillar_roots_bottom": {
+      "textures": "textures/blocks/glowing_pillar_roots_bottom"
+    },
+    "betterend:glowing_pillar_roots_both": {
+      "textures": "textures/blocks/glowing_pillar_roots_both"
+    },
+    "betterend:amber_root_0": {
+      "textures": "textures/blocks/amber_root_0"
+    },
+    "betterend:amber_root_1": {
+      "textures": "textures/blocks/amber_root_1"
+    },
+    "betterend:amber_root_2": {
+      "textures": "textures/blocks/amber_root_2"
+    },
+    "betterend:amber_root_3": {
+      "textures": "textures/blocks/amber_root_3"
+    },
+    "betterend:glowing_pillar_luminophor": {
+      "textures": "textures/blocks/glowing_pillar_luminophor"
+    },
+    "betterend:amber_moss_top": {
+      "textures": "textures/blocks/amber_moss_top"
+    },
+    "betterend:amber_moss_path_top": {
+      "textures": "textures/blocks/amber_moss_path_top"
+    },
+    "betterend:amber_moss_side": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/amber_moss_side_1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/amber_moss_side_2",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/amber_moss_side_3",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "betterend:helix_tree_leaves": {
+      "textures": "textures/blocks/helix_tree_leaves"
+    },
+    "betterend:helix_tree_barrel_bottom": {
+      "textures": "textures/blocks/helix_tree_barrel_bottom"
+    },
+    "betterend:helix_tree_barrel_top_open": {
+      "textures": "textures/blocks/helix_tree_barrel_top_open"
+    },
+    "betterend:helix_tree_barrel_top": {
+      "textures": "textures/blocks/helix_tree_barrel_top"
+    },
+    "betterend:helix_tree_barrel_side": {
+      "textures": "textures/blocks/helix_tree_barrel_side"
+    },
+    "betterend:helix_tree_trapdoor": {
+      "textures": "textures/blocks/helix_tree_trapdoor"
+    },
+    "betterend:helix_tree_stripped_log_top": {
+      "textures": "textures/blocks/helix_tree_stripped_log_top"
+    },
+    "betterend:helix_tree_stripped_log_side": {
+      "textures": "textures/blocks/helix_tree_stripped_log_side"
+    },
+    "betterend:helix_tree_door_bottom": {
+      "textures": "textures/blocks/helix_tree_door_bottom"
+    },
+    "betterend:helix_tree_door_side": {
+      "textures": "textures/blocks/helix_tree_door_side"
+    },
+    "betterend:helix_tree_door_top": {
+      "textures": "textures/blocks/helix_tree_door_top"
+    },
+    "betterend:helix_tree_log_side": {
+      "textures": "textures/blocks/helix_tree_log_side"
+    },
+    "betterend:helix_tree_log_top": {
+      "textures": "textures/blocks/helix_tree_log_top"
+    },
+    "betterend:helix_tree_bookshelf": {
+      "textures": "textures/blocks/helix_tree_bookshelf"
+    },
+    "betterend:helix_tree_crafting_table_bottom": {
+      "textures": "textures/blocks/helix_tree_crafting_table_bottom"
+    },
+    "betterend:helix_tree_crafting_table_front": {
+      "textures": "textures/blocks/helix_tree_crafting_table_front"
+    },
+    "betterend:helix_tree_crafting_table_side": {
+      "textures": "textures/blocks/helix_tree_crafting_table_side"
+    },
+    "betterend:helix_tree_crafting_table_top": {
+      "textures": "textures/blocks/helix_tree_crafting_table_top"
+    },
+    "betterend:helix_tree_planks": {
+      "textures": "textures/blocks/helix_tree_planks"
+    },
+    "betterend:pink_moss_top": {
+      "textures": "textures/blocks/pink_moss_top"
+    },
+    "betterend:pink_moss_side": {
+      "textures": "textures/blocks/pink_moss_side"
+    },
+    "betterend:pink_moss_path_top": {
+      "textures": "textures/blocks/pink_moss_path_top"
+    },
+    "betterend:thallasium_ore": {
+      "textures": "textures/blocks/thallasium_ore"
+    },
+    "betterend:ender_ore": {
+      "textures": "textures/blocks/ender_ore"
+    },
+    "betterend:umbrella_tree_membrane_0": {
+      "textures": "textures/blocks/umbrella_tree_membrane_0"
+    },
+    "betterend:umbrella_tree_membrane_1": {
+      "textures": "textures/blocks/umbrella_tree_membrane_1"
+    },
+    "betterend:umbrella_tree_membrane_2": {
+      "textures": "textures/blocks/umbrella_tree_membrane_2"
+    },
+    "betterend:umbrella_tree_membrane_3": {
+      "textures": "textures/blocks/umbrella_tree_membrane_3"
+    },
+    "betterend:umbrella_tree_membrane_4": {
+      "textures": "textures/blocks/umbrella_tree_membrane_4"
+    },
+    "betterend:umbrella_tree_membrane_5": {
+      "textures": "textures/blocks/umbrella_tree_membrane_5"
+    },
+    "betterend:umbrella_tree_membrane_6": {
+      "textures": "textures/blocks/umbrella_tree_membrane_6"
+    },
+    "betterend:umbrella_tree_membrane_7": {
+      "textures": "textures/blocks/umbrella_tree_membrane_7"
+    }
+  }
+}

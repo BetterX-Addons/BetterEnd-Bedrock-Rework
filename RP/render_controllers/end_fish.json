@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.end_fish": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.endfish1",
+						"Texture.endfish2",
+						"Texture.endfish3",
+						"Texture.endfish4",
+						"Texture.endfish5",
+						"Texture.endfish6",
+						"Texture.endfish7",
+						"Texture.endfish8"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		},
+		"controller.render.betterend_chest": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.chest1",
+						"Texture.chest2",
+						"Texture.chest3",
+						"Texture.chest4",
+						"Texture.chest5",
+						"Texture.chest6",
+						"Texture.chest7",
+						"Texture.chest8",
+						"Texture.chest9"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.skin_id]"
+			]
+		}
+	}
+}

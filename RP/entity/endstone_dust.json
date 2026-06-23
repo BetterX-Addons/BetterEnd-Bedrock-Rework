@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "betterend:endstone_dust",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.block.entity"
+      },
+      "textures": {
+        "default": "textures/blocks/dust/endstone_dust"
+      },
+      "render_controllers": [
+        "controller.render.falling_block"
+      ]
+    }
+  }
+}

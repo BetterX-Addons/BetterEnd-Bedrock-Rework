@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:painted_mountains/layers/layers_placement_feature"
+    },
+    "iterations":  "t.octave1 = q.noise((v.worldx - 256)/32, (v.worldz + 256)/32); t.octave2 = q.noise((v.worldx - 256)/16, (v.worldz + 256)/16); t.height = math.floor(96 - 32 + (3*t.octave1 + 1*t.octave2)/4*3); t.maxheight = 96 + 48 + 16; return 1;",
+    "x": 0,
+    "z": 0,
+    "y": "t.height - 45",
+    "places_feature": "betterend:painted_mountains/layers/layers_feature"
+  }
+}

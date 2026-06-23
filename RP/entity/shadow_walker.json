@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "betterend:shadow_walker",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/shadow_walker"
+			},
+			"geometry": {
+				"default": "geometry.shadow_walker"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					{
+						"move": "query.modified_move_speed>0.1"
+					}
+				]
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.shadow_walker.walk"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#250025"
+			}
+		}
+	}
+}

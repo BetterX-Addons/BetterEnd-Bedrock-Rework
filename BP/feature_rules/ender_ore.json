@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:ender_ore",
+      "places_feature": "betterend:ender_ore"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "the_end"
+      }
+    },
+    "distribution": {
+      "iterations": 2,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [ 10, 65 ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      }
+    }
+  }
+}

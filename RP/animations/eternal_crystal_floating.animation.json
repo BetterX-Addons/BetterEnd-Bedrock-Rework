@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.eternal_crystal_floating.rotate": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*10)*360",
+						0
+					],
+					"position": [
+						0,
+						"2.5+math.cos(query.anim_time*100)*2.5",
+						0
+					]
+				},
+				"bone2": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*10)*360",
+						0
+					],
+					"position": [
+						0,
+						"2.5+math.cos(query.anim_time*100)*4",
+						1
+					]
+				},
+				"bone3": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*10)*360",
+						0
+					],
+					"position": [
+						0,
+						"2.5+math.cos(query.anim_time*100)*4",
+						0
+					]
+				},
+				"bone4": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*10)*360",
+						0
+					],
+					"position": [
+						-2,
+						"2.5+math.cos(query.anim_time*100)*4",
+						0
+					]
+				},
+				"bone5": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*10)*360",
+						0
+					],
+					"position": [
+						0,
+						"2.5+math.cos(query.anim_time*100)*4",
+						0
+					]
+				},
+				"bone6": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								0,
+								"math.sin(query.anim_time * 3) * 360",
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:custom/lakes/fixed_area"
+    },
+    "places_feature": "betterend:custom/lakes/fixed_check",
+    "distribution": {
+      "iterations": "temp.radius = temp.size + 2; temp.x = v.originx; temp.z = v.originz; temp.length = temp.radius * 2 + 1; return math.pow(temp.length, 2);",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      }
+    }
+  }
+}

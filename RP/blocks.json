@@ -1,0 +1,76 @@
+{
+  "format_version": "1.1.0",
+  "betterend:amber_moss": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:amber_moss_top",
+      "side": "betterend:amber_moss_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:amber_moss_path": {
+    "sound": "gravel"
+  },
+  "betterend:amber_grass": {
+    "sound": "grass"
+  },
+  "betterend:amber_root_seed": {
+    "sound": "roots"
+  },
+  "betterend:bulb_moss": {
+    "sound": "grass"
+  },
+  "betterend:amber_ore": {
+    "sound": "stone",
+    "textures": "betterend:amber_ore"
+  },
+  "betterend:helix_tree_leaves": {
+    "sound": "nether_wart",
+    "textures": "betterend:helix_tree_leaves"
+  },
+  "betterend:helix_tree_planks" : {
+    "sound" : "wood",
+    "textures" : "betterend:helix_tree_planks"
+  },
+  "betterend:helix_tree_bookshelf" : {
+    "sound" : "wood",
+    "textures" : {
+      "down" : "betterend:helix_tree_planks",
+      "side" : "betterend:helix_tree_bookshelf",
+      "up" : "betterend:helix_tree_planks"
+    }
+  },
+  "betterend:helix_tree_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:helix_tree_crafting_table_bottom",
+      "east": "betterend:helix_tree_crafting_table_side",
+      "north": "betterend:helix_tree_crafting_table_front",
+      "south": "betterend:helix_tree_crafting_table_front",
+      "up": "betterend:helix_tree_crafting_table_top",
+      "west": "betterend:helix_tree_crafting_table_side"
+    }
+  },
+  "betterend:pink_moss": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:pink_moss_top",
+      "side": "betterend:pink_moss_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:thallasium_ore": {
+    "sound": "stone",
+    "textures": "betterend:thallasium_ore"
+  },
+  "betterend:ender_ore": {
+    "sound": "stone",
+    "textures": "betterend:ender_ore"
+  }
+}

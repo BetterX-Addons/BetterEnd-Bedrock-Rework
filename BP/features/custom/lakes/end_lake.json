@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "betterend:custom/lakes/end_lake"
+    },
+    "features": [
+      "betterend:custom/lakes/endstone_dust_area",
+      "betterend:custom/lakes/water_area",
+      "betterend:custom/lakes/air_area",
+      "betterend:custom/lakes/fixed_area"
+    ]
+  }
+}

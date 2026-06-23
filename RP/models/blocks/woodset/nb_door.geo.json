@@ -1,0 +1,93 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nb_door",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "close",
+					"pivot": [-6, 0, -6],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 3],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16]},
+								"east": {"uv": [3, 0], "uv_size": [-3, 16], "material_instance": "hinge"},
+								"south": {"uv": [16, 0], "uv_size": [-16, 16]},
+								"west": {"uv": [16, 0], "uv_size": [-3, 16], "material_instance": "bolt"},
+								"up": {"uv": [0, 0], "uv_size": [16, 3]},
+								"down": {"uv": [0, 13], "uv_size": [16, 3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "open",
+					"pivot": [-6, 0, -6],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 3],
+							"pivot": [-6.5, 0, -6.5],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16]},
+								"east": {"uv": [3, 0], "uv_size": [-3, 16], "material_instance": "hinge"},
+								"south": {"uv": [16, 0], "uv_size": [-16, 16]},
+								"west": {"uv": [16, 0], "uv_size": [-3, 16], "material_instance": "bolt"},
+								"up": {"uv": [0, 0], "uv_size": [16, 3]},
+								"down": {"uv": [0, 13], "uv_size": [16, 3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "inverted_close",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 3],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [-16, 16]},
+								"east": {"uv": [13, 0], "uv_size": [3, 16], "material_instance": "bolt"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16]},
+								"west": {"uv": [0, 0], "uv_size": [3, 16], "material_instance": "hinge"},
+								"up": {"uv": [16, 0], "uv_size": [-16, 3]},
+								"down": {"uv": [16, 13], "uv_size": [-16, 3]}
+							}
+						}
+					]
+				},
+				{
+					"name": "inverted_open",
+					"pivot": [-6, 0, -6],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 3],
+							"pivot": [6.5, 0, -6.5],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [-16, 16]},
+								"east": {"uv": [13, 0], "uv_size": [3, 16], "material_instance": "bolt"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16]},
+								"west": {"uv": [0, 0], "uv_size": [3, 16], "material_instance": "hinge"},
+								"up": {"uv": [16, 0], "uv_size": [-16, 3]},
+								"down": {"uv": [16, 13], "uv_size": [-16, 3]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

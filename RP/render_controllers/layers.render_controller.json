@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.falling_block.layers": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": false,
+          "layer_1": true,
+          "layer_2": "v.layers >= 1",
+          "layer_3": "v.layers >= 2",
+          "layer_4": "v.layers >= 3",
+          "layer_5": "v.layers >= 4",
+          "layer_6": "v.layers >= 5",
+          "layer_7": "v.layers >= 6",
+          "layer_8": "v.layers >= 7"
+        }
+      ],
+      "is_hurt_color": {},
+      "on_fire_color": {}
+    }
+  }
+}

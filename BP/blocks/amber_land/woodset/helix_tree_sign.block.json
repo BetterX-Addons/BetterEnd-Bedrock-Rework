@@ -1,0 +1,106 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_sign",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.sign"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [ "minecraft:block_face" ]
+        }
+      },
+      "states": {
+        "wiki:rotation": {
+          "values": {
+            "min": 0,
+            "max": 15
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.sign",
+        "bone_visibility": {
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 3",
+          "side": "q.block_state('minecraft:block_face') != 'up'"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [ -4, 0, -4 ],
+        "size": [ 8, 16, 8 ]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "up", "side" ]
+          }
+        ]
+      },
+      "betterend:sign_rotation": {},
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:text_sign": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('wiki:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wiki:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('wiki:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') != 'up'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 4, 6 ],
+            "size": [ 16, 8.2, 2 ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_button",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.buttons"
+      },
+      "states": {
+        "betterend:button_pressed_bit": [ false, true ]
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [ "minecraft:block_face" ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Helix Tree Button",
+      "minecraft:map_color": "#7c3d2d",
+      "minecraft:geometry": {
+        "identifier": "geometry.nb_button",
+        "bone_visibility": {
+          "off": "query.block_state('betterend:button_pressed_bit') == false",
+          "on": "query.block_state('betterend:button_pressed_bit') == true",
+          "inventory": false
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.nb_button",
+          "bone_visibility": {
+            "off": false,
+            "on": false,
+            "inventory": true
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "betterend:helix_tree_planks",
+            "render_method": "blend"
+          }
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.75
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "tag:wood": {},
+      "tag:minecraft:is_axe_item_destructible": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('betterend:button_pressed_bit') == false",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "down",
+            "transform_relative": true
+          },
+          "minecraft:selection_box": {
+            "origin": [ -3, 0, -2 ],
+            "size": [ 6, 2, 4 ]
+          },
+          "betterend:button_config": {
+            "on_sound": "click_on.nether_wood_button",
+            "off_sound": "click_off.nether_wood_button"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:button_pressed_bit') == true",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "down",
+            "transform_relative": true
+          },
+          "minecraft:selection_box": {
+            "origin": [ -3, 0, -2 ],
+            "size": [ 6, 1, 4 ]
+          },
+          "tag:active_button": {}
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ -180, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 90, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 90 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ -90, 0, -180 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, -90 ]
+          }
+        }
+      }
+    ]
+  }
+}

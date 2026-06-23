@@ -1,0 +1,15 @@
+{
+  "format_version":"1.26.0",
+  "minecraft:scatter_feature": { 
+    "description": {
+      "identifier":"betterend:fixed/chorus_replacer_p3"
+    },
+    "places_feature":"betterend:fixed/chorus_replacer_p4",
+    "distribution": { 
+      "iterations": "temp.a = temp.a - 1; return temp.a > 0 ? 1 : 0;",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  }
+}

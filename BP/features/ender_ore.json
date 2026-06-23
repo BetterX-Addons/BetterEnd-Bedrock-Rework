@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "betterend:ender_ore"
+    },
+    "discard_chance_on_air_exposure": 0.0,
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": "betterend:ender_ore",
+        "may_replace": [
+          {
+            "name": "minecraft:end_stone"
+          }
+        ]
+      }
+    ]
+  }
+}

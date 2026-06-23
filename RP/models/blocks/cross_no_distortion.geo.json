@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cross_no_distortion",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "group",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{
+							"origin": [5.624, 0, -5.75],
+							"size": [0.001, 16, 16],
+							"pivot": [5.625, 0, -5.75],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16]},
+								"west": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [-5.751, 0, -5.75],
+							"size": [0.001, 16, 16],
+							"pivot": [-5.75, 0, -5.75],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16]},
+								"west": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

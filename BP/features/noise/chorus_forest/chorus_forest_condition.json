@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:chorus_forest/chorus_forest_condition"
+    },
+    "distribution": {
+      "iterations": "temp.index == 2",
+      "x": 0,
+      "y": -1,
+      "z": 0
+    },
+    "places_feature": "betterend:chorus_forest/chorus_nylium"
+  }
+}

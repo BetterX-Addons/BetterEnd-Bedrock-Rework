@@ -1,0 +1,353 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:lanceleaf_seed",
+      "states": {
+        "betterend:growth": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"],
+          "y_rotation_offset": 180
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 0",
+        "components": {
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": ["betterend:amber_moss"]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [-3, 0, -3],
+            "size": [6, 11, 6]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_seed_0",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 1",
+        "components": {
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": ["betterend:amber_moss"]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [-3.5, 0, -3.5],
+            "size": [7, 12, 7]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_seed_1",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 2",
+        "components": {
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": ["betterend:amber_moss"]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [-4, 0, -4],
+            "size": [8, 14, 8]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_seed_2",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 3",
+        "components": {
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": ["betterend:amber_moss"]
+              }
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [-4.5, 0, -4.5],
+            "size": [9, 16, 9]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_seed_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.lanceleaf_leaf_bottom",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_stem",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -6],
+            "size": [12, 16, 12]
+          },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": ["betterend:amber_moss"]
+              },
+              {
+                "allowed_faces": ["down"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 5",
+        "components": {
+          "minecraft:geometry": "geometry.lanceleaf_leaf_pre_bottom",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_leaf_bottom",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -6],
+            "size": [12, 16, 12]
+          },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 4
+                    }
+                  }
+                ]
+              },
+              {
+                "allowed_faces": ["down"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 6
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 6",
+        "components": {
+          "minecraft:geometry": "geometry.lanceleaf_leaf_middle",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_leaf_middle",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -6],
+            "size": [12, 16, 12]
+          },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "allowed_faces": ["down"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 7
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 7",
+        "components": {
+          "minecraft:geometry": "geometry.lanceleaf_leaf_pre_top",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_leaf_pre_top",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -6],
+            "size": [12, 16, 12]
+          },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 6
+                    }
+                  }
+                ]
+              },
+              {
+                "allowed_faces": ["down"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 8
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:growth') == 8",
+        "components": {
+          "minecraft:geometry": "geometry.lanceleaf_leaf_top",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "lanceleaf_leaf_top",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false
+            }
+          },
+          "minecraft:selection_box": {
+            "origin": [-6, 0, -6],
+            "size": [12, 16, 12]
+          },
+          "minecraft:placement_filter": {
+            "conditions": [
+              {
+                "allowed_faces": ["up"],
+                "block_filter": [
+                  {
+                    "name": "betterend:lanceleaf_seed",
+                    "states": {
+                      "betterend:growth": 7
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:geometry": "geometry.random_model2",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:collision_box": false
+    }
+  }
+}

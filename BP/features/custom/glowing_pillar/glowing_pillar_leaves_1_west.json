@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_leaves_1_west"
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "z": -1,
+      "y": 2
+    },
+    "places_feature": "betterend:glowing_pillar_leaves"
+  }
+}

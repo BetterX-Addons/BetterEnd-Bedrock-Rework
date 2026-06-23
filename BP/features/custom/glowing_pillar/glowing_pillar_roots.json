@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_roots"
+    },
+    "early_out": "none",
+    "features": [
+      "betterend:glowing_pillar_seed_lower",
+      "betterend:glowing_pillar_seed_upper_1"
+    ]
+  }
+}

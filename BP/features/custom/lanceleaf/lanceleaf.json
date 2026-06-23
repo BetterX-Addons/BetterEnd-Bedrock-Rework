@@ -1,0 +1,22 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:lanceleaf"
+    },
+    "distribution": {
+      "iterations": 32,
+      "x": {
+        "extent": [ -7, 7 ],
+        "distribution": "gaussian"
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "extent": [ -7, 7 ],
+        "distribution": "gaussian"
+      }
+    },
+    "places_feature": "betterend:lanceleaf_floor"
+  }
+}
+

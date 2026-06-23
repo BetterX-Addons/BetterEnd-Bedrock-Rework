@@ -1,0 +1,77 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_crafting_table",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Helix Tree Crafting Table",
+      "minecraft:map_color": "#845B45",
+      "minecraft:crafting_table": {
+        "table_name": "helix_tree_crafting_table",
+        "crafting_tags": [
+          "crafting_table"
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2.5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:wooden_tier')"
+            },
+            "destroy_speed": 4.0
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:stone_tier')"
+            },
+            "destroy_speed": 2.0
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:copper_tier')"
+            },
+            "destroy_speed": 1.67
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:iron_tier')"
+            },
+            "destroy_speed": 1.35
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:diamond_tier')"
+            },
+            "destroy_speed": 1.0
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:netherite_tier')"
+            },
+            "destroy_speed": 0.9
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_axe','minecraft:golden_tier')"
+            },
+            "destroy_speed": 0.85
+          }
+        ]
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.end_fish.swim": {
+			"loop": true,
+			"bones": {
+				"bone2": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*160)*45",
+						0
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*160)*5",
+						0
+					]
+				},
+				"bone5": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*400)*-2.5",
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						0,
+						"math.sin(query.anim_time*400)*2.5",
+						0
+					]
+				}
+			}
+		}
+	}
+}

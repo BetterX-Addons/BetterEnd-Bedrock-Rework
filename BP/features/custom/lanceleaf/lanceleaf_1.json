@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "betterend:lanceleaf_1"
+    },
+    "features": [
+      "betterend:lanceleaf_bottom",
+      "betterend:lanceleaf_top_fixup"
+    ],
+    "early_out": "first_failure"
+  }
+}

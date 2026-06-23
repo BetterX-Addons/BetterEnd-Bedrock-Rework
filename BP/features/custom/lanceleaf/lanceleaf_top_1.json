@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:lanceleaf_top_1"
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "z": 0,
+      "y": 5
+    }, 
+    "project_input_to_floor": false,
+    "places_feature": "betterend:lanceleaf_top_snap_to_floor"
+  }
+}

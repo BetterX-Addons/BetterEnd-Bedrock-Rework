@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "betterend:amber_land/amber_moss"
+    },
+    "places_block": {
+      "name": "betterend:amber_moss",
+      "states": {
+        "betterend:biomes": "amber_land"
+      }
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false
+  }
+}

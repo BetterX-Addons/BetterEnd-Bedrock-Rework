@@ -1,0 +1,28 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "BetterEnd RP",
+    "description": "By BetterX Addons",
+    "min_engine_version": [ 1, 26, 0 ],
+    "uuid": "8a783070-0728-4fc5-bc07-81738a9a8079",
+    "version": [ 1, 0, 0 ],
+    "pack_scope": "world"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "03dfaf7e-4cb2-4664-818d-d8db9813bcf1",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "ee3b63c5-87df-4f29-bec1-4222e5cc5c26",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "capabilities": [ "pbr" ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}

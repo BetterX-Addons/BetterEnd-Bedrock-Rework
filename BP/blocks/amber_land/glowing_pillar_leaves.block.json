@@ -1,0 +1,167 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_leaves",
+      "states": {
+        "betterend:random": [ 0, 1, 2 ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [ "minecraft:cardinal_direction" ]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.bulb_moss_01"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.bulb_moss_02"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.bulb_moss_03"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'down'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 6 ]
+          },
+          "minecraft:geometry": "geometry.glowing_pillar_leaves_up",
+          "minecraft:transformation": {
+            "rotation": [ -90, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'up'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 6 ]
+          },
+          "minecraft:geometry": "geometry.glowing_pillar_leaves_up",
+          "minecraft:transformation": {
+            "rotation": [ 90, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 6 ]
+          },
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 6 ]
+          },
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 6 ]
+          },
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 16, 6 ]
+          },
+          "minecraft:transformation": {
+            "rotation": [ 0, 270, 0 ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "tag:minecraft:is_shears_item_destructible": {},
+      "betterend:random": {
+        "max_states": 3
+      },
+      "minecraft:geometry": "geometry.bulb_moss_01",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:glowing_pillar_leaves",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        },
+        "glowing_pillar_leaves": {
+          "texture": "betterend:glowing_pillar_leaves",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [ -8, 0, 0 ],
+        "size": [ 16, 16, 8 ]
+      },
+      "minecraft:loot": "loot_tables/blocks/glowing_pillar_leaves.json",
+      "minecraft:map_color": "#ffb300",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "betterend:glowing_pillar_luminophor"
+            ]
+          }
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:light_emission": 15,
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      }
+    }
+  }
+}

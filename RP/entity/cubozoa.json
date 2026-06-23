@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "betterend:cubozoa",
+			"materials": {
+				"translucent": "slime_outer",
+				"shine": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/cubozoa"
+			},
+			"geometry": {
+				"default": "geometry.cubozoa"
+			},
+			"animations": {
+				"swim": "animation.cubozoa.swim"
+			},
+			"scripts": {
+				"animate": [
+					"swim"
+				]
+			},
+			"render_controllers": [
+				"controller.render.cubozoa"
+			],
+			"spawn_egg": {
+				"base_color": "#AE3FE2",
+				"overlay_color": "#0785FA"
+			}
+		}
+	}
+}

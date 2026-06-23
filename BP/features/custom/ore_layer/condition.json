@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:condition"
+    },
+    "places_feature": "betterend:flavolite_single_block_feature",
+    "iterations": "t.current_x = v.originx - t.center_x; t.current_z = v.originz - t.center_z; t.current_y = v.originy - t.center_y; return t.point1_radius / math.pow(math.sqrt(math.pow(t.current_x - t.point1_center_x, 2) + math.pow(t.current_z - t.point1_center_z, 2) + math.pow(t.current_y - t.point1_center_y, 2)), t.point1_influence) + t.point2_radius / math.pow(math.sqrt(math.pow(t.current_x - t.point2_center_x, 2) + math.pow(t.current_z - t.point2_center_z, 2) + math.pow(t.current_y - t.point2_center_y, 2)), t.point2_influence) + t.point3_radius / math.pow(math.sqrt(math.pow(t.current_x - t.point3_center_x, 2) + math.pow(t.current_z - t.point3_center_z, 2) + math.pow(t.current_y - t.point3_center_y, 2)), t.point3_influence) + t.point4_radius / math.pow(math.sqrt(math.pow(t.current_x - t.point4_center_x, 2) + math.pow(t.current_z - t.point4_center_z, 2) + math.pow(t.current_y - t.point4_center_y, 2)), t.point4_influence) > t.threshold;",
+    "x": 0,
+    "z": 0,
+    "y": 0
+  }
+}

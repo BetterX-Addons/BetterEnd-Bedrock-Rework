@@ -1,0 +1,27 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "betterend:amber_grass": {
+      "textures": "textures/blocks/amber_grass"
+    },
+    "betterend:raw_amber": {
+      "textures": "textures/items/raw_amber"
+    },
+    "betterend:helix_tree_sign": {
+      "textures": "textures/items/helix_tree_sign"
+    },
+    "betterend:helix_tree_door": {
+      "textures": "textures/items/helix_tree_door"
+    },
+    "betterend:helix_tree_hanging_sign": {
+      "textures": "textures/items/helix_tree_hanging_sign"
+    },
+    "betterend:thallasium_raw": {
+      "textures": "textures/items/thallasium_raw"
+    },
+    "betterend:ender_shard": {
+      "textures": "textures/items/ender_shard"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "betterend:chorus_forest/chorus_nylium"
+    },
+    "places_block": {
+      "name": "betterend:chorus_nylium",
+      "states": {
+        "betterend:biomes": "chorus_forest"
+      }
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_weight"
+    },
+    "features": [
+      [ "betterend:glowing_pillar_1", 1 ],
+      [ "betterend:glowing_pillar_2", 1 ]
+    ]
+  }
+}

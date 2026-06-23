@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "betterend:amber_ore"
+    },
+    "discard_chance_on_air_exposure": 0.0,
+    "count": 6,
+    "replace_rules": [
+      {
+        "places_block": "betterend:amber_ore",
+        "may_replace": [
+          "minecraft:end_stone"
+        ]
+      }
+    ]
+  }
+}

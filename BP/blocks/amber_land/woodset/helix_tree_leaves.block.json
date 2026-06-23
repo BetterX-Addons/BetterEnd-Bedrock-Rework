@@ -1,0 +1,34 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_leaves",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.leaves"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Helix Tree leaves",
+      "minecraft:map_color": "#7c3d2d",
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 10,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 7
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "tag:wood": {},
+      "tag:minecraft:is_axe_item_destructible": {}
+    }
+  }
+}

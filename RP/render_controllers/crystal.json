@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.eternal_crystal": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.frame_1",
+						"Texture.frame_2",
+						"Texture.frame_3",
+						"Texture.frame_4",
+						"Texture.frame_5"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[(query.anim_time)]"
+			]
+		}
+	}
+}

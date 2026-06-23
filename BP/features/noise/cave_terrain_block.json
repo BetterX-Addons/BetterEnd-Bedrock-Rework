@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:noise/cave_terrain_block"
+    },
+    "iterations": "t.tunnel_b=q.noise(v.originx/20,v.originy/100,v.originz/20)+q.noise(v.originx/20+100,v.originy/20, v.originz/20);return t.tunnel_b;",
+    "x": 0,
+    "z": 0,
+    "y": 100,
+    "places_feature": "betterend:noise/air"
+  }
+}
+//t.cave_x=q.noise(v.originx/48,v.originy/48);t.cave_z=q.noise(v.originz/48,v.originy/48);t.cave_y=q.noise(v.originx/48,v.originz/48);t.cave_sphere=(t.cave_x+t.cave_y+t.cave_z)/3;t.cave_mask=math.pow(math.max(t.cave_sphere-0.55,0)*6,2);t.tunnel_a=q.noise(v.originx/20,v.originy/12,v.originz/20);t.tunnel_b=q.noise(v.originx/20+100,v.originy/12+100,v.originz/20+100);t.tunnel_diff=math.abs(t.tunnel_a-t.tunnel_b);t.tunnel_mask=math.max(1.0-(t.tunnel_diff*8),0);t.combined=math.max(t.cave_mask,t.tunnel_mask);t.vert_gradient=1.0-math.pow(((v.originy/22)-0.5)*2,6);t.total_noise=t.combined*t.vert_gradient;return t.total_noise;

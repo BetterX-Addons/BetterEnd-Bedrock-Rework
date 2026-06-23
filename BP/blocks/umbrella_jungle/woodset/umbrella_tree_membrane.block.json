@@ -1,0 +1,171 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:umbrella_tree_membrane",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.leaves"
+      },
+      "states": {
+        "betterend:color": [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('betterend:color') == 0",
+        "components": {
+          "tag:membrane0": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_7",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 1",
+        "components": {
+          "tag:membrane1": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_6",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 2",
+        "components": {
+          "tag:membrane2": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_5",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 3",
+        "components": {
+          "tag:membrane3": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_4",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 4",
+        "components": {
+          "tag:membrane4": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_3",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 5",
+        "components": {
+          "tag:membrane5": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_2",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 6",
+        "components": {
+          "tag:membrane6": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_1",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:color') == 7",
+        "components": {
+          "tag:membrane7": {},
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:umbrella_tree_membrane_0",
+              "ambient_occlusion": 10.0,
+              "face_dimming": true,
+              "render_method": "blend_to_opaque"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          }
+        }
+      }
+    ],
+    "components": {
+      "betterend:umbrella_tree_membrane": {},
+      "minecraft:friction": 0.1,
+      "minecraft:entity_fall_on": {
+        "min_fall_distance": 0.1
+      },
+      "minecraft:destructible_by_mining": true,
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:flammable": false
+    }
+  }
+}

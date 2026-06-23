@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.cubozoa": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"bone": "material.translucent"
+				},
+				{
+					"bone2": "material.shine"
+				},
+				{
+					"bone3": "material.shine"
+				},
+				{
+					"bone4": "material.translucent"
+				},
+				{
+					"bone5": "material.translucent"
+				},
+				{
+					"bone6": "material.translucent"
+				},
+				{
+					"bone7": "material.translucent"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		}
+	}
+}

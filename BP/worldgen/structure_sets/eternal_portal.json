@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "betterend:eternal_portal"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1502528157,
+      "separation": 12,
+      "spacing": 40
+    },
+    "structures": [
+      {
+        "structure": "betterend:eternal_portal",
+        "weight": 1
+      }
+    ]
+  }
+}

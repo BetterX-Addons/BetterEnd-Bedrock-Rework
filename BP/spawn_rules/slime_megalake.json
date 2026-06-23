@@ -1,0 +1,35 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "betterend:megalake_slime_spawner",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_above_block_filter": {
+          "blocks": [
+            "betterend:end_moss_lakes"
+          ]
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15
+        },
+        "minecraft:weight": {
+          "default": 15
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "the_end"
+        }
+      }
+    ]
+  }
+}

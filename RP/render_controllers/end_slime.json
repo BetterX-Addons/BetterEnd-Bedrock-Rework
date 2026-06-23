@@ -1,0 +1,133 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.amber_slime": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"hat": "material.default"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_sheared"
+				}
+			],
+			"textures": [
+				"texture.amber"
+			]
+		},
+		"controller.render.amber_slime2": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.outer"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_sheared"
+				}
+			],
+			"textures": [
+				"texture.amber"
+			]
+		},
+		"controller.render.chorus_slime": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"hat": "material.default"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_illager_captain"
+				}
+			],
+			"textures": [
+				"texture.chorus"
+			]
+		},
+		"controller.render.chorus_slime2": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.outer"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_illager_captain"
+				}
+			],
+			"textures": [
+				"texture.chorus"
+			]
+		},
+		"controller.render.foggy_slime": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"hat": "material.default"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_saddled"
+				}
+			],
+			"textures": [
+				"texture.foggy"
+			]
+		},
+		"controller.render.foggy_slime2": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.outer"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_saddled"
+				}
+			],
+			"textures": [
+				"texture.foggy"
+			]
+		},
+		"controller.render.megalake_slime": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"hat": "material.default"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_stunned"
+				}
+			],
+			"textures": [
+				"texture.megalake"
+			]
+		},
+		"controller.render.megalake_slime2": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.outer"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_stunned"
+				}
+			],
+			"textures": [
+				"texture.megalake"
+			]
+		}
+	}
+}

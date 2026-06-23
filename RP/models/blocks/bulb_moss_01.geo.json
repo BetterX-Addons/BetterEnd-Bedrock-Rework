@@ -1,0 +1,104 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bulb_moss_01",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "group",
+					"pivot": [0, 8, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0.5, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [10, 0.5, -8],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "bulb_moss_bulbs"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_bulbs"}
+							}
+						},
+						{
+							"origin": [-7, -9, -8],
+							"size": [16, 16, 0.001],
+							"pivot": [9, 7, -8],
+							"rotation": [45, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_bulbs"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 180, "material_instance": "bulb_moss_bulbs"}
+							}
+						},
+						{
+							"origin": [-11, 15, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [5, 15, -8],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "bulb_moss_leaves"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_leaves"}
+							}
+						},
+						{
+							"origin": [-9, -10, -8],
+							"size": [16, 16, 0.001],
+							"pivot": [7, 6, -8],
+							"rotation": [45, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_bulbs"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 180, "material_instance": "bulb_moss_bulbs"}
+							}
+						},
+						{
+							"origin": [-9, 11, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [7, 11, -8],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "bulb_moss_bulbs"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_bulbs"}
+							}
+						},
+						{
+							"origin": [-9, 1, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [7, 1, -8],
+							"rotation": [-22.5, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "bulb_moss_bulbs"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_bulbs"}
+							}
+						},
+						{
+							"origin": [-6.5, 16, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [9.5, 16, -8],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "bulb_moss_leaves"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16]}
+							}
+						},
+						{
+							"origin": [-5, 13.5, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [11, 13.5, -8],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "bulb_moss_leaves"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "bulb_moss_leaves"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:custom/lakes/fixed_check"
+    },
+    "places_feature": "betterend:custom/lakes/air_material2",
+    "distribution": {
+      "iterations": "math.sqrt(math.pow((v.originx - temp.radius) - temp.x, 2) + math.pow((v.originz - temp.radius) - temp.z, 2)) <= temp.radius + q.noise(v.originx / 8, v.originz / 8) * 0.4",
+      "x": "-t.radius",
+      "y": "query.heightmap(variable.worldx, variable.worldz) - variable.originy - 1",
+      "z": "-t.radius"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:lanceleaf_top_fixup"
+    },
+    "places_feature": "betterend:lanceleaf_top_2",
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "z": 0,
+      "y": 2
+    }
+  }
+}

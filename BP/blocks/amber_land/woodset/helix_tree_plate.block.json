@@ -1,0 +1,120 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_plate",
+      "menu_category": {
+        "category": "items",
+        "group": "minecraft:itemGroup.name.pressurePlate"
+      },
+      "states": {
+        "betterend:pressure_plate": [ "off", "on", "wait" ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('betterend:pressure_plate') == 'off'",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 0,
+            "strongly_powered_face": "down"
+          },
+          "minecraft:selection_box": {
+            "origin": [ -7, 0, -7 ],
+            "size": [ 14, 1, 14 ]
+          },
+          "nearbear:events": {
+            "betterend:pressure_plate":{}
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:pressure_plate') == 'on'",
+        "components": {
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "down"
+          },
+          "minecraft:selection_box": {
+            "origin": [ -7, 0, -7 ],
+            "size": [ 14, 0.5, 14 ]
+          },
+          "nearbear:events": {
+            "betterend:pressure_plate":{}
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:pressure_plate') == 'wait'",
+        "components": {
+          "minecraft:tick": {
+            "interval_range": [ 15, 15 ],
+            "looping": true
+          },
+          "minecraft:redstone_producer": {
+            "power": 15,
+            "strongly_powered_face": "down"
+          },
+          "minecraft:selection_box": {
+            "origin": [ -7, 0, -7 ],
+            "size": [ 14, 0.5, 14 ]
+          },
+          "betterend:pressure_plate_setting": {},
+          "nearbear:events": {
+            "betterend:pressure_plate":{}
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:display_name": "Helix Tree Plate",
+      "minecraft:map_color": "#7c3d2d",
+      "minecraft:geometry": {
+        "identifier": "geometry.nb_pressure_plate",
+        "bone_visibility": {
+          "off": "query.block_state('betterend:pressure_plate') == 'off'",
+          "on": "query.block_state('betterend:pressure_plate') == 'on' || query.block_state('betterend:pressure_plate') == 'wait'",
+          "inventory": false
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.nb_pressure_plate",
+          "bone_visibility": {
+            "off": false,
+            "on": false,
+            "inventory": true
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "betterend:helix_tree_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "tag:wood": {},
+      "tag:minecraft:is_axe_item_destructible": {}
+    }
+  }
+}

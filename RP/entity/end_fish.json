@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "betterend:end_fish",
+			"materials": {
+				"default": "skeleton",
+				"endfish_glow": "entity_emissive_alpha"
+			},
+			"textures": {
+				"endfish1": "textures/entity/end_fish/end_fish_0",
+				"endfish2": "textures/entity/end_fish/end_fish_1",
+				"endfish3": "textures/entity/end_fish/end_fish_2",
+				"endfish4": "textures/entity/end_fish/end_fish_3",
+				"endfish5": "textures/entity/end_fish/end_fish_4",
+				"endfish6": "textures/entity/end_fish/end_fish_5",
+				"endfish7": "textures/entity/end_fish/end_fish_6",
+				"endfish8": "textures/entity/end_fish/end_fish_7",
+				"endfish_glow1": "textures/entity/end_fish/end_fish_0_glow",
+				"endfish_glow2": "textures/entity/end_fish/end_fish_1_glow",
+				"endfish_glow3": "textures/entity/end_fish/end_fish_2_glow",
+				"endfish_glow4": "textures/entity/end_fish/end_fish_3_glow",
+				"endfish_glow5": "textures/entity/end_fish/end_fish_4_glow",
+				"endfish_glow6": "textures/entity/end_fish/end_fish_5_glow",
+				"endfish_glow7": "textures/entity/end_fish/end_fish_6_glow",
+				"endfish_glow8": "textures/entity/end_fish/end_fish_7_glow"
+			},
+			"geometry": {
+				"default": "geometry.end_fish"
+			},
+			"animations": {
+				"move": "animation.end_fish.swim"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			},
+			"render_controllers": [
+				"controller.render.end_fish",
+				"controller.render.end_fish_glow"
+			],
+			"spawn_egg": {
+				"base_color": "#062038",
+				"overlay_color": "#1D6FBB"
+			}
+		}
+	}
+}

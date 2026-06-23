@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:surface_rules",
+      "places_feature": "betterend:noise/surface_fixed"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "the_end"
+      }
+    }, 
+    "distribution": {
+      "iterations": 256,
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, 15 ]
+      },
+      "y": "temp.nx = q.noise(variable.worldx / 128 + 31.41, variable.worldz / 128 + 59.26) * 0.1 + q.noise(variable.worldx / 64 + 31.41, variable.worldz / 64 + 59.26) * 0.025 + q.noise(variable.worldx / 13 + 31.41, variable.worldz / 13 + 59.26) * 0.0125; temp.nz = q.noise(variable.worldx / 128 + 97.15, variable.worldz / 128 + 12.73) * 0.1 + q.noise(variable.worldx / 64 + 97.15, variable.worldz / 64 + 12.73) * 0.025 + q.noise(variable.worldx / 13 + 97.15, variable.worldz / 13 + 12.73) * 0.0125; temp.x = variable.worldx / 256 + temp.nx; temp.z = variable.worldz / 256 + temp.nz; temp.cx = math.floor(temp.x); temp.cz = math.floor(temp.z); temp.d1 = 999; temp.d2 = 999; temp.c1 = 0; temp.c2 = 0; temp.i = 0; loop(9, { temp.px = temp.cx + math.mod(temp.i, 3) - 1; temp.pz = temp.cz + math.floor(temp.i / 3) - 1; temp.hx = math.sin(temp.px * 12.9898 + temp.pz * 78.233) * 43758.5453; temp.hz = math.sin(temp.px * 39.3467 + temp.pz * 11.135) * 96321.6543; temp.rx = temp.hx - math.floor(temp.hx); temp.rz = temp.hz - math.floor(temp.hz); temp.dx = temp.px + temp.rx - temp.x; temp.dz = temp.pz + temp.rz - temp.z; temp.d = temp.dx * temp.dx + temp.dz * temp.dz; (temp.d < temp.d1) ? { temp.d2 = temp.d1; temp.c2 = temp.c1; temp.d1 = temp.d; temp.c1 = temp.rx; } : { (temp.d < temp.d2) ? { temp.d2 = temp.d; temp.c2 = temp.rx; }; }; temp.i = temp.i + 1; }); temp.index = math.floor(temp.c1 * 16); temp.heightmap = query.heightmap(variable.worldx, variable.worldz); return temp.heightmap;",
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, 15 ]
+      }
+    }
+  }
+}

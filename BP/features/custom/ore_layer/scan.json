@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:scan"
+    },
+    "places_feature": "betterend:condition",
+    "iterations": "t.bounds_x * t.bounds_z * t.bounds_y",
+    "x": {
+      "distribution": "fixed_grid",
+      "extent": [ 0, "t.bounds_x - 1" ]
+    },
+    "z": {
+      "distribution": "fixed_grid",
+      "extent": [ 0, "t.bounds_z - 1" ]
+    },
+    "y": {
+      "distribution": "fixed_grid",
+      "extent": [ 0, "t.bounds_y - 1" ]
+    }
+  }
+}

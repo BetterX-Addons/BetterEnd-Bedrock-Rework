@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.end_fish_glow": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.endfish_glow1",
+						"Texture.endfish_glow2",
+						"Texture.endfish_glow3",
+						"Texture.endfish_glow4",
+						"Texture.endfish_glow5",
+						"Texture.endfish_glow6",
+						"Texture.endfish_glow7",
+						"Texture.endfish_glow8"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.endfish_glow"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

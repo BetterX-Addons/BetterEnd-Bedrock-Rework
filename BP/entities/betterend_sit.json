@@ -1,0 +1,67 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "betterend:sit_entity",
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"betterend:despawn_sit": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"betterend",
+					"sit"
+				]
+			},
+			"minecraft:rideable": {
+				"seats": {
+					"position": [
+						0,
+						0,
+						0
+					],
+					"min_rider_count": 1,
+					"max_rider_count": 1,
+					"rotate_rider_by": 180
+				},
+				"controlling_seat": 1,
+				"interact_text": "action.interact.sit",
+				"pull_in_entities": false,
+				"seat_count": 1,
+				"family_types": [
+					"player"
+				],
+				"rider_can_interact": true
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"event": "betterend:despawn_sit",
+						"filters": {
+							"test": "rider_count",
+							"value": 0
+						}
+					}
+				]
+			}
+		},
+		"events": {
+			"betterend:despawn_sit": {
+				"add": {
+					"component_groups": [
+						"betterend:despawn_sit"
+					]
+				}
+			}
+		}
+	}
+}

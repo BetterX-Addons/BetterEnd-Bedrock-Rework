@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:test",
+      "places_feature": "betterend:noise/cave_terrain_column"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "not",
+        "value": "the_end"
+      }
+    }, 
+    "distribution": {
+      "iterations": 256,
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, 15 ]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, 15 ]
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "betterend:noise/surface_rules"
+    },
+    "features": [
+      "betterend:amber_land/amber_land_condition",
+      "betterend:blossoming_spire/blossoming_spire_condition",
+      "betterend:chorus_forest/chorus_forest_condition"
+    ]
+  }
+}

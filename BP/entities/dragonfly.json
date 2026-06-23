@@ -1,0 +1,134 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "betterend:dragonfly",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:despawn": {
+				"despawn_from_chance": true,
+				"despawn_from_distance": {},
+				"despawn_from_inactivity": true,
+				"despawn_from_simulation_edge": true,
+				"min_range_inactivity_timer": 30,
+				"min_range_random_chance": 800,
+				"remove_child_entities": false
+			},
+			"minecraft:behavior.random_hover": {
+				"priority": 12,
+				"xz_dist": 8,
+				"y_dist": 8,
+				"y_offset": -1,
+				"interval": 1,
+				"hover_height": [
+					1,
+					4
+				]
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:behavior.float": {
+				"priority": 19
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"dragonfly"
+				]
+			},
+			"minecraft:on_target_acquired": {
+				"event": "attacked",
+				"target": "self"
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:collision_box": {
+				"width": 0.55,
+				"height": 0.5
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:home": {},
+			"minecraft:follow_range": {
+				"value": 1024
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.3
+			},
+			"minecraft:flying_speed": {
+				"value": 0.15
+			},
+			"minecraft:navigation.hover": {
+				"can_path_over_water": true,
+				"can_sink": false,
+				"can_pass_doors": false,
+				"can_path_from_air": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true,
+				"avoid_sun": false
+			},
+			"minecraft:movement.hover": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_fly": {},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:nameable": {},
+			"minecraft:block_sensor": {
+				"sensor_radius": 16,
+				"on_break": [
+					{
+						"block_list": [
+							"minecraft:beehive",
+							"minecraft:bee_nest"
+						],
+						"on_block_broken": "hive_destroyed"
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.move_to_block": {
+				"priority": 1,
+				"target_blocks": [
+					"betterend:umbrella_moss_tall",
+					"betterend:umbrella_moss",
+					"betterend:creeping_moss"
+				]
+			}
+		},
+		"component_groups": {},
+		"events": {}
+	}
+}

@@ -1,0 +1,157 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_trapdoor",
+      "menu_category": {
+        "category": "construction",
+        "group": "minecraft:itemGroup.name.trapdoor"
+      },
+      "states": {
+        "betterend:open_bit": [ false, true ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [ "minecraft:cardinal_direction" ]
+        },
+        "minecraft:placement_position": {
+          "enabled_states": [ "minecraft:vertical_half" ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "Helix Tree Trapdoor",
+      "minecraft:geometry": {
+        "identifier": "geometry.nb_trapdoor",
+        "bone_visibility": {
+          "bottom_close": "query.block_state('betterend:open_bit')== false && query.block_state('minecraft:vertical_half')== 'bottom'",
+          "bottom_open": "query.block_state('betterend:open_bit')== true && query.block_state('minecraft:vertical_half')== 'bottom'",
+          "top_close": "query.block_state('betterend:open_bit')== false && query.block_state('minecraft:vertical_half')== 'top'",
+          "top_open": "query.block_state('betterend:open_bit')== true && query.block_state('minecraft:vertical_half')== 'top'",
+          "inventory": false
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_trapdoor",
+          "render_method": "alpha_test_single_sided"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.nb_trapdoor",
+          "bone_visibility": {
+            "bottom_close": false,
+            "bottom_open": false,
+            "top_close": false,
+            "top_open": false,
+            "inventory": true
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "betterend:helix_tree_trapdoor",
+            "render_method": "alpha_test_single_sided"
+          }
+        }
+      },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.75
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "tag:minecraft:is_axe_item_destructible": {},
+      "betterend:trapdoor_config": {
+        "open_sound": "open.cherry_wood_door",
+        "close_sound": "close.cherry_wood_door"
+      },
+      "minecraft:redstone_consumer": {
+        "min_power": 0,
+        "propogates_power": false
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "tag:trapdoors": {},
+      "tag:wood": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('betterend:open_bit')== false && query.block_state('minecraft:vertical_half')== 'bottom'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 3, 16 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 3, 16 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:open_bit')== false && query.block_state('minecraft:vertical_half')== 'top'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 13, -8 ],
+            "size": [ 16, 3, 16 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -8, 13, -8 ],
+            "size": [ 16, 3, 16 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('betterend:open_bit')== true",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, 5 ],
+            "size": [ 16, 16, 3 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -8, 0, 5 ],
+            "size": [ 16, 16, 3 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 0 ]
+          }
+        }
+      }
+    ]
+  }
+}

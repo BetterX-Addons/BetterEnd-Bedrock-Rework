@@ -1,0 +1,104 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nb_button",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "button",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "off",
+					"parent": "button",
+					"pivot": [0, 8, 0],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, -8],
+							"size": [6, 4, 2],
+							"uv": {
+								"north": {"uv": [5, 6], "uv_size": [6, 4]},
+								"east": {"uv": [12, 10], "uv_size": [2, 4]},
+								"south": {"uv": [5, 6], "uv_size": [6, 4]},
+								"west": {"uv": [12, 10], "uv_size": [2, 4]},
+								"up": {"uv": [11, 2], "uv_size": [-6, -2]},
+								"down": {"uv": [11, 2], "uv_size": [-6, -2]}
+							}
+						}
+					]
+				},
+				{
+					"name": "on",
+					"parent": "button",
+					"pivot": [0, 8, 0],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, -8],
+							"size": [6, 4, 1],
+							"uv": {
+								"north": {"uv": [5, 6], "uv_size": [6, 4]},
+								"east": {"uv": [13, 10], "uv_size": [1, 4]},
+								"south": {"uv": [5, 6], "uv_size": [6, 4]},
+								"west": {"uv": [11, 10], "uv_size": [1, 4]},
+								"up": {"uv": [11, 2], "uv_size": [-6, -1]},
+								"down": {"uv": [11, 2], "uv_size": [-6, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "inventory",
+					"pivot": [0, 8, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, -1],
+							"size": [6, 4, 2],
+							"uv": {
+								"north": {"uv": [5, 6], "uv_size": [6, 4]},
+								"east": {"uv": [12, 10], "uv_size": [2, 4]},
+								"south": {"uv": [5, 6], "uv_size": [6, 4]},
+								"west": {"uv": [12, 10], "uv_size": [2, 4]},
+								"up": {"uv": [11, 2], "uv_size": [-6, -2]},
+								"down": {"uv": [11, 2], "uv_size": [-6, -2]}
+							}
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"firstperson_righthand": {
+					"rotation": [0, 135, -90],
+					"translation": [1.25, -0.25, -1],
+					"scale": [0.5, 0.5, 0.5],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"gui": {
+					"rotation": [30, 45, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.62, 0.62, 0.62],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": false
+				},
+				"fixed": {
+					"rotation": [0, 0, -90],
+					"translation": [0, 0, 0],
+					"scale": [0.5, 0.5, 0.5],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				}
+			}
+		}
+	]
+}

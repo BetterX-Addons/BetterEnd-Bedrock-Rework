@@ -1,0 +1,146 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:bulb_moss",
+      "states": {
+        "betterend:random": [ 0, 1, 2 ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [ "minecraft:cardinal_direction" ]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.bulb_moss_01"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.bulb_moss_02"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.bulb_moss_03"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 270, 0 ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "tag:minecraft:is_shears_item_destructible": {},
+      "betterend:random": {
+        "max_states": 3
+      },
+      "minecraft:geometry": "geometry.bulb_moss_01",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:bulb_moss_leaves",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        },
+        "bulb_moss_leaves": {
+          "texture": "betterend:bulb_moss_leaves",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        },
+        "bulb_moss_bulbs": {
+          "texture": "betterend:bulb_moss_bulbs",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [ -8, 0, 0 ],
+        "size": [ 16, 16, 8 ]
+      },
+      "minecraft:map_color": "#b35b00",
+      "minecraft:light_emission": 15,
+      "minecraft:loot": "loot_tables/blocks/bulb_moss.json",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:collision_box": false,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "side" ],
+            "block_filter": [
+              "betterend:helix_tree_log",
+              "betterend:helix_tree_wood",
+              "betterend:helix_tree_leaves",
+              "betterend:amber_moss",
+              "minecraft:end_stone"
+            ]
+          }
+        ]
+      },
+      "minecraft:random_offset": {
+        "y": {
+          "range": {
+            "min": -1,
+            "max": 1
+          },
+          "steps": 0
+        }
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      }
+    }
+  }
+}
