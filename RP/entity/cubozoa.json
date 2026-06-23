@@ -4,11 +4,10 @@
 		"description": {
 			"identifier": "betterend:cubozoa",
 			"materials": {
-				"translucent": "slime_outer",
-				"shine": "entity_emissive_alpha"
+				"default": "cubozoa"
 			},
 			"textures": {
-				"default": "textures/entity/cubozoa"
+				"default": "textures/entity/cubozoa/cubozoa_glow"
 			},
 			"geometry": {
 				"default": "geometry.cubozoa"

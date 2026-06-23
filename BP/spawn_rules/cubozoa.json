@@ -7,9 +7,7 @@
     },
     "conditions": [
       {
-        "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underwater": {},
-
         "minecraft:distance_filter": {
           "min": 12,
           "max": 32
@@ -24,7 +22,6 @@
           "min_size":1,
           "max_size":2
         },
-
         "minecraft:biome_filter": [
           {"test": "has_biome_tag", "operator":"==", "value": "the_end"}
         ]

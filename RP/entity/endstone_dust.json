@@ -10,7 +10,7 @@
         "default": "geometry.block.entity"
       },
       "textures": {
-        "default": "textures/blocks/dust/endstone_dust"
+        "default": "textures/blocks/endstone_dust"
       },
       "render_controllers": [
         "controller.render.falling_block"

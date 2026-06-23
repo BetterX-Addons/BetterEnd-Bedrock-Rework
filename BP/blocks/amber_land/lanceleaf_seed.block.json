@@ -53,6 +53,7 @@
             "origin": [-3, 0, -3],
             "size": [6, 11, 6]
           },
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_seed_0",
@@ -78,6 +79,7 @@
             "origin": [-3.5, 0, -3.5],
             "size": [7, 12, 7]
           },
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_seed_1",
@@ -103,6 +105,7 @@
             "origin": [-4, 0, -4],
             "size": [8, 14, 8]
           },
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_seed_2",
@@ -128,6 +131,7 @@
             "origin": [-4.5, 0, -4.5],
             "size": [9, 16, 9]
           },
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_seed_3",
@@ -141,7 +145,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 4",
         "components": {
-          "minecraft:geometry": "geometry.lanceleaf_leaf_bottom",
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_stem",
@@ -178,7 +182,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 5",
         "components": {
-          "minecraft:geometry": "geometry.lanceleaf_leaf_pre_bottom",
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_leaf_bottom",
@@ -222,7 +226,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 6",
         "components": {
-          "minecraft:geometry": "geometry.lanceleaf_leaf_middle",
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_leaf_middle",
@@ -266,7 +270,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 7",
         "components": {
-          "minecraft:geometry": "geometry.lanceleaf_leaf_pre_top",
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_leaf_pre_top",
@@ -310,7 +314,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 8",
         "components": {
-          "minecraft:geometry": "geometry.lanceleaf_leaf_top",
+          "minecraft:geometry": "geometry.cross",
           "minecraft:material_instances": {
             "*": {
               "texture": "lanceleaf_leaf_top",
@@ -344,7 +348,6 @@
     "components": {
       "minecraft:map_color": "#b35b00",
       "minecraft:loot": "loot_tables/empty.json",
-      "minecraft:geometry": "geometry.random_model2",
       "minecraft:destructible_by_explosion": true,
       "minecraft:destructible_by_mining": true,
       "minecraft:collision_box": false

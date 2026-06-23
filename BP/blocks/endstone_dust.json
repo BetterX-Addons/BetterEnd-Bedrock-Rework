@@ -1,0 +1,47 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:endstone_dust",
+      "menu_category": {
+        "category": "nature"
+      },
+      "states": {
+        "betterend:biomes": [
+          "none",
+          "dust_wasteland",
+          "neon_oasis"
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:biomes') == 'none'",
+        "components": {
+          "tag:none": {}
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:biomes') == 'dust_wasteland'",
+        "components": {
+          "tag:dust_wasteland": {}
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:biomes') == 'neon_oasis'",
+        "components": {
+          "tag:neon_oasis": {}
+        }
+      }
+    ],
+    "components": {
+      "minecraft:custom_components": [
+        "falling_block:custom_component"
+      ],
+      "minecraft:map_color": "#dfc597",
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "tag:isFallingBlock": {}
+    }
+  }
+}

@@ -9,7 +9,7 @@
     ],
     "growth_direction": "UP",
     "body_blocks" : [
-      [{"name": "betterend:glowing_pillar_leaves", "states": {"minecraft:facing_direction": "down"}}, 1]],
+      [{"name": "betterend:glowing_pillar_leaves", "states": {"minecraft:facing_direction": "up"}}, 1]],
     "head_blocks" : [
       [{"name": "minecraft:air"}, 1]
     ]

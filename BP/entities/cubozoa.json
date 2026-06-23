@@ -5,11 +5,36 @@
 			"identifier": "betterend:cubozoa",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:cod"
+			"is_experimental": false
 		},
-		"component_groups": {},
-		"events": {},
+		"component_groups": {
+			"betterend:normal": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"betterend:sulphur": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			}
+		},
+		"events": {
+			"betterend:normal": {
+				"add": {
+					"component_groups": [
+						"betterend:normal"
+					]
+				}
+			},
+			"betterend:sulphur": {
+				"add": {
+					"component_groups": [
+						"betterend:sulphur"
+					]
+				}
+			}
+		},
 		"components": {
 			"minecraft:type_family": {
 				"family": [
