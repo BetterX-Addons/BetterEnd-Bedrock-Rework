@@ -8,8 +8,13 @@
 					"*": "material.default"
 				}
 			],
+			"arrays": {
+				"textures": {
+					"Array.variants": [ "texture.normal", "texture.sulphur" ]
+				}
+			},
 			"textures": [
-				"texture.default"
+				"Array.variants[q.variant]"
 			]
 		}
 	}

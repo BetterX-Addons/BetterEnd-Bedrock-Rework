@@ -18,7 +18,7 @@ import "external/FallingBlocks/startFalling";
 // UTILS
 // ==========================================
 
-import { Cubozoa } from "./utils/entities/Cubozoa";
+import { EntityUtils } from "./utils/EntityUtils";
 
 // ==========================================
 // REGISTRATION
@@ -52,7 +52,8 @@ system.runInterval(() => {
       // ==========================================
       // ENTITY UTILS
       // ==========================================
-
+      const utils = new EntityUtils(entity);
+      utils.sulphurVariant();
     }
   }
 }, 20);

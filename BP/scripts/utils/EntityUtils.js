@@ -15,12 +15,26 @@ export class EntityUtils {
     }
 
     sulphurVariant() {
-        if (this.typeId !== 'betterend:end_fish' || this.typeId !== 'betterend:cubozoa') return;
+        if (this.typeId !== 'betterend:end_fish' && this.typeId !== 'betterend:cubozoa') return;
         const events = {
             normal: "betterend:normal",
             sulphur: "betterend:sulphur"
         };
-        const volume = new BlockVolume(from, to)
-        const area = this.dimension.getBlocks(volume);
+        const groundBlocks = [];
+        for (let i = -1; i > -12; i--) {
+            const offset = { x: this.location.x, y: this.location.y + i, z: this.location.z };
+            const block = this.dimension.getBlockBelow(offset);
+            if (!block) continue;
+            groundBlocks.push(block);
+        }
+
+        const hasVariant = this.entity.getDynamicProperty('betterend:has_variant');
+        if (hasVariant) return;
+
+        if (groundBlocks.find(block => block.typeId.includes('brimstone'))) { // falta añadir sulphuric_rock
+            this.entity.triggerEvent(events.sulphur);
+        } else this.entity.triggerEvent(events.normal);
+
+        this.entity.setDynamicProperty('betterend:has_variant', true);
     }
 }
