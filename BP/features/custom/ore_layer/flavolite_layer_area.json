@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:flavolite_layer_area"
+    },
+    "places_feature": "betterend:flavolite_layer_check",
+    "distribution": {
+      "iterations": "temp.radius = 12 * 0.5; temp.length = temp.radius * 2 + 1; temp.ox = v.originx; temp.oy = v.originy; temp.oz = v.originz; return temp.length * temp.length * temp.length;",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      },
+      "y": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      },
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.length - 1" ]
+      }
+    }
+  }
+}

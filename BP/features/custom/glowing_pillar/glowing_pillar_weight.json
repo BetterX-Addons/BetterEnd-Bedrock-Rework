@@ -5,8 +5,8 @@
       "identifier": "betterend:glowing_pillar_weight"
     },
     "features": [
-      [ "betterend:glowing_pillar_1", 1 ],
-      [ "betterend:glowing_pillar_2", 1 ]
+      [ "betterend:glowing_pillar_small", 1 ],
+      [ "betterend:glowing_pillar_big", 1 ]
     ]
   }
 }

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:amber_land/q"
+    },
+    "distribution": {
+      "iterations": "t.n = q.noise(v.worldx * 0.1, v.worldz * 0.1) + math.random(-0.4, 0.4); return (t.n > 0) ? 1 : 0;",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "places_feature": "betterend:amber_land/amber_moss"
+  }
+}

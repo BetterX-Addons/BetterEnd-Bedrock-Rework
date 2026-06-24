@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:glow_pillar_small"
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    "places_feature": "betterend:glowing_pillar"
+  }
+}

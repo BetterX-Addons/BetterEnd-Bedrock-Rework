@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:glow_pillar"
+    },
+    "distribution": {
+      "iterations": 32,
+      "x": {
+        "extent": [ -9, 9 ],
+        "distribution": "gaussian"
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "extent": [ -9, 9 ],
+        "distribution": "gaussian"
+      }
+    },
+    "places_feature": "betterend:glow_pillar_floor"
+  }
+}

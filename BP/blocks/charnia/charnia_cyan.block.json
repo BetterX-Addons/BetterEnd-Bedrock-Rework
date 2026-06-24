@@ -2,7 +2,7 @@
   "format_version": "1.26.0",
   "minecraft:block": {
     "description": {
-      "identifier": "betterend:charnia_cyan",
+      "identifier": "betterend:charnia_cyan"
     },
     "components": {
       "minecraft:material_instances": {
@@ -10,8 +10,8 @@
           "texture": "betterend:charnia_cyan",
           "render_method": "alpha_test_single_sided",
           "ambient_occlusion": false,
-              "face_dimming": false,
-              "emissive": true
+          "face_dimming": false,
+          "emissive": true
         }
       },
       "minecraft:geometry": "geometry.charnia",

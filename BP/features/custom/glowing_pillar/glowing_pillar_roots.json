@@ -4,10 +4,10 @@
     "description": {
       "identifier": "betterend:glowing_pillar_roots"
     },
-    "early_out": "none",
     "features": [
       "betterend:glowing_pillar_seed_lower",
-      "betterend:glowing_pillar_seed_upper_1"
-    ]
+      "betterend:glowing_pillar_seed_up_fix"
+    ],
+    "early_out": "first_failure"
   }
 }

@@ -7,13 +7,13 @@
     "places_feature": "betterend:amber_grass_single",
     "distribution": {
       "iterations": 36,
-      "x": { 
-        "distribution": "gaussian",
+      "x": {
+        "distribution": "uniform",
         "extent": [ -6, 6 ]
       },
       "y": "query.heightmap(variable.worldx, variable.worldz)",
-      "z": { 
-        "distribution": "gaussian",
+      "z": {
+        "distribution": "uniform",
         "extent": [ -6, 6 ]
       }
     }

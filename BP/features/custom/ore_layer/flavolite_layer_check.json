@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:flavolite_layer_check"
+    },
+    "places_feature": "betterend:flavolite_material",
+    "distribution": {
+      "iterations": "temp.dx = (v.originx - temp.ox) / temp.radius; temp.dy = ((v.originy - temp.oy) - q.noise((v.originx + temp.ox) * 0.1, (v.originz + temp.oz) * 0.1) * 8) / (temp.radius * 0.2); temp.dz = (v.originz - temp.oz) / temp.radius; return temp.dx * temp.dx + temp.dy * temp.dy + temp.dz * temp.dz < 1.0;",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  }
+}

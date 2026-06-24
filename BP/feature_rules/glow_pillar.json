@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:glow_pillar",
+      "places_feature": "betterend:glow_pillar"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "the_end"
+      }
+    },
+    "distribution": {
+      "iterations": "math.random_integer(0, 1)",
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      },
+      "y": 0,
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      }
+    }
+  }
+}

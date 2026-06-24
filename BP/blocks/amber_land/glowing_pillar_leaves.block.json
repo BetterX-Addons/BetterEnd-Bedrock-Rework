@@ -36,7 +36,7 @@
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, -8 ],
-            "size": [ 16, 16, 6 ]
+            "size": [ 16, 6, 16 ]
           },
           "minecraft:geometry": "geometry.glowing_pillar_leaves_up",
           "minecraft:transformation": {
@@ -49,11 +49,11 @@
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, -8 ],
-            "size": [ 16, 16, 6 ]
+            "size": [ 16, 6, 16 ]
           },
           "minecraft:geometry": "geometry.glowing_pillar_leaves_up",
           "minecraft:transformation": {
-            "rotation": [ 0, 0, 0 ]
+            "rotation": [ -180, 0, 0 ]
           }
         }
       },
@@ -61,7 +61,7 @@
         "condition": "q.block_state('minecraft:facing_direction') == 'north'",
         "components": {
           "minecraft:selection_box": {
-            "origin": [ -8, 0, -8 ],
+            "origin": [ -8, 0, 2 ],
             "size": [ 16, 16, 6 ]
           },
           "minecraft:transformation": {
@@ -73,7 +73,7 @@
         "condition": "q.block_state('minecraft:facing_direction') == 'south'",
         "components": {
           "minecraft:selection_box": {
-            "origin": [ -8, 0, -8 ],
+            "origin": [ -8, 0, 2 ],
             "size": [ 16, 16, 6 ]
           },
           "minecraft:transformation": {
@@ -85,7 +85,7 @@
         "condition": "q.block_state('minecraft:facing_direction') == 'east'",
         "components": {
           "minecraft:selection_box": {
-            "origin": [ -8, 0, -8 ],
+            "origin": [ -8, 0, 2 ],
             "size": [ 16, 16, 6 ]
           },
           "minecraft:transformation": {
@@ -97,7 +97,7 @@
         "condition": "q.block_state('minecraft:facing_direction') == 'west'",
         "components": {
           "minecraft:selection_box": {
-            "origin": [ -8, 0, -8 ],
+            "origin": [ -8, 0, 2 ],
             "size": [ 16, 16, 6 ]
           },
           "minecraft:transformation": {
@@ -114,13 +114,6 @@
       "minecraft:geometry": "geometry.bulb_moss_01",
       "minecraft:material_instances": {
         "*": {
-          "texture": "betterend:glowing_pillar_leaves",
-          "render_method": "alpha_test_single_sided",
-          "ambient_occlusion": false,
-          "face_dimming": false,
-          "emissive": true
-        },
-        "glowing_pillar_leaves": {
           "texture": "betterend:glowing_pillar_leaves",
           "render_method": "alpha_test_single_sided",
           "ambient_occlusion": false,

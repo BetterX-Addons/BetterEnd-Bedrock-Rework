@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:flavolite_layer",
+      "places_feature": "betterend:flavolite_layer_area"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "the_end"
+      }
+    },
+    "distribution": {
+      "iterations": 2.625,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [ 16, 65 ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      }
+    }
+  }
+}

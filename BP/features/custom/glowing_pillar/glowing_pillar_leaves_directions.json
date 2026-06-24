@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_leaves_directions"
+    },
+    "features": [
+      "betterend:glowing_pillar_leaves_east",
+      "betterend:glowing_pillar_leaves_north",
+      "betterend:glowing_pillar_leaves_south",
+      "betterend:glowing_pillar_leaves_up", 
+      "betterend:glowing_pillar_leaves_west"
+    ],
+    "early_out": "none"
+  }
+}

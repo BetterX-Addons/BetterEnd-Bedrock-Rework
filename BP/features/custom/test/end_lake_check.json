@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:end_lake_check"
+    },
+    "places_feature": "betterend:end_lake_water",
+    "distribution": {
+      "iterations": "temp.dx = (v.originx - temp.radius) - temp.cx; temp.dz = (v.originz - temp.radius) - temp.cz; temp.dy = (v.originy - temp.depth) - temp.cy; temp.x2 = temp.dx * temp.dx; temp.z2 = temp.dz * temp.dz; temp.y2 = (temp.dy * temp.aspect) * (temp.dy * temp.aspect); temp.nx = v.originx * 0.2; temp.ny = v.originy * 0.2; temp.nz = v.originz * 0.2; temp.r = temp.radius * (q.noise(temp.nx + temp.ny, temp.nz + temp.ny) * 0.25 + 0.75); temp.r2 = temp.r * temp.r; return (temp.y2 + temp.x2 + temp.z2) <= temp.r2;",
+      "x": "-temp.grid_xz",
+      "y": 0,
+      "z": "-temp.grid_xz"
+    }
+  }
+}
