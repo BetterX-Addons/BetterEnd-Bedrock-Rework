@@ -1,0 +1,754 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:aurora_crystal",
+      "states": {
+        "betterend:color": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+        "betterend:color_page": [ 0, 1, 2 ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_0",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_1",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_2",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 3",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_3",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 4",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_4",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 5",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_5",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 6",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_6",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 7",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_7",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 8",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_8",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 9",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_9",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 10",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_10",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 11",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_11",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 12",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_12",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 13",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_13",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 14",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_14",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 0 && q.block_state('betterend:color') == 15",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_15",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_16",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_17",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_18",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 3",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_19",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 4",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_20",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 5",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_21",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 6",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_22",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 7",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_23",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 8",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_24",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 9",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_25",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 10",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_26",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 11",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_27",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 12",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_28",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 13",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_29",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 14",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_30",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 1 && q.block_state('betterend:color') == 15",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_31",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_32",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_33",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_34",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 3",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_35",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 4",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_36",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 5",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_37",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 6",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_38",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:color_page') == 2 && q.block_state('betterend:color') == 7",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.bone",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:aurora_crystal_color_39",
+              "render_method": "blend",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "betterend:aurora_crystal": {},
+      "minecraft:geometry": {
+        "identifier": "geometry.bone",
+        "culling": "betterend:block_culling"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:aurora_crystal_color_0",
+          "render_method": "blend",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        }
+      },
+      "minecraft:light_emission": 15,
+      "minecraft:map_color": "#F33AFF",
+      "minecraft:destructible_by_mining": true,
+      "minecraft:destructible_by_explosion": true
+    }
+  }
+}

@@ -1,20 +1,13 @@
 {
   "format_version": "1.26.0",
-  "minecraft:scatter_feature": {
+  "minecraft:aggregate_feature": {
     "description": {
       "identifier": "betterend:glowing_pillar"
     },
-    "iterations": 16,
-    "coordinate_eval_order": "zyx",
-    "x": {
-      "extent": [ -8, 8 ],
-      "distribution": "gaussian"
-    },
-    "y": 0,
-    "z": {
-      "extent": [ -8, 8 ],
-      "distribution": "gaussian"
-    },
-    "places_feature": "betterend:glowing_snap_to_floor"
+    "features": [
+      "betterend:glowing_pillar_luminophor",
+      "betterend:glowing_pillar_leaves_directions"
+    ],
+    "early_out": "first_failure"
   }
 }

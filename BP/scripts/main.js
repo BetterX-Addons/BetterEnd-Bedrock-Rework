@@ -11,6 +11,7 @@ import { xpDropComponent } from "components/XpDrop";
 import { umbrellaTreeMembraneComponent } from "components/UmbrellaTreeMembrane";
 import { tallPlantComponent } from "components/TallPlant";
 import { boneMealDropComponent } from "./components/BoneMealDrop";
+import { auroraCrystalComponent } from "components/AuroraCrystal";
 import "woodset/WoodSet";
 import "external/FallingBlocks/startFalling";
 
@@ -24,6 +25,7 @@ import { EntityUtils } from "./utils/EntityUtils";
 // REGISTRATION
 // ==========================================
 system.beforeEvents.startup.subscribe(e => {
+    e.blockComponentRegistry.registerCustomComponent("betterend:aurora_crystal", auroraCrystalComponent);
     e.blockComponentRegistry.registerCustomComponent("betterend:growth", seedPlantComponent);
     e.blockComponentRegistry.registerCustomComponent("betterend:growing_plant", growingPlantComponent);
     e.blockComponentRegistry.registerCustomComponent("betterend:random", randomPlantComponent);

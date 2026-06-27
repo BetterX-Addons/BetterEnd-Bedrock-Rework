@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:end_lake_area"
+    },
+    "places_feature": "betterend:end_lake_check",
+    "distribution": {
+      "iterations": "temp.radius = math.random(10, 20); temp.depth = temp.radius * 0.5 * math.random(0.8, 1.2); temp.aspect = temp.radius / temp.depth; temp.cx = v.originx; temp.cy = v.originy; temp.cz = v.originz; temp.grid_xz = (temp.radius) * 2 + 1; temp.grid_y = (temp.depth) + 1; return temp.grid_xz * temp.grid_xz * temp.grid_y;",
+      "x": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.grid_xz - 1" ]
+      },
+      "y": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.grid_y - 1" ]
+      },
+      "z": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.grid_xz - 1" ]
+      }
+    }
+  }
+}

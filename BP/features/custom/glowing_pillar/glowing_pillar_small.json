@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "betterend:glowing_pillar_small"
+    },
+    "features": [
+      "betterend:glowing_pillar_both",
+      "betterend:glow_pillar_small"
+    ],
+    "early_out": "first_failure"
+  }
+}

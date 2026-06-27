@@ -7,6 +7,26 @@
     "blank": {
       "textures": "textures/blocks/blank"
     },
+    "aurora_crystal": {
+      "textures": [
+        {
+          "path": "textures/blocks/aurora_crystal",
+          "overlay_color": "#F74DA1"
+        },
+        {
+          "path": "textures/blocks/aurora_crystal",
+          "overlay_color": "#78B8FF"
+        },
+        {
+          "path": "textures/blocks/aurora_crystal",
+          "overlay_color": "#78FFA8"
+        },
+        {
+          "path": "textures/blocks/aurora_crystal",
+          "overlay_color": "#F33AFF"
+        }
+      ]
+    },
     "betterend:amber_ore": {
       "textures": "textures/blocks/amber_ore"
     },
@@ -39,9 +59,6 @@
     },
     "betterend:glowing_pillar_roots_both": {
       "textures": "textures/blocks/glowing_pillar_roots_both"
-    },
-    "betterend:glowing_pillar_leaves": {
-      "textures": "textures/blocks/glowing_pillar_leaves"
     },
     "betterend:amber_root_0": {
       "textures": "textures/blocks/amber_root_0"
@@ -83,7 +100,12 @@
       }
     },
     "betterend:helix_tree_leaves": {
-      "textures": "textures/blocks/helix_tree_leaves"
+      "textures": [
+        {
+          "path": "textures/blocks/helix_tree_leaves",
+          "overlay_color": "#ED9E14"
+        }
+      ]
     },
     "betterend:helix_tree_barrel_bottom": {
       "textures": "textures/blocks/helix_tree_barrel_bottom"
@@ -178,9 +200,192 @@
     "betterend:umbrella_tree_membrane_7": {
       "textures": "textures/blocks/umbrella_tree_membrane_7"
     },
-    // Lake
+    "betterend:jellyshroom_cap_purple_color_0": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#D98EFF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_1": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#CE79FF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_2": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#C364FF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_3": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#B84FFF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_4": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#AD3AFF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_5": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#A225FF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_6": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#9710FF"
+        }
+      ]
+    },
+    "betterend:jellyshroom_cap_purple_color_7": {
+      "textures": [
+        {
+          "path": "textures/blocks/jellyshroom_cap",
+          "overlay_color": "#A400FF"
+        }
+      ]
+    },
     "betterend:endstone_dust": {
       "textures": "textures/blocks/endstone_dust"
+    },
+    "betterend:aurora_crystal_color_0": {
+      "textures": "textures/blocks/aurora_crystal_color_0"
+    },
+    "betterend:aurora_crystal_color_1": {
+      "textures": "textures/blocks/aurora_crystal_color_1"
+    },
+    "betterend:aurora_crystal_color_2": {
+      "textures": "textures/blocks/aurora_crystal_color_2"
+    },
+    "betterend:aurora_crystal_color_3": {
+      "textures": "textures/blocks/aurora_crystal_color_3"
+    },
+    "betterend:aurora_crystal_color_4": {
+      "textures": "textures/blocks/aurora_crystal_color_4"
+    },
+    "betterend:aurora_crystal_color_5": {
+      "textures": "textures/blocks/aurora_crystal_color_5"
+    },
+    "betterend:aurora_crystal_color_6": {
+      "textures": "textures/blocks/aurora_crystal_color_6"
+    },
+    "betterend:aurora_crystal_color_7": {
+      "textures": "textures/blocks/aurora_crystal_color_7"
+    },
+    "betterend:aurora_crystal_color_8": {
+      "textures": "textures/blocks/aurora_crystal_color_8"
+    },
+    "betterend:aurora_crystal_color_9": {
+      "textures": "textures/blocks/aurora_crystal_color_9"
+    },
+    "betterend:aurora_crystal_color_10": {
+      "textures": "textures/blocks/aurora_crystal_color_10"
+    },
+    "betterend:aurora_crystal_color_11": {
+      "textures": "textures/blocks/aurora_crystal_color_11"
+    },
+    "betterend:aurora_crystal_color_12": {
+      "textures": "textures/blocks/aurora_crystal_color_12"
+    },
+    "betterend:aurora_crystal_color_13": {
+      "textures": "textures/blocks/aurora_crystal_color_13"
+    },
+    "betterend:aurora_crystal_color_14": {
+      "textures": "textures/blocks/aurora_crystal_color_14"
+    },
+    "betterend:aurora_crystal_color_15": {
+      "textures": "textures/blocks/aurora_crystal_color_15"
+    },
+    "betterend:aurora_crystal_color_16": {
+      "textures": "textures/blocks/aurora_crystal_color_16"
+    },
+    "betterend:aurora_crystal_color_17": {
+      "textures": "textures/blocks/aurora_crystal_color_17"
+    },
+    "betterend:aurora_crystal_color_18": {
+      "textures": "textures/blocks/aurora_crystal_color_18"
+    },
+    "betterend:aurora_crystal_color_19": {
+      "textures": "textures/blocks/aurora_crystal_color_19"
+    },
+    "betterend:aurora_crystal_color_20": {
+      "textures": "textures/blocks/aurora_crystal_color_20"
+    },
+    "betterend:aurora_crystal_color_21": {
+      "textures": "textures/blocks/aurora_crystal_color_21"
+    },
+    "betterend:aurora_crystal_color_22": {
+      "textures": "textures/blocks/aurora_crystal_color_22"
+    },
+    "betterend:aurora_crystal_color_23": {
+      "textures": "textures/blocks/aurora_crystal_color_23"
+    },
+    "betterend:aurora_crystal_color_24": {
+      "textures": "textures/blocks/aurora_crystal_color_24"
+    },
+    "betterend:aurora_crystal_color_25": {
+      "textures": "textures/blocks/aurora_crystal_color_25"
+    },
+    "betterend:aurora_crystal_color_26": {
+      "textures": "textures/blocks/aurora_crystal_color_26"
+    },
+    "betterend:aurora_crystal_color_27": {
+      "textures": "textures/blocks/aurora_crystal_color_27"
+    },
+    "betterend:aurora_crystal_color_28": {
+      "textures": "textures/blocks/aurora_crystal_color_28"
+    },
+    "betterend:aurora_crystal_color_29": {
+      "textures": "textures/blocks/aurora_crystal_color_29"
+    },
+    "betterend:aurora_crystal_color_30": {
+      "textures": "textures/blocks/aurora_crystal_color_30"
+    },
+    "betterend:aurora_crystal_color_31": {
+      "textures": "textures/blocks/aurora_crystal_color_31"
+    },
+    "betterend:aurora_crystal_color_32": {
+      "textures": "textures/blocks/aurora_crystal_color_32"
+    },
+    "betterend:aurora_crystal_color_33": {
+      "textures": "textures/blocks/aurora_crystal_color_33"
+    },
+    "betterend:aurora_crystal_color_34": {
+      "textures": "textures/blocks/aurora_crystal_color_34"
+    },
+    "betterend:aurora_crystal_color_35": {
+      "textures": "textures/blocks/aurora_crystal_color_35"
+    },
+    "betterend:aurora_crystal_color_36": {
+      "textures": "textures/blocks/aurora_crystal_color_36"
+    },
+    "betterend:aurora_crystal_color_37": {
+      "textures": "textures/blocks/aurora_crystal_color_37"
+    },
+    "betterend:aurora_crystal_color_38": {
+      "textures": "textures/blocks/aurora_crystal_color_38"
+    },
+    "betterend:aurora_crystal_color_39": {
+      "textures": "textures/blocks/aurora_crystal_color_39"
     }
   }
 }

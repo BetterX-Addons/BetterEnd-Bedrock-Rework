@@ -17,12 +17,7 @@
     ],
     "may_attach_to": {
       "bottom": [
-        {
-          "name": "betterend:amber_moss",
-          "states": {
-            "betterend:biomes": "amberland"
-          }
-        }
+        "betterend:amber_moss"
       ]
     }
   }
