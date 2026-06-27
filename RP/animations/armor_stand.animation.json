@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.betterend.item_rotation": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [0, 0, "query.anim_time * 30"],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"baseplate": {
+					"position": [7, -17, 8]
+				},
+				"rightarm": {
+					"rotation": [-85, 0, 0]
+				}
+			}
+		}
+	}
+}
