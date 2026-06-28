@@ -1,0 +1,52 @@
+{
+    "format_version": "1.26.20",
+    "minecraft:block": {
+        "description": {
+            "identifier": "betterend:barrel",
+            "states": {
+                "betterend:open": [
+                    false, true
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('betterend:open')",
+                "components": {
+                    "minecraft:selection_box": {
+                        "size": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "!q.block_state('betterend:open')",
+                "components": {
+                    "minecraft:selection_box": {
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "betterend:barrel": {},
+            "minecraft:chest_obstruction": {
+                "obstruction_rule": "never"
+            },
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "planks",
+                    "render_method": "alpha_test"
+                }
+            }
+        }
+    }
+}

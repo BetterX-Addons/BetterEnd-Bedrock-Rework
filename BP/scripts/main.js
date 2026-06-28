@@ -11,7 +11,8 @@ import { xpDropComponent } from "components/XpDrop";
 import { umbrellaTreeMembraneComponent } from "components/UmbrellaTreeMembrane";
 import { tallPlantComponent } from "components/TallPlant";
 import { boneMealDropComponent } from "./components/BoneMealDrop";
-import { auroraCrystalComponent } from "components/AuroraCrystal";
+import { auroraCrystalComponent } from "./components/AuroraCrystal";
+import { barrelComponent } from "./components/Barrel";
 import "woodset/WoodSet";
 import "external/FallingBlocks/startFalling";
 
@@ -33,7 +34,10 @@ system.beforeEvents.startup.subscribe(e => {
     e.blockComponentRegistry.registerCustomComponent("betterend:xp_drop", xpDropComponent);
     e.blockComponentRegistry.registerCustomComponent("betterend:umbrella_tree_membrane", umbrellaTreeMembraneComponent);
     e.blockComponentRegistry.registerCustomComponent("betterend:tall_plant", tallPlantComponent);
-    e.blockComponentRegistry.registerCustomComponent("betterend:bonemeal_drop", boneMealDropComponent)
+    e.blockComponentRegistry.registerCustomComponent("betterend:bonemeal_drop", boneMealDropComponent);
+
+    // Chest, Barrel
+    // e.blockComponentRegistry.registerCustomComponent("betterend:barrel", barrelComponent);
 });
 
 
