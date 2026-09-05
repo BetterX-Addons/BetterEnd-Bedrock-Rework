@@ -1,0 +1,61 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:dragon_tree_leaves",
+      "states": {
+        "betterend:persistent_bit": [ false, true ],
+        "betterend:update_bit": [ false, true ]
+      },
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.leaves"
+      }
+    },
+    "components": {
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "betterend:leaves_settings": {},
+      "nearbear:events": {
+        "betterend:leaves": {}
+      },
+      "minecraft:tick": {
+        "interval_range": [ 60, 120 ],
+        "looping": true
+      },
+      "minecraft:map_color": "#87b5ff",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:dragon_tree_leaves",
+          "render_method": "alpha_test_single_sided_to_opaque",
+          "tint_method": "none",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "emissive": false
+        }
+      },
+      "minecraft:light_dampening": 15,
+      "minecraft:light_emission": 0,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.25,
+        "item_specific_speeds": [
+          {
+            "item": "shears",
+            "destroy_speed": 0
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 20
+      },
+      "minecraft:loot": "loot_tables/blocks/dragon_tree_leaves.json"
+    },
+    "permutations": []
+  }
+}

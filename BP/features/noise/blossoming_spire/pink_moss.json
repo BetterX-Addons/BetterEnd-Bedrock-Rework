@@ -4,12 +4,7 @@
     "description": {
       "identifier": "betterend:blossoming_spire/pink_moss"
     },
-    "places_block": {
-      "name": "betterend:pink_moss",
-      "states": {
-        "betterend:biomes": "blossoming_spire"
-      }
-    },
+    "places_block": "betterend:pink_moss",
     "enforce_survivability_rules": false,
     "enforce_placement_rules": false
   }

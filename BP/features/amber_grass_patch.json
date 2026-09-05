@@ -6,14 +6,14 @@
     },
     "places_feature": "betterend:amber_grass_single",
     "distribution": {
-      "iterations": 36,
+      "iterations": 66,
       "x": {
-        "distribution": "uniform",
+        "distribution": "gaussian",
         "extent": [ -6, 6 ]
       },
       "y": "query.heightmap(variable.worldx, variable.worldz)",
       "z": {
-        "distribution": "uniform",
+        "distribution": "gaussian",
         "extent": [ -6, 6 ]
       }
     }

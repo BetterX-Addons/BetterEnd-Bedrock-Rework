@@ -4,12 +4,10 @@
     "description": {
       "identifier": "betterend:glowing_pillar_luminophor"
     },
-    "places_block": "betterend:glowing_pillar_luminophor", 
+    "places_block": "betterend:glowing_pillar_luminophor",
     "enforce_survivability_rules": true,
     "enforce_placement_rules": true,
-    "may_replace": [
-      "minecraft:air"
-    ],
+    "may_replace": [ "minecraft:air" ],
     "may_attach_to": {
       "bottom": [
         {
@@ -17,7 +15,7 @@
           "states": {
             "betterend:growth": 4
           }
-        }, 
+        },
         {
           "name": "betterend:glowing_pillar_seed",
           "states": {

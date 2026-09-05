@@ -13,7 +13,7 @@
         }
       },
       "states": {
-        "wiki:rotation": {
+        "betterend:rotation": {
           "values": {
             "min": 0,
             "max": 15
@@ -22,6 +22,45 @@
         "horizons:fence": [ false, true ]
       }
     },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') != 'down'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -2, 0, -8 ],
+            "size": [ 4, 16, 16 ]
+          },
+          "minecraft:collision_box": {
+            "origin": [ -2, 14, -8 ],
+            "size": [ 4, 2, 16 ]
+          }
+        }
+      }
+    ],
     "components": {
       "minecraft:collision_box": false,
       "minecraft:selection_box": {
@@ -31,18 +70,18 @@
       "minecraft:geometry": {
         "identifier": "geometry.hanging_sign",
         "bone_visibility": {
-          "up_0": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 0",
-          "up_0_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 0) && q.block_state('horizons:fence') == false",
-          "up_0_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 0) && q.block_state('horizons:fence') == true",
-          "up_22_5": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 1",
-          "up_22_5_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 1)  && q.block_state('horizons:fence') == false",
-          "up_22_5_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 1)  && q.block_state('horizons:fence') == true",
-          "up_45": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 2",
-          "up_45_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 2) && q.block_state('horizons:fence') == false",
-          "up_45_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 2) && q.block_state('horizons:fence') == true",
-          "up_67_5": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 3",
-          "up_67_5_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 3) && q.block_state('horizons:fence') == false",
-          "up_67_5_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('wiki:rotation'), 4) == 3) && q.block_state('horizons:fence') == true",
+          "up_0": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 0",
+          "up_0_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 0) && q.block_state('horizons:fence') == false",
+          "up_0_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 0) && q.block_state('horizons:fence') == true",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 1",
+          "up_22_5_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 1)  && q.block_state('horizons:fence') == false",
+          "up_22_5_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 1)  && q.block_state('horizons:fence') == true",
+          "up_45": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 2",
+          "up_45_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 2) && q.block_state('horizons:fence') == false",
+          "up_45_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 2) && q.block_state('horizons:fence') == true",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 3",
+          "up_67_5_small_chains": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 3) && q.block_state('horizons:fence') == false",
+          "up_67_5_chain": "(q.block_state('minecraft:block_face') == 'down' && math.mod(q.block_state('betterend:rotation'), 4) == 3) && q.block_state('horizons:fence') == true",
           "side": "q.block_state('minecraft:block_face') != 'down'"
         }
       },
@@ -78,45 +117,6 @@
       },
       "tag:minecraft:is_axe_item_destructible": {},
       "tag:wood": {}
-    },
-    "permutations": [
-      {
-        "condition": "q.block_state('wiki:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [ 0, -90, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('wiki:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'up'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [ 0, 180, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('wiki:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [ 0, 90, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:block_face') != 'down'",
-        "components": {
-          "minecraft:selection_box": {
-            "origin": [ -2, 0, -8 ],
-            "size": [ 4, 16, 16 ]
-          },
-          "minecraft:collision_box": {
-            "origin": [ -2, 14, -8 ],
-            "size": [ 4, 2, 16 ]
-          }
-        }
-      }
-    ]
+    }
   }
 }

@@ -1,0 +1,228 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:chorus_mushroom_seed",
+      "states": {
+        "betterend:age": [ 0, 1, 2, 3 ],
+        "betterend:random": [ 0, 1 ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:age') == 0 && q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.crop_block_inverted",
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 8, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_0",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 0 && q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.crop_block",
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 8, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_0",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 1 && q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.crop_block_inverted",
+          "minecraft:selection_box": {
+            "origin": [ -4.5, 0, -4.5 ],
+            "size": [ 9, 12, 9 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_1",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 1 && q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.crop_block",
+          "minecraft:selection_box": {
+            "origin": [ -4.5, 0, -4.5 ],
+            "size": [ 9, 12, 9 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_1",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 2 && q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.crop_block_inverted",
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 14, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_2",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 2 && q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.crop_block",
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 14, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_2",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 3 && q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_3.json",
+          "minecraft:geometry": "geometry.crop_block_inverted",
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 16, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 3 && q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/chorus_mushroom_seed_age_3.json",
+          "minecraft:geometry": "geometry.crop_block",
+          "minecraft:selection_box": {
+            "origin": [ -6, 0, -6 ],
+            "size": [ 12, 16, 12 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:chorus_mushroom_3",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "tag:minecraft:is_shears_item_destructible": {},
+      "betterend:age": {
+        "max_size": 3,
+        "random_chance": 0.5,
+        "bone_meal_chance": 0.5
+      },
+      "betterend:random": {
+        "max_states": 2
+      },
+      "minecraft:map_color": "#b35b00",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:collision_box": false,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "up" ],
+            "block_filter": [ "betterend:chorus_nylium" ]
+          }
+        ]
+      },
+      "minecraft:random_offset": {
+        "x": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        },
+        "z": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        }
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": false,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      }
+    }
+  }
+}

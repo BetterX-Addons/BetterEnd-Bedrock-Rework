@@ -8,9 +8,7 @@
     "conditions": [
       {
         "minecraft:spawns_above_block_filter": {
-          "blocks": [
-            "betterend:pink_moss"
-          ]
+          "blocks": [ "betterend:pink_moss" ]
         },
         "minecraft:spawns_on_surface": {},
         "minecraft:brightness_filter": {

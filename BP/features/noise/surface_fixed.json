@@ -4,9 +4,9 @@
     "description": {
       "identifier": "betterend:noise/surface_fixed"
     },
-    "features": [
-      "betterend:noise/surface_rules",
-      "betterend:fixed/air_condition"
+    "features": [ 
+      "betterend:noise/surface_rules", 
+      "betterend:fixed/air_condition" 
     ]
   }
 }

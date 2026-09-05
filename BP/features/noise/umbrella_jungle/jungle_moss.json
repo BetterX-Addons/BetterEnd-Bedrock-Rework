@@ -1,0 +1,11 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "betterend:umbrella_jungle/jungle_moss"
+    },
+    "places_block": "betterend:jungle_moss",
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false
+  }
+}

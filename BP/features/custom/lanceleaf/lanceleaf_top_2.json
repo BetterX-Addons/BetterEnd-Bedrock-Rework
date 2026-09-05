@@ -4,7 +4,7 @@
     "description": {
       "identifier": "betterend:lanceleaf_top_2"
     },
-    "features": [
+    "features": [ 
       "betterend:lanceleaf_middle_and_pre_top",
       "betterend:lanceleaf_top_1"
     ],

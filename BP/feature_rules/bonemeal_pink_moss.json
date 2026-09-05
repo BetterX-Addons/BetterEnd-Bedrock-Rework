@@ -1,0 +1,19 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "betterend:bonemeal_pink_moss",
+      "places_feature": "betterend:bonemeal_pink_moss"
+    },
+    "conditions": {
+      "minecraft:biome_filter": [],
+      "placement_pass": "first_pass"
+    },
+    "distribution": {
+      "iterations": 0,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  }
+}

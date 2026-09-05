@@ -1,0 +1,38 @@
+[
+  {
+    "atlas_tile": "betterend:crystal_moss_cover",
+    "flipbook_texture": "textures/blocks/crystal_moss_cover",
+    "ticks_per_frame": 32,
+    "blend_frames": true
+  },
+  {
+    "atlas_tile": "betterend:flavolite_runed_portal_off",
+    "flipbook_texture": "textures/blocks/flavolite_runed_portal_off",
+    "ticks_per_frame": 60,
+    "blend_frames": true
+  },
+  {
+    "atlas_tile": "betterend:flavolite_runed_portal_on",
+    "flipbook_texture": "textures/blocks/flavolite_runed_portal_on",
+    "ticks_per_frame": 60,
+    "blend_frames": true
+  },
+  {
+    "atlas_tile": "betterend:end_portal",
+    "flipbook_texture": "textures/blocks/end_portal",
+    "ticks_per_frame": 3,
+    "blend_frames": false
+  },
+  {
+    "atlas_tile": "betterend:eternal_pedestal_off",
+    "flipbook_texture": "textures/blocks/flavolite_runed_portal_off",
+    "ticks_per_frame": 60,
+    "blend_frames": true
+  },
+  {
+    "atlas_tile": "betterend:eternal_pedestal_on",
+    "flipbook_texture": "textures/blocks/flavolite_runed_portal_on",
+    "ticks_per_frame": 60,
+    "blend_frames": true
+  }
+]

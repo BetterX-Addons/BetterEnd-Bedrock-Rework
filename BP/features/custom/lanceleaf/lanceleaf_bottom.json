@@ -4,10 +4,10 @@
     "description": {
       "identifier": "betterend:lanceleaf_bottom"
     },
-    "early_out": "first_failure",
     "features": [
       "betterend:lanceleaf_seed_lower",
-      "betterend:lanceleaf_seed_upper_1"
-    ]
+      "betterend:lanceleaf_seed_up_fix" 
+    ],
+    "early_out": "first_failure"
   }
 }

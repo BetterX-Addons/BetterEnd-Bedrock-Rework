@@ -24,12 +24,11 @@
         }
       },
       "minecraft:geometry": "geometry.path",
-      "minecraft:display_name": "Pink Moss Path",
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 0.5
+        "explosion_resistance": 8
       },
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1
+        "seconds_to_destroy": 8
       },
       "minecraft:collision_box": {
         "size": [ 16, 15, 16 ],

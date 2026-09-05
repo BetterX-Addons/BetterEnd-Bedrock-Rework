@@ -1,14 +1,10 @@
-// States: betterend:color (0-15) + betterend:color_page (0-2)
-// page 0 = colors 0-15, page 1 = colors 16-31, page 2 = colors 32-39
 const TOTAL_STATES = 40;
 const PAGE_SIZE = 16;
-
 function getAbsoluteColor(permutation) {
   const color = permutation.getState('betterend:color');
   const page = permutation.getState('betterend:color_page');
   return page * PAGE_SIZE + color;
 }
-
 function setAbsoluteColor(permutation, absolute) {
   const clamped = absolute % TOTAL_STATES;
   const page = Math.floor(clamped / PAGE_SIZE);
@@ -17,10 +13,14 @@ function setAbsoluteColor(permutation, absolute) {
     .withState('betterend:color', color)
     .withState('betterend:color_page', page);
 }
-
+function getSeededColor(x, y, z) {
+  const hash = Math.abs(((x * 73856093) ^ (y * 19349663) ^ (z * 83492791)) | 0);
+  return hash % TOTAL_STATES;
+}
 export const auroraCrystalComponent = {
   beforeOnPlayerPlace(e) {
     const { block } = e;
+    const { x, y, z } = block.location;
     const directions = [
       block.above(),
       block.below(),
@@ -29,20 +29,16 @@ export const auroraCrystalComponent = {
       block.east(),
       block.west()
     ];
-
     let neighborAbsolute = null;
-
     for (const neighbor of directions) {
       if (neighbor?.typeId === 'betterend:aurora_crystal') {
         neighborAbsolute = getAbsoluteColor(neighbor.permutation);
         break;
       }
     }
-
     const newAbsolute = neighborAbsolute !== null
       ? (neighborAbsolute + 1) % TOTAL_STATES
-      : 0;
-
+      : getSeededColor(x, y, z);
     e.permutationToPlace = setAbsoluteColor(e.permutationToPlace, newAbsolute);
   }
 };

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:aggregate_feature": {
+    "description": { 
+      "identifier": "betterend:mountains/fix_surface"
+    },
+    "features":[
+      "betterend:mountains/end_stone",
+      "betterend:fixed/air_condition"
+    ]
+  }
+}

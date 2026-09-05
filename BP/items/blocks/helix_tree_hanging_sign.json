@@ -14,10 +14,7 @@
         "block": "betterend:helix_tree_hanging_sign",
         "replace_block_item": true
       },
-      "minecraft:icon": "betterend:helix_tree_hanging_sign",
-      "minecraft:display_name": {
-        "value": "helix Tree Hanging Sign"
-      }
+      "minecraft:icon": "betterend:helix_tree_hanging_sign"
     }
   }
 }

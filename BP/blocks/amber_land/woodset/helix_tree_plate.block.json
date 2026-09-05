@@ -24,7 +24,7 @@
             "size": [ 14, 1, 14 ]
           },
           "nearbear:events": {
-            "betterend:pressure_plate":{}
+            "betterend:pressure_plate": {}
           }
         }
       },
@@ -40,7 +40,7 @@
             "size": [ 14, 0.5, 14 ]
           },
           "nearbear:events": {
-            "betterend:pressure_plate":{}
+            "betterend:pressure_plate": {}
           }
         }
       },
@@ -61,16 +61,15 @@
           },
           "betterend:pressure_plate_setting": {},
           "nearbear:events": {
-            "betterend:pressure_plate":{}
+            "betterend:pressure_plate": {}
           }
         }
       }
     ],
     "components": {
-      "minecraft:display_name": "Helix Tree Plate",
       "minecraft:map_color": "#7c3d2d",
       "minecraft:geometry": {
-        "identifier": "geometry.nb_pressure_plate",
+        "identifier": "geometry.plate",
         "bone_visibility": {
           "off": "query.block_state('betterend:pressure_plate') == 'off'",
           "on": "query.block_state('betterend:pressure_plate') == 'on' || query.block_state('betterend:pressure_plate') == 'wait'",
@@ -85,7 +84,7 @@
       },
       "minecraft:item_visual": {
         "geometry": {
-          "identifier": "geometry.nb_pressure_plate",
+          "identifier": "geometry.plate",
           "bone_visibility": {
             "off": false,
             "on": false,
@@ -104,14 +103,17 @@
         "seconds_to_destroy": 0.5
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 2
+        "explosion_resistance": 0.5
       },
       "minecraft:flammable": {
-        "catch_chance_modifier": 5,
-        "destroy_chance_modifier": 20
+        "catch_chance_modifier": 30,
+        "destroy_chance_modifier": 60
       },
       "minecraft:support": {
         "shape": "stair"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
       },
       "tag:wood": {},
       "tag:minecraft:is_axe_item_destructible": {}

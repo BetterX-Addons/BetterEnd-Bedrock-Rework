@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.blossom_berry",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "group",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{
+							"origin": [5.749, 0, -5.75],
+							"size": [0.001, 16, 16],
+							"pivot": [5.75, 0, -5.75],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "blossom_berry_stem"},
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "blossom_berry_stem"}
+							}
+						},
+						{
+							"origin": [-5.751, 0, -5.75],
+							"size": [0.001, 16, 16],
+							"pivot": [-5.75, 0, -5.75],
+							"rotation": [0, 45, 0],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "blossom_berry_stem"},
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "blossom_berry_stem"}
+							}
+						},
+						{
+							"origin": [-8, 12, -8],
+							"size": [16, 0.001, 16],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "blossom_berry_flowers"},
+								"down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "blossom_berry_flowers"}
+							}
+						},
+						{
+							"origin": [-3, 11, -3],
+							"size": [6, 6, 6],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [6, 6], "material_instance": "blossom_berry_fruit"},
+								"east": {"uv": [0, 0], "uv_size": [6, 6], "material_instance": "blossom_berry_fruit"},
+								"south": {"uv": [0, 0], "uv_size": [6, 6], "material_instance": "blossom_berry_fruit"},
+								"west": {"uv": [0, 0], "uv_size": [6, 6], "material_instance": "blossom_berry_fruit"},
+								"up": {"uv": [6, 6], "uv_size": [-6, -6], "material_instance": "blossom_berry_fruit"},
+								"down": {"uv": [6, 6], "uv_size": [-6, -6], "material_instance": "blossom_berry_fruit"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

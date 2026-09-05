@@ -1,0 +1,81 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:lacugrove_ladder",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [ "minecraft:block_face" ]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 270, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -270, 0 ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "betterend:ladder_settings": {},
+      "minecraft:geometry": "geometry.ladder",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:lacugrove_ladder",
+          "render_method": "alpha_test_single_sided"
+        }
+      },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 20,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:collision_box": {
+        "size": [ 14, 16, 2 ],
+        "origin": [ -7, 0, 6 ]
+      },
+      "minecraft:selection_box": {
+        "size": [ 14, 16, 2 ],
+        "origin": [ -7, 0, 6 ]
+      },
+      "tag:betterend:ladder": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
+  }
+}

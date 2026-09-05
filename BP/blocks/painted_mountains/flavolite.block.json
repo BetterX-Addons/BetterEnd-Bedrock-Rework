@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:flavolite",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.stone"
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/flavolite.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 5
+      },
+      "minecraft:flammable": false,
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:stone": {}
+    }
+  }
+}

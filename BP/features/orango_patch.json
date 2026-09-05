@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:orango_patch"
+    },
+    "places_feature": "betterend:orango_single",
+    "distribution": {
+      "iterations": 45,
+      "x": {
+        "distribution": "gaussian",
+        "extent": [ -5, 5 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [ -5, 5 ]
+      }
+    }
+  }
+}

@@ -4,9 +4,6 @@
     "description": {
       "identifier": "betterend:fixed/chorus_replacer_p2"
     },
-    "features": [ 
-      "betterend:fixed/air",
-      "betterend:fixed/chorus_replacer_p3"
-    ]
+    "features": [ "betterend:fixed/air", "betterend:fixed/chorus_replacer_p3" ]
   }
 }

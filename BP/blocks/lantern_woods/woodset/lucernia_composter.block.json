@@ -1,0 +1,508 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:lucernia_composter",
+      "states": {
+        "betterend:composter_fill_level": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+      },
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.composter",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.composter1",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 3, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.composter2",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 5, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.composter3",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 7, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.composter4",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 9, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 5",
+        "components": {
+          "minecraft:geometry": "geometry.composter5",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 11, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 6",
+        "components": {
+          "minecraft:geometry": "geometry.composter6",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 13, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 7",
+        "components": {
+          "minecraft:geometry": "geometry.composter7",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_compost",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 15, 12 ]
+            }
+          ]
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:composter_fill_level') == 8",
+        "components": {
+          "minecraft:geometry": "geometry.composter8",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_bottom": {
+              "texture": "betterend:lucernia_composter_bottom",
+              "render_method": "opaque"
+            },
+            "composter_side": {
+              "texture": "betterend:lucernia_composter_side",
+              "render_method": "opaque"
+            },
+            "composter_top": {
+              "texture": "betterend:lucernia_composter_top",
+              "render_method": "opaque"
+            },
+            "compost": {
+              "texture": "betterend:composter_ready",
+              "render_method": "opaque"
+            }
+          },
+          "minecraft:collision_box": [
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 16, 2, 16 ]
+            },
+            {
+              "origin": [ -8, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ 6, 0, -8 ],
+              "size": [ 2, 16, 16 ]
+            },
+            {
+              "origin": [ -6, 0, -8 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, 6 ],
+              "size": [ 12, 16, 2 ]
+            },
+            {
+              "origin": [ -6, 0, -6 ],
+              "size": [ 12, 15, 12 ]
+            }
+          ]
+        }
+      }
+    ],
+    "components": {
+      "betterend:composter": {},
+      "minecraft:map_color": "#6d3028",
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "tag:betterend:composter": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
+  }
+}

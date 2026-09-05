@@ -1,0 +1,159 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_chest",
+      "states": {
+        "betterend:open": [ 0, 1, 2, 3, 4, 5, 6 ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [ "minecraft:cardinal_direction" ]
+        }
+      },
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:open') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.chest",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.chest1",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.chest2",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.chest3",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.chest4",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open') == 5",
+        "components": {
+          "minecraft:geometry": "geometry.chest5",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open') == 6",
+        "components": {
+          "minecraft:geometry": "geometry.chest6",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_chest",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 0 ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "betterend:chest": {},
+      "minecraft:map_color": "#6d3028",
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:collision_box": {
+        "origin": [ -7, 0, -7 ],
+        "size": [ 14, 14, 14 ]
+      },
+      "minecraft:selection_box": {
+        "origin": [ -7, 0, -7 ],
+        "size": [ 14, 14, 14 ]
+      },
+      "tag:betterend:chest": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
+  }
+}

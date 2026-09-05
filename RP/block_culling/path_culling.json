@@ -1,0 +1,60 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block_culling_rules": {
+    "description": {
+      "identifier": "betterend:path_culling"
+    },
+    "rules": [
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "north"
+        },
+        "direction": "north",
+        "condition": "same_block",
+        "cull_against_full_and_opaque": true
+      },
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "south"
+        },
+        "direction": "south",
+        "condition": "same_block",
+        "cull_against_full_and_opaque": true
+      },
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "east"
+        },
+        "direction": "east",
+        "condition": "same_block",
+        "cull_against_full_and_opaque": true
+      },
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "west"
+        },
+        "direction": "west",
+        "condition": "same_block",
+        "cull_against_full_and_opaque": true
+      },
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "down"
+        },
+        "direction": "down",
+        "condition": "same_block",
+        "cull_against_full_and_opaque": true
+      }
+    ]
+  }
+}

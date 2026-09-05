@@ -13,7 +13,7 @@
         }
       },
       "states": {
-        "wiki:rotation": {
+        "betterend:rotation": {
           "values": {
             "min": 0,
             "max": 15
@@ -21,14 +21,50 @@
         }
       }
     },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') != 'up'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 4, 6 ],
+            "size": [ 16, 8.2, 2 ]
+          }
+        }
+      }
+    ],
     "components": {
+      "betterend:sign_rotation": {},
       "minecraft:geometry": {
         "identifier": "geometry.sign",
         "bone_visibility": {
-          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 0",
-          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 1",
-          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 2",
-          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('wiki:rotation'), 4) == 3",
+          "up_0": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('betterend:rotation'), 4) == 0",
+          "up_22_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('betterend:rotation'), 4) == 1",
+          "up_45": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('betterend:rotation'), 4) == 2",
+          "up_67_5": "q.block_state('minecraft:block_face') == 'up' && math.mod(q.block_state('betterend:rotation'), 4) == 3",
           "side": "q.block_state('minecraft:block_face') != 'up'"
         }
       },
@@ -50,7 +86,6 @@
           }
         ]
       },
-      "betterend:sign_rotation": {},
       "minecraft:flammable": {
         "destroy_chance_modifier": 5,
         "catch_chance_modifier": 5
@@ -64,43 +99,9 @@
       "minecraft:support": {
         "shape": "stair"
       },
+      "tag:text_sign": {},
       "tag:minecraft:is_axe_item_destructible": {},
-      "tag:text_sign": {}
-    },
-    "permutations": [
-      {
-        "condition": "q.block_state('wiki:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [ 0, -90, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('wiki:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south' || q.block_state('minecraft:block_face') == 'down'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [ 0, 180, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('wiki:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
-        "components": {
-          "minecraft:transformation": {
-            "rotation": [ 0, 90, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:block_face') != 'up'",
-        "components": {
-          "minecraft:selection_box": {
-            "origin": [ -8, 4, 6 ],
-            "size": [ 16, 8.2, 2 ]
-          }
-        }
-      }
-    ]
+      "tag:wood": {}
+    }
   }
 }

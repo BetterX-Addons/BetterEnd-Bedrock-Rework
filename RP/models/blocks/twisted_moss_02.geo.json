@@ -1,0 +1,73 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.twisted_moss_02",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "group",
+					"pivot": [0, 8, 8],
+					"cubes": [
+						{
+							"origin": [-8, -3, -8],
+							"size": [16, 16, 0.001],
+							"pivot": [8, 13, -8],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "twisted_moss_2"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 180, "material_instance": "twisted_moss_2"}
+							}
+						},
+						{
+							"origin": [-8, -9, -8],
+							"size": [16, 16, 0.001],
+							"pivot": [8, 7, -8],
+							"rotation": [45, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "twisted_moss"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 180, "material_instance": "twisted_moss"}
+							}
+						},
+						{
+							"origin": [-6, -12, -8],
+							"size": [16, 16, 0.001],
+							"pivot": [10, 4, -8],
+							"rotation": [45, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "twisted_moss_2"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 180, "material_instance": "twisted_moss_2"}
+							}
+						},
+						{
+							"origin": [-8, -15, -8],
+							"size": [16, 16, 0.001],
+							"pivot": [8, 1, -8],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "twisted_moss_2"},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 180, "material_instance": "twisted_moss_2"}
+							}
+						},
+						{
+							"origin": [-11, 15, -8],
+							"size": [16, 0.001, 16],
+							"pivot": [5, 15, -8],
+							"rotation": [-45, 0, 0],
+							"uv": {
+								"up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180, "material_instance": "twisted_moss"},
+								"down": {"uv": [0, 16], "uv_size": [16, -16], "material_instance": "twisted_moss"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

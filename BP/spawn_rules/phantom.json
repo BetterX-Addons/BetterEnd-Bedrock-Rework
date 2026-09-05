@@ -31,9 +31,7 @@
       },
       {
         "minecraft:spawns_above_block_filter": {
-          "blocks": [
-            "betterend:shadow_grass"
-          ]
+          "blocks": [ "betterend:shadow_grass" ]
         },
         "minecraft:spawns_on_surface": {},
         "minecraft:brightness_filter": {

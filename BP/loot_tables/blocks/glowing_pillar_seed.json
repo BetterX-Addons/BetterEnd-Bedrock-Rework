@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "betterend:glowing_pillar_seed",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,14 @@
+import "woodset/barrel";
 import "woodset/button";
+import "woodset/chest";
+import "woodset/composter";
 import "woodset/door";
 import "woodset/fence_gate";
+import "woodset/ladder";
+import "woodset/leaves";
 import "woodset/log";
 import "woodset/pressure_plate";
+import "woodset/sapling";
 import "woodset/signs";
 import "woodset/slab";
 import "woodset/stairs";

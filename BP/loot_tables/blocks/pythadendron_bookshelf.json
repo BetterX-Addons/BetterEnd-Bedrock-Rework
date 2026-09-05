@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "silk_touch",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "betterend:pythadendron_bookshelf"
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "conditions": [
+        {
+          "condition": "match_tool"
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book"
+        }
+      ]
+    }
+  ]
+}

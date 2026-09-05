@@ -7,8 +7,6 @@
     "places_block": "minecraft:air",
     "enforce_placement_rules": false,
     "enforce_survivability_rules": false,
-    "may_replace": [
-      "minecraft:air"
-    ]
+    "may_replace": [ "minecraft:air" ]
   }
 }

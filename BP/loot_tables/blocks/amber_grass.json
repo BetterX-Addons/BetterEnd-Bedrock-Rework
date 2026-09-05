@@ -1,32 +1,43 @@
 {
   "pools": [
     {
-      "bonus_rolls": 0.0,
       "conditions": [
         {
           "condition": "match_tool",
-          "item": "minecraft:shears",
-          "count": 1
-        },
-        {
-          "condition": "match_tool",
-          "enchantments": [
-            {
-              "silk_touch": {
-                "level": 1
-              }
-            }
-          ]
+          "item": "minecraft:shears"
         }
       ],
+      "rolls": 1,
       "entries": [
         {
           "type": "item",
           "name": "betterend:amber_grass",
           "count": 1
         }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "silk_touch",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
       ],
-      "rolls": 1.0
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "betterend:amber_grass",
+          "count": 1
+        }
+      ]
     }
   ]
 }

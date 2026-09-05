@@ -11,13 +11,11 @@ system.beforeEvents.startup.subscribe((init) => {
         beforeOnPlayerPlace(e, p) {
             const { block, permutationToPlace, face, player } = e;
 
-
             if (face !== "Down" && face !== "Up") return;
 
             const slabBlock = adjacentFunction[face](block);
             const slabBit = slabBlock.permutation.getState("minecraft:vertical_half");
             const slabFullBit = slabBlock.permutation.getState("betterend:block_bit");
-
 
             const toPlaceId = permutationToPlace.type.id;
             const blockid = slabBlock.typeId;
@@ -50,12 +48,30 @@ NearbearEvents.registerBehaviourByEvent("betterend:slab", {
         const { block, player, itemStack } = e;
         const { placing_sound } = p;
 
-        block.setPermutation(block.permutation.withState("betterend:block_bit", true));
+        const location = block.location;
+        const dimension = block.dimension;
 
-        if (placing_sound) {
-            block.dimension.playSound(placing_sound, block.center());
+        // Cambia el state a bloque doble
+        dimension.getBlock(location).setPermutation(
+            block.permutation.withState("betterend:block_bit", true)
+        );
+
+        // Volver a obtener el bloque, la referencia anterior puede quedar obsoleta
+        const updatedBlock = dimension.getBlock(location);
+
+        // El slab doble no puede contener agua (liquid_detection lo bloquea),
+        // así que si el slab suelto tenía agua, hay que quitarla manualmente.
+        try {
+            if (updatedBlock && updatedBlock.isWaterlogged) {
+                updatedBlock.setWaterlogged(false);
+            }
+        } catch (err) {
+            console.warn("No se pudo quitar el agua del slab doble: " + err);
         }
 
+        if (placing_sound) {
+            dimension.playSound(placing_sound, updatedBlock.center());
+        }
 
         if (player.getGameMode() === "Survival") {
             if (itemStack) {
@@ -67,10 +83,5 @@ NearbearEvents.registerBehaviourByEvent("betterend:slab", {
                 }
             }
         }
-
-
     }
 });
-
-
-

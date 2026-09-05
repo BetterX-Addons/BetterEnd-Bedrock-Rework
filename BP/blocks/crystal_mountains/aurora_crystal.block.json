@@ -3,6 +3,9 @@
   "minecraft:block": {
     "description": {
       "identifier": "betterend:aurora_crystal",
+      "menu_category": {
+        "category": "construction"
+      },
       "states": {
         "betterend:color": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
         "betterend:color_page": [ 0, 1, 2 ]
@@ -19,7 +22,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_0",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -37,7 +40,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_1",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -55,7 +58,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_2",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -73,7 +76,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_3",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -91,7 +94,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_4",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -109,7 +112,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_5",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -127,7 +130,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_6",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -145,7 +148,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_7",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -163,7 +166,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_8",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -181,7 +184,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_9",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -199,7 +202,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_10",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -217,7 +220,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_11",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -235,7 +238,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_12",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -253,7 +256,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_13",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -271,7 +274,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_14",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -289,7 +292,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_15",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -307,7 +310,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_16",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -325,7 +328,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_17",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -343,7 +346,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_18",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -361,7 +364,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_19",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -379,7 +382,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_20",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -397,7 +400,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_21",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -415,7 +418,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_22",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -433,7 +436,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_23",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -451,7 +454,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_24",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -469,7 +472,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_25",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -487,7 +490,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_26",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -505,7 +508,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_27",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -523,7 +526,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_28",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -541,7 +544,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_29",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -559,7 +562,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_30",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -577,7 +580,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_31",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -595,7 +598,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_32",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -613,7 +616,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_33",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -631,7 +634,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_34",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -649,7 +652,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_35",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -667,7 +670,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_36",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -685,7 +688,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_37",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -703,7 +706,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_38",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -721,7 +724,7 @@
           "minecraft:material_instances": {
             "*": {
               "texture": "betterend:aurora_crystal_color_39",
-              "render_method": "blend",
+              "render_method": "blend_to_opaque",
               "ambient_occlusion": false,
               "face_dimming": false,
               "emissive": true
@@ -732,23 +735,37 @@
     ],
     "components": {
       "betterend:aurora_crystal": {},
+      "betterend:xp_drop": {
+        "drop_item": "betterend:crystal_shards",
+        "min_drop": 1,
+        "max_drop": 4,
+        "min": 0,
+        "max": 0
+      },
       "minecraft:geometry": {
         "identifier": "geometry.bone",
         "culling": "betterend:block_culling"
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "betterend:aurora_crystal_color_0",
-          "render_method": "blend",
+          "texture": "betterend:aurora_crystal_color_39",
+          "render_method": "blend_to_opaque",
           "ambient_occlusion": false,
           "face_dimming": false,
           "emissive": true
         }
       },
+      "minecraft:loot": "loot_tables/blocks/aurora_crystal.json",
       "minecraft:light_emission": 15,
       "minecraft:map_color": "#F33AFF",
-      "minecraft:destructible_by_mining": true,
-      "minecraft:destructible_by_explosion": true
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:stone": {}
     }
   }
 }

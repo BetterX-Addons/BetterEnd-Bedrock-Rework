@@ -7,8 +7,10 @@
         "betterend:random": [ 0, 1, 2 ]
       },
       "traits": {
-        "minecraft:placement_direction": {
-          "enabled_states": [ "minecraft:cardinal_direction" ]
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       }
     },
@@ -32,7 +34,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "condition": "q.block_state('minecraft:block_face') == 'north'",
         "components": {
           "minecraft:transformation": {
             "rotation": [ 0, 180, 0 ]
@@ -40,7 +42,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
         "components": {
           "minecraft:transformation": {
             "rotation": [ 0, 0, 0 ]
@@ -48,7 +50,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
         "components": {
           "minecraft:transformation": {
             "rotation": [ 0, 90, 0 ]
@@ -56,7 +58,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:transformation": {
             "rotation": [ 0, 270, 0 ]
@@ -69,6 +71,7 @@
       "betterend:random": {
         "max_states": 3
       },
+      "betterend:bonemeal_drop": {},
       "minecraft:geometry": "geometry.bulb_moss_01",
       "minecraft:material_instances": {
         "*": {
@@ -93,44 +96,33 @@
           "emissive": true
         }
       },
+      "minecraft:collision_box": false,
       "minecraft:selection_box": {
-        "origin": [ -8, 0, 0 ],
-        "size": [ 16, 16, 8 ]
+        "origin": [ -7, 1, -8 ],
+        "size": [ 14, 14, 8 ]
       },
       "minecraft:map_color": "#b35b00",
-      "minecraft:light_emission": 15,
+      "minecraft:light_emission": 12,
       "minecraft:loot": "loot_tables/blocks/bulb_moss.json",
       "minecraft:destructible_by_explosion": true,
       "minecraft:destructible_by_mining": true,
-      "minecraft:collision_box": false,
       "minecraft:placement_filter": {
         "conditions": [
           {
             "allowed_faces": [ "side" ],
             "block_filter": [
-              "betterend:helix_tree_log",
-              "betterend:helix_tree_wood",
-              "betterend:helix_tree_leaves",
-              "betterend:amber_moss",
-              "minecraft:end_stone"
+              {
+                "tags": "!query.any_tag('minecraft:leaves', 'not_feature_replaceable', 'plant', 'water', 'text_sing')"
+              }
             ]
           }
         ]
-      },
-      "minecraft:random_offset": {
-        "y": {
-          "range": {
-            "min": -1,
-            "max": 1
-          },
-          "steps": 0
-        }
       },
       "minecraft:liquid_detection": {
         "detection_rules": [
           {
             "liquid_type": "water",
-            "can_contain_liquid": true,
+            "can_contain_liquid": false,
             "on_liquid_touches": "broken"
           }
         ]

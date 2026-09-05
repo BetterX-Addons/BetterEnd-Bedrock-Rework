@@ -7,10 +7,9 @@
     "distribution": {
       "iterations": 1,
       "x": 0,
-      "z": 0,
-      "y": 5
-    }, 
-    "project_input_to_floor": false,
-    "places_feature": "betterend:lanceleaf_top_snap_to_floor"
+      "y": 5,
+      "z": 0
+    },
+    "places_feature": "betterend:lanceleaf_top_floor"
   }
 }

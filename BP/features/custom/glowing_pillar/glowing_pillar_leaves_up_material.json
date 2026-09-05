@@ -4,30 +4,33 @@
     "description": {
       "identifier": "betterend:glowing_pillar_leaves_up_material"
     },
-    "height_distribution":  [
+    "height_distribution": [
       [
         {
-          "range_min": 2, 
+          "range_min": 2,
           "range_max": 2
-        }, 1
+        },
+        1
       ]
     ],
     "growth_direction": "UP",
-    "body_blocks" : [
+    "body_blocks": [
       [
         {
           "name": "betterend:glowing_pillar_leaves",
           "states": {
-            "minecraft:facing_direction": "down"
+            "minecraft:block_face": "up"
           }
-        }, 1
+        },
+        1
       ]
     ],
-    "head_blocks" : [
+    "head_blocks": [
       [
         {
           "name": "minecraft:air"
-        }, 1
+        },
+        1
       ]
     ]
   }

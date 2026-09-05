@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:bonemeal_pink_moss"
+    },
+    "places_feature": "betterend:bushy_grass_single",
+    "distribution": {
+      "iterations": 9,
+      "x": {
+        "distribution": "gaussian",
+        "extent": [ -3, 3 ]
+      },
+      "y": {
+        "distribution": "gaussian",
+        "extent": [ -1, 1 ]
+      },
+      "z": {
+        "distribution": "gaussian",
+        "extent": [ -3, 3 ]
+      }
+    }
+  }
+}

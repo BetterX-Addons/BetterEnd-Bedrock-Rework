@@ -10,10 +10,12 @@
     },
     "components": {
       "betterend:xp_drop": {
+        "drop_item": "betterend:ender_shard",
+        "min_drop": 1,
+        "max_drop": 2,
         "min": 1,
         "max": 3
       },
-      "minecraft:display_name": "Ender Ore",
       "minecraft:loot": "loot_tables/blocks/ender_ore.json",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 5
@@ -21,6 +23,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 5
       },
+      "minecraft:flammable": false,
       "tag:minecraft:is_pickaxe_item_destructible": {},
       "tag:stone": {}
     }

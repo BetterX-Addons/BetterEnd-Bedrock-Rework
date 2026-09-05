@@ -4,12 +4,7 @@
     "description": {
       "identifier": "betterend:chorus_forest/chorus_nylium"
     },
-    "places_block": {
-      "name": "betterend:chorus_nylium",
-      "states": {
-        "betterend:biomes": "chorus_forest"
-      }
-    },
+    "places_block": "betterend:chorus_nylium",
     "enforce_survivability_rules": false,
     "enforce_placement_rules": false
   }

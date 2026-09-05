@@ -13,94 +13,6 @@
         }
       }
     },
-    "components": {
-      "minecraft:display_name": "Helix Tree Fence",
-      "minecraft:material_instances": {
-        "*": {
-          "texture": "betterend:helix_tree_planks",
-          "render_method": "opaque"
-        }
-      },
-      "minecraft:support": {
-        "shape": "fence"
-      },
-      "minecraft:precipitation_interactions": {
-        "precipitation_behavior": "obstruct_rain"
-      },
-      "minecraft:collision_box": {
-        "size": [ 4, 24, 4 ],
-        "origin": [ -2, 0, -2 ]
-      },
-      "minecraft:selection_box": {
-        "size": [ 4, 16, 4 ],
-        "origin": [ -2, 0, -2 ]
-      },
-      "tag:minecraft:has_fence_connections": {},
-      "minecraft:geometry": {
-        "identifier": "geometry.nb_fence",
-        "bone_visibility": {
-          "north": "q.block_state('minecraft:connection_north')",
-          "south": "q.block_state('minecraft:connection_south')",
-          "east": "q.block_state('minecraft:connection_east')",
-          "west": "q.block_state('minecraft:connection_west')",
-          "base": true,
-          "inventory": false
-        }
-      },
-      "minecraft:item_visual": {
-        "geometry": {
-          "identifier": "geometry.nb_fence",
-          "bone_visibility": {
-            "north": false,
-            "south": false,
-            "east": false,
-            "west": false,
-            "base": false,
-            "inventory": true
-          }
-        },
-        "material_instances": {
-          "*": {
-            "texture": "betterend:helix_tree_planks",
-            "render_method": "opaque"
-          }
-        }
-      },
-      "minecraft:connection_rule": {
-        "accepts_connections_from": "only_fences"
-      },
-      "minecraft:liquid_detection": {
-        "detection_rules": [
-          {
-            "can_contain_liquid": true
-          }
-        ]
-      },
-      "minecraft:light_dampening": 0,
-      "minecraft:leashable": {
-        "offset": [ 0, 12, 0 ]
-      },
-      "minecraft:flammable": {
-        "destroy_chance_modifier": 5,
-        "catch_chance_modifier": 20
-      },
-      "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 15
-      },
-      "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 2,
-        "item_specific_speeds": [
-          {
-            "destroy_speed": 0.9,
-            "item": {
-              "tags": "query.any_tag('minecraft:is_axe')"
-            }
-          }
-        ]
-      },
-      "tag:minecraft:is_axe_item_destructible": {},
-      "tag:wood": {}
-    },
     "permutations": [
       {
         "condition": "q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')",
@@ -387,6 +299,83 @@
           }
         }
       }
-    ]
+    ],
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:helix_tree_planks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:support": {
+        "shape": "fence"
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "obstruct_rain"
+      },
+      "minecraft:collision_box": {
+        "size": [ 4, 24, 4 ],
+        "origin": [ -2, 0, -2 ]
+      },
+      "minecraft:selection_box": {
+        "size": [ 4, 16, 4 ],
+        "origin": [ -2, 0, -2 ]
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.fence",
+        "bone_visibility": {
+          "north": "q.block_state('minecraft:connection_north')",
+          "south": "q.block_state('minecraft:connection_south')",
+          "east": "q.block_state('minecraft:connection_east')",
+          "west": "q.block_state('minecraft:connection_west')",
+          "base": true,
+          "inventory": false
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "geometry.fence",
+          "bone_visibility": {
+            "north": false,
+            "south": false,
+            "east": false,
+            "west": false,
+            "base": false,
+            "inventory": true
+          }
+        },
+        "material_instances": {
+          "*": {
+            "texture": "betterend:helix_tree_planks",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences"
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "can_contain_liquid": true,
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "minecraft:leashable": {
+        "offset": [ 0, 12, 0 ]
+      },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 20
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2
+      },
+      "tag:minecraft:has_fence_connections": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
   }
 }

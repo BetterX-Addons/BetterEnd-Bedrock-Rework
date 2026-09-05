@@ -4,10 +4,7 @@
     "description": {
       "identifier": "betterend:glow_pillar_search"
     },
-    "features": [
-      "betterend:space_check",
-      "betterend:glowing_pillar_weight"
-    ],
+    "features": [ "betterend:space_check", "betterend:glowing_pillar_weight" ],
     "early_out": "first_failure"
   }
 }

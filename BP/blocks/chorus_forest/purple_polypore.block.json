@@ -1,0 +1,128 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:purple_polypore",
+      "states": {
+        "betterend:random": [ 0, 1, 2 ]
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.purple_polypore_01"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.purple_polypore_02"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.purple_polypore_03"
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 270, 0 ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "tag:minecraft:is_shears_item_destructible": {},
+      "betterend:random": {
+        "max_states": 3
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.2
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.2
+      },
+      "betterend:bonemeal_drop": {},
+      "minecraft:geometry": "geometry.purple_polypore_01",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:purple_polypore",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        }
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [ -7, 1, -8 ],
+        "size": [ 14, 14, 8 ]
+      },
+      "minecraft:light_emission": 13,
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/blocks/purple_polypore.json",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "side" ],
+            "block_filter": [
+              {
+                "tags": "!query.any_tag('minecraft:leaves', 'not_feature_replaceable', 'plant', 'water', 'text_sing')"
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": false,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "betterend:mountains/end_stone"
+    },
+    "places_block": "minecraft:end_stone",
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false
+  }
+}

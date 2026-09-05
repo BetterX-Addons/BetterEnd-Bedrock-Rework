@@ -4,15 +4,13 @@
     "description": {
       "identifier": "betterend:thallasium_ore"
     },
-    "discard_chance_on_air_exposure": 0.0,    
+    "discard_chance_on_air_exposure": 0.0,
     "count": 8,
     "replace_rules": [
       {
         "places_block": "betterend:thallasium_ore",
         "may_replace": [
-          {
-            "name": "minecraft:end_stone"
-          }
+          "minecraft:end_stone"
         ]
       }
     ]

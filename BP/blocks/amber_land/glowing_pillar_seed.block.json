@@ -8,9 +8,15 @@
       }
     },
     "components": {
+      "betterend:age_advanced": {
+        "max_size": 4,
+        "random_chance": 0.5,
+        "bone_meal_chance": 0.5,
+        "feature_on_max": "betterend:glowing_pillar_weight"
+      },
       "tag:minecraft:is_shears_item_destructible": {},
       "minecraft:map_color": "#b35b00",
-      "minecraft:loot": "loot_tables/blocks/amber_grass.json",
+      "minecraft:loot": "loot_tables/blocks/glowing_pillar_seed.json",
       "minecraft:destructible_by_explosion": true,
       "minecraft:destructible_by_mining": true,
       "minecraft:collision_box": false,
@@ -25,14 +31,14 @@
       },
       "minecraft:replaceable": {},
       "minecraft:random_offset": {
-        "x": { 
+        "x": {
           "range": {
             "min": -1,
             "max": 1
           },
           "steps": 0
         },
-        "y": { 
+        "y": {
           "range": {
             "min": -1,
             "max": 0
@@ -40,10 +46,10 @@
           "steps": 0
         },
         "z": {
-          "range": { 
+          "range": {
             "min": -1,
             "max": 1
-          }, 
+          },
           "steps": 0
         }
       },
@@ -51,22 +57,17 @@
         "detection_rules": [
           {
             "liquid_type": "water",
-            "can_contain_liquid": true,
+            "can_contain_liquid": false,
             "on_liquid_touches": "broken"
           }
         ]
-      },
-      "betterend:growing_plant": {
-        "max_size": 4,
-        "random_chance": 0.5,
-        "bone_meal_chance": 0.5,
-        "feature": "betterend:glowing_pillar_weight"
       }
     },
     "permutations": [
       {
         "condition": "q.block_state('betterend:growth') == 0",
         "components": {
+          "minecraft:light_emission": 3,
           "minecraft:geometry": "geometry.cross_no_distortion",
           "minecraft:placement_filter": {
             "conditions": [
@@ -94,6 +95,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 1",
         "components": {
+          "minecraft:light_emission": 6,
           "minecraft:geometry": "geometry.cross_no_distortion",
           "minecraft:placement_filter": {
             "conditions": [
@@ -121,6 +123,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 2",
         "components": {
+          "minecraft:light_emission": 9,
           "minecraft:geometry": "geometry.cross_no_distortion",
           "minecraft:placement_filter": {
             "conditions": [
@@ -148,6 +151,7 @@
       {
         "condition": "q.block_state('betterend:growth') == 3",
         "components": {
+          "minecraft:light_emission": 12,
           "minecraft:geometry": "geometry.cross_no_distortion",
           "minecraft:placement_filter": {
             "conditions": [

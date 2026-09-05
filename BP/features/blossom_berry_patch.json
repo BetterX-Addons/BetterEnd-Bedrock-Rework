@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:blossom_berry_patch"
+    },
+    "places_feature": "betterend:blossom_berry_single",
+    "distribution": {
+      "iterations": 16,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ -4, 4 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ -4, 4 ]
+      }
+    }
+  }
+}

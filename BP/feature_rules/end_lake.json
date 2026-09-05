@@ -3,7 +3,7 @@
   "minecraft:feature_rules": {
     "description": {
       "identifier": "betterend:end_lake",
-      "places_feature": "betterend:custom/lakes/end_lake"
+      "places_feature": "betterend:end_lake_area"
     },
     "conditions": {
       "placement_pass": "surface_pass",
@@ -14,12 +14,12 @@
       }
     },
     "distribution": {
-      "iterations": "temp.index == 0 ? math.random_integer(1, 40) == 1 ? 1 : 0 : 0",
+      "iterations": "temp.index == 0 ? math.random_integer(1, 40) == 1 : 0",
       "x": {
         "distribution": "fixed_grid",
         "extent": [ 0, 15 ]
       },
-      "y": "t.size = math.random_integer(5, 10); t.a = q.heightmap(v.worldx, v.worldz); t.s1 = math.abs(q.heightmap(v.worldx - 4, v.worldz - 4) - t.a); t.s2 = math.abs(q.heightmap(v.worldx - 4, v.worldz + 4) - t.a); t.s3 = math.abs(q.heightmap(v.worldx + 4, v.worldz - 4) - t.a); t.s4 = math.abs(q.heightmap(v.worldx + 4, v.worldz + 4) - t.a); (t.s1 <= 2 && t.s2 <= 2 && t.s3 <= 2 && t.s4 <= 2 && t.a > 59) ? { return t.a - t.size / 2 + 1; } : { return -64; };",
+      "y": "t.size = math.random_integer(5, 10); temp.heightmap = query.heightmap(variable.worldx, variable.worldz); return temp.heightmap + 20;",
       "z": {
         "distribution": "fixed_grid",
         "extent": [ 0, 15 ]

@@ -12,18 +12,18 @@
       }
     ],
     "step": "raw_generation",
+    "heightmap_projection": "world_surface",
     "start_pool": "betterend:eternal_portal",
-    "max_depth": 5,
+    "max_depth": 6,
     "start_height": {
       "type": "constant",
       "value": {
-        "absolute": -2
+        "absolute": 0
       }
     },
     "dimension_padding": {
       "top": 10,
       "bottom": 5
-    },
-    "heightmap_projection": "world_surface"
+    }
   }
 }

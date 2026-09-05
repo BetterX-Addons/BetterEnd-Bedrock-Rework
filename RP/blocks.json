@@ -1,7 +1,231 @@
 {
   "format_version": "1.1.0",
-  "betterend:charnia_cyan": {
+  "betterend:amaranita_cap": {
+    "sound": "wood",
+    "textures": "betterend:amaranita_cap"
+  },
+  "betterend:amaranita_lantern": {
+    "sound": "nether_wart",
+    "textures": "betterend:amaranita_lantern"
+  },
+  "betterend:amaranita_fur": {
+    "sound": "nether_wart"
+  },
+  "betterend:amaranita_hymenophore": {
+    "sound": "wood",
+    "textures": "betterend:amaranita_hymenophore"
+  },
+  "betterend:amaranita_hyphae": {
+    "sound": "wood"
+  },
+  "betterend:purple_polypore": {
+    "sound": "wood"
+  },
+  "betterend:tail_moss": {
     "sound": "grass"
+  },
+  "betterend:tenanea_outer_leaves": {
+    "sound": "grass"
+  },
+  "betterend:twisted_moss": {
+    "sound": "grass"
+  },
+  "betterend:blossom_berry_seed": {
+    "sound": "grass"
+  },
+  "betterend:chorus_mushroom_seed": {
+    "sound": "grass"
+  },
+  "betterend:helix_tree_chest": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_barrel": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_composter": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:dragon_tree_composter": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:end_lotus_composter": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:jellyshroom_composter": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:lacugrove_composter": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:lucernia_composter": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:mossy_glowshroom_composter": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:pythadendron_composter": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:tenanea_composter": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:umbrella_tree_composter": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:end_lotus_bark": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:end_lotus_planks",
+      "side": "betterend:end_lotus_bookshelf",
+      "up": "betterend:end_lotus_planks"
+    }
+  },
+  "betterend:end_lotus_button": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:end_lotus_crafting_table_bottom",
+      "east": "betterend:end_lotus_crafting_table_side",
+      "north": "betterend:end_lotus_crafting_table_front",
+      "south": "betterend:end_lotus_crafting_table_front",
+      "up": "betterend:end_lotus_crafting_table_top",
+      "west": "betterend:end_lotus_crafting_table_side"
+    }
+  },
+  "betterend:end_lotus_door": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_fence": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_log": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_planks": {
+    "sound": "wood",
+    "textures": "betterend:end_lotus_planks"
+  },
+  "betterend:end_lotus_plate": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_sign": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_slab": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_stairs": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:end_lotus_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_composter": {
+    "sound": "wood"
+  },
+  "betterend:umbralith": {
+    "sound": "stone",
+    "textures": "betterend:umbralith"
+  },
+  "betterend:sulphuric_rock": {
+    "sound": "stone",
+    "textures": {
+      "up": "betterend:sulphuric_rock_top",
+      "side": "betterend:sulphuric_rock",
+      "down": "betterend:sulphuric_rock_top"
+    }
+  },
+  "betterend:amber_grass": {
+    "sound": "grass"
+  },
+  "betterend:creeping_moss": {
+    "sound": "grass"
+  },
+  "betterend:lamellarium": {
+    "sound": "grass"
+  },
+  "betterend:lutebus": {
+    "sound": "grass"
+  },
+  "betterend:aeridium": {
+    "sound": "grass"
+  },
+  "betterend:orango": {
+    "sound": "grass"
+  },
+  "betterend:globulagus": {
+    "sound": "grass"
+  },
+  "betterend:small_amaranita_mushroom": {
+    "sound": "grass"
+  },
+  "betterend:crystal_grass": {
+    "sound": "grass"
+  },
+  "betterend:clawfern": {
+    "sound": "grass"
+  },
+  "betterend:flammalix": {
+    "sound": "grass"
+  },
+  "betterend:inflexia": {
+    "sound": "grass"
+  },
+  "betterend:bushy_grass": {
+    "sound": "grass"
+  },
+  "betterend:chorus_grass": {
+    "sound": "grass"
+  },
+  "betterend:amber_land_fog": {
+    "sound": "stone"
   },
   "betterend:amber_moss": {
     "sound": "gravel",
@@ -17,34 +241,189 @@
   "betterend:amber_moss_path": {
     "sound": "gravel"
   },
-  "betterend:amber_grass": {
-    "sound": "grass"
-  },
-  "betterend:amber_root_seed": {
-    "sound": "roots"
-  },
-  "betterend:bulb_moss": {
-    "sound": "grass"
-  },
   "betterend:amber_ore": {
     "sound": "stone",
     "textures": "betterend:amber_ore"
   },
-  "betterend:helix_tree_leaves": {
-    "sound": "nether_wart",
-    "textures": "betterend:helix_tree_leaves"
+  "betterend:amber_root_seed": {
+    "sound": "grass"
   },
-  "betterend:helix_tree_planks" : {
-    "sound" : "wood",
-    "textures" : "betterend:helix_tree_planks"
+  "betterend:aurora_crystal": {
+    "sound": "glass"
   },
-  "betterend:helix_tree_bookshelf" : {
-    "sound" : "wood",
-    "textures" : {
-      "down" : "betterend:helix_tree_planks",
-      "side" : "betterend:helix_tree_bookshelf",
-      "up" : "betterend:helix_tree_planks"
+  "betterend:bulb_moss": {
+    "sound": "grass"
+  },
+  "betterend:charnia_cyan": {
+    "sound": "roots"
+  },
+  "betterend:charnia_green": {
+    "sound": "roots"
+  },
+  "betterend:charnia_light_blue": {
+    "sound": "roots"
+  },
+  "betterend:charnia_orange": {
+    "sound": "roots"
+  },
+  "betterend:charnia_purple": {
+    "sound": "roots"
+  },
+  "betterend:charnia_red": {
+    "sound": "roots"
+  },
+  "betterend:chorus_nylium": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:chorus_nylium_top",
+      "side": "betterend:chorus_nylium_side",
+      "down": "end_stone"
     }
+  },
+  "betterend:chorus_nylium_path": {
+    "sound": "gravel"
+  },
+  "betterend:crystal_moss": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:crystal_moss_top",
+      "side": "betterend:crystal_moss_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:crystal_moss_path": {
+    "sound": "gravel"
+  },
+  "betterend:dragon_tree_bark": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_leaves": {
+    "sound": "grass"
+  },
+  "betterend:dragon_tree_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:dragon_tree_planks",
+      "side": "betterend:dragon_tree_bookshelf",
+      "up": "betterend:dragon_tree_planks"
+    }
+  },
+  "betterend:dragon_tree_button": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:dragon_tree_crafting_table_bottom",
+      "east": "betterend:dragon_tree_crafting_table_side",
+      "north": "betterend:dragon_tree_crafting_table_front",
+      "south": "betterend:dragon_tree_crafting_table_front",
+      "up": "betterend:dragon_tree_crafting_table_top",
+      "west": "betterend:dragon_tree_crafting_table_side"
+    }
+  },
+  "betterend:dragon_tree_door": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_fence": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_log": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_planks": {
+    "sound": "wood",
+    "textures": "betterend:dragon_tree_planks"
+  },
+  "betterend:dragon_tree_plate": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_sapling": {
+    "sound": "grass"
+  },
+  "betterend:dragon_tree_sign": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_slab": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_stairs": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:dragon_tree_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:end_moss": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:end_moss_top",
+      "side": "betterend:end_moss_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:end_moss_path": {
+    "sound": "gravel"
+  },
+  "betterend:ender_ore": {
+    "sound": "stone",
+    "textures": "betterend:ender_ore"
+  },
+  "betterend:endstone_dust": {
+    "sound": "sand",
+    "textures": "betterend:endstone_dust",
+    "isotropic": true,
+    "brightness_gamma": 0.55
+  },
+  "betterend:flavolite": {
+    "textures": "betterend:flavolite",
+    "sound": "stone"
+  },
+  "betterend:glowing_pillar_leaves": {
+    "sound": "grass"
+  },
+  "betterend:glowing_pillar_luminophor": {
+    "sound": "grass"
+  },
+  "betterend:glowing_pillar_seed": {
+    "sound": "grass"
+  },
+  "betterend:helix_tree_ladder": {
+    "sound": "ladder"
+  },
+  "betterend:helix_tree_bark": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:helix_tree_planks",
+      "side": "betterend:helix_tree_bookshelf",
+      "up": "betterend:helix_tree_planks"
+    }
+  },
+  "betterend:helix_tree_button": {
+    "sound": "wood"
   },
   "betterend:helix_tree_crafting_table": {
     "sound": "wood",
@@ -55,6 +434,377 @@
       "south": "betterend:helix_tree_crafting_table_front",
       "up": "betterend:helix_tree_crafting_table_top",
       "west": "betterend:helix_tree_crafting_table_side"
+    }
+  },
+  "betterend:helix_tree_door": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_fence": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_leaves": {
+    "sound": "nether_wart",
+    "textures": "betterend:helix_tree_leaves"
+  },
+  "betterend:helix_tree_log": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_planks": {
+    "sound": "wood",
+    "textures": "betterend:helix_tree_planks"
+  },
+  "betterend:helix_tree_plate": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_sapling": {
+    "sound": "grass"
+  },
+  "betterend:helix_tree_sign": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_slab": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_stairs": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:helix_tree_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_bark": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:jellyshroom_planks",
+      "side": "betterend:jellyshroom_bookshelf",
+      "up": "betterend:jellyshroom_planks"
+    }
+  },
+  "betterend:jellyshroom_button": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:jellyshroom_crafting_table_bottom",
+      "east": "betterend:jellyshroom_crafting_table_side",
+      "north": "betterend:jellyshroom_crafting_table_front",
+      "south": "betterend:jellyshroom_crafting_table_front",
+      "up": "betterend:jellyshroom_crafting_table_top",
+      "west": "betterend:jellyshroom_crafting_table_side"
+    }
+  },
+  "betterend:jellyshroom_door": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_fence": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_log": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_planks": {
+    "sound": "wood",
+    "textures": "betterend:jellyshroom_planks"
+  },
+  "betterend:jellyshroom_plate": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_sign": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_slab": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_stairs": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:jellyshroom_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:jungle_moss": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:jungle_moss_top",
+      "side": "betterend:jungle_moss_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:jungle_moss_path": {
+    "sound": "gravel"
+  },
+  "betterend:lacugrove_bark": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:lacugrove_planks",
+      "side": "betterend:lacugrove_bookshelf",
+      "up": "betterend:lacugrove_planks"
+    }
+  },
+  "betterend:lacugrove_button": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:lacugrove_crafting_table_bottom",
+      "east": "betterend:lacugrove_crafting_table_side",
+      "north": "betterend:lacugrove_crafting_table_front",
+      "south": "betterend:lacugrove_crafting_table_front",
+      "up": "betterend:lacugrove_crafting_table_top",
+      "west": "betterend:lacugrove_crafting_table_side"
+    }
+  },
+  "betterend:lacugrove_door": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_fence": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_leaves": {
+    "sound": "grass"
+  },
+  "betterend:lacugrove_log": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_planks": {
+    "sound": "wood",
+    "textures": "betterend:lacugrove_planks"
+  },
+  "betterend:lacugrove_plate": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_sapling": {
+    "sound": "grass"
+  },
+  "betterend:lacugrove_sign": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_slab": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_stairs": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:lacugrove_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:lanceleaf_seed": {
+    "sound": "grass"
+  },
+  "betterend:lucernia_bark": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:lucernia_planks",
+      "side": "betterend:lucernia_bookshelf",
+      "up": "betterend:lucernia_planks"
+    }
+  },
+  "betterend:lucernia_button": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:lucernia_crafting_table_bottom",
+      "east": "betterend:lucernia_crafting_table_side",
+      "north": "betterend:lucernia_crafting_table_front",
+      "south": "betterend:lucernia_crafting_table_front",
+      "up": "betterend:lucernia_crafting_table_top",
+      "west": "betterend:lucernia_crafting_table_side"
+    }
+  },
+  "betterend:lucernia_door": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_fence": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_leaves": {
+    "sound": "grass"
+  },
+  "betterend:lucernia_log": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_planks": {
+    "sound": "wood",
+    "textures": "betterend:lucernia_planks"
+  },
+  "betterend:lucernia_plate": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_sapling": {
+    "sound": "grass"
+  },
+  "betterend:lucernia_sign": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_slab": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_stairs": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:lucernia_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_bark": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:mossy_glowshroom_planks",
+      "side": "betterend:mossy_glowshroom_bookshelf",
+      "up": "betterend:mossy_glowshroom_planks"
+    }
+  },
+  "betterend:mossy_glowshroom_button": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:mossy_glowshroom_crafting_table_bottom",
+      "east": "betterend:mossy_glowshroom_crafting_table_side",
+      "north": "betterend:mossy_glowshroom_crafting_table_front",
+      "south": "betterend:mossy_glowshroom_crafting_table_front",
+      "up": "betterend:mossy_glowshroom_crafting_table_top",
+      "west": "betterend:mossy_glowshroom_crafting_table_side"
+    }
+  },
+  "betterend:mossy_glowshroom_door": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_fence": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_log": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_planks": {
+    "sound": "wood",
+    "textures": "betterend:mossy_glowshroom_planks"
+  },
+  "betterend:mossy_glowshroom_plate": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_sapling": {
+    "sound": "grass"
+  },
+  "betterend:mossy_glowshroom_sign": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_slab": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_stairs": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:mossy_glowshroom_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:pallidium_full": {
+    "sound": "stone",
+    "textures": {
+      "up": "betterend:pallidium_full_top",
+      "side": "betterend:pallidium_full_side",
+      "down": "betterend:umbralith"
+    }
+  },
+  "betterend:pallidium_heavy": {
+    "sound": "stone",
+    "textures": {
+      "up": "betterend:pallidium_heavy_top",
+      "side": "betterend:pallidium_heavy_side",
+      "down": "betterend:umbralith"
+    }
+  },
+  "betterend:pallidium_thin": {
+    "sound": "stone",
+    "textures": {
+      "up": "betterend:pallidium_thin_top",
+      "side": "betterend:pallidium_thin_side",
+      "down": "betterend:umbralith"
+    }
+  },
+  "betterend:pallidium_tiny": {
+    "sound": "stone",
+    "textures": {
+      "up": "betterend:pallidium_tiny_top",
+      "side": "betterend:pallidium_tiny_side",
+      "down": "betterend:umbralith"
     }
   },
   "betterend:pink_moss": {
@@ -68,18 +818,270 @@
       "down": "end_stone"
     }
   },
+  "betterend:pink_moss_path": {
+    "sound": "gravel"
+  },
+  "betterend:pythadendron_bark": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:pythadendron_planks",
+      "side": "betterend:pythadendron_bookshelf",
+      "up": "betterend:pythadendron_planks"
+    }
+  },
+  "betterend:pythadendron_button": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:pythadendron_crafting_table_bottom",
+      "east": "betterend:pythadendron_crafting_table_side",
+      "north": "betterend:pythadendron_crafting_table_front",
+      "south": "betterend:pythadendron_crafting_table_front",
+      "up": "betterend:pythadendron_crafting_table_top",
+      "west": "betterend:pythadendron_crafting_table_side"
+    }
+  },
+  "betterend:pythadendron_door": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_fence": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_leaves": {
+    "sound": "grass"
+  },
+  "betterend:pythadendron_log": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_planks": {
+    "sound": "wood",
+    "textures": "betterend:pythadendron_planks"
+  },
+  "betterend:pythadendron_plate": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_sapling": {
+    "sound": "grass"
+  },
+  "betterend:pythadendron_sign": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_slab": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_stairs": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:pythadendron_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:rutiscus": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:rutiscus_top",
+      "side": "betterend:rutiscus_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:rutiscus_path": {
+    "sound": "gravel"
+  },
+  "betterend:sangnum": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:sangnum_top",
+      "side": "betterend:sangnum_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:sangnum_path": {
+    "sound": "gravel"
+  },
+  "betterend:shadow_grass": {
+    "sound": "gravel",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "betterend:shadow_grass_top",
+      "side": "betterend:shadow_grass_side",
+      "down": "end_stone"
+    }
+  },
+  "betterend:shadow_grass_path": {
+    "sound": "gravel"
+  },
+  "betterend:tenanea_bark": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:tenanea_planks",
+      "side": "betterend:tenanea_bookshelf",
+      "up": "betterend:tenanea_planks"
+    }
+  },
+  "betterend:tenanea_button": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:tenanea_crafting_table_bottom",
+      "east": "betterend:tenanea_crafting_table_side",
+      "north": "betterend:tenanea_crafting_table_front",
+      "south": "betterend:tenanea_crafting_table_front",
+      "up": "betterend:tenanea_crafting_table_top",
+      "west": "betterend:tenanea_crafting_table_side"
+    }
+  },
+  "betterend:tenanea_door": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_fence": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_leaves": {
+    "sound": "grass"
+  },
+  "betterend:tenanea_log": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_planks": {
+    "sound": "wood",
+    "textures": "betterend:tenanea_planks"
+  },
+  "betterend:tenanea_plate": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_sapling": {
+    "sound": "grass"
+  },
+  "betterend:tenanea_sign": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_slab": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_stairs": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:tenanea_trapdoor": {
+    "sound": "wood"
+  },
   "betterend:thallasium_ore": {
     "sound": "stone",
     "textures": "betterend:thallasium_ore"
   },
-  "betterend:ender_ore": {
-    "sound": "stone",
-    "textures": "betterend:ender_ore"
+  "betterend:umbrella_tree_bark": {
+    "sound": "wood"
   },
-  "betterend:endstone_dust": {
-    "sound": "sand",
-    "textures": "betterend:endstone_dust",
-    "isotropic": true,
-    "brightness_gamma": 0.55
+  "betterend:umbrella_tree_bookshelf": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:umbrella_tree_planks",
+      "side": "betterend:umbrella_tree_bookshelf",
+      "up": "betterend:umbrella_tree_planks"
+    }
+  },
+  "betterend:umbrella_tree_button": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_crafting_table": {
+    "sound": "wood",
+    "textures": {
+      "down": "betterend:umbrella_tree_crafting_table_bottom",
+      "east": "betterend:umbrella_tree_crafting_table_side",
+      "north": "betterend:umbrella_tree_crafting_table_front",
+      "south": "betterend:umbrella_tree_crafting_table_front",
+      "up": "betterend:umbrella_tree_crafting_table_top",
+      "west": "betterend:umbrella_tree_crafting_table_side"
+    }
+  },
+  "betterend:umbrella_tree_door": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_fence": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_fence_gate": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_hanging_sign": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_log": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_membrane": {
+    "sound": "slime"
+  },
+  "betterend:umbrella_tree_planks": {
+    "sound": "wood",
+    "textures": "betterend:umbrella_tree_planks"
+  },
+  "betterend:umbrella_tree_plate": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_sapling": {
+    "sound": "grass"
+  },
+  "betterend:umbrella_tree_sign": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_slab": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_stairs": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_stripped_bark": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_stripped_log": {
+    "sound": "wood"
+  },
+  "betterend:umbrella_tree_trapdoor": {
+    "sound": "wood"
+  },
+  "betterend:violecite": {
+    "textures": "betterend:violecite",
+    "sound": "stone"
   }
 }

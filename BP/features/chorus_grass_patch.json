@@ -1,0 +1,25 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:chorus_grass_patch"
+    },
+    "places_feature": "betterend:chorus_grass_single",
+    "distribution": {
+      "iterations": 28,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ -4, 4 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ -4, 4 ]
+      }
+    }
+  }
+}
+4x4 = 16
+4x3 = 20
+4x2 = 24
+4x1 = 28

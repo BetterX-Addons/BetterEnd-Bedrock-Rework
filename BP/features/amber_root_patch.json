@@ -7,14 +7,14 @@
     "places_feature": "betterend:amber_root_single",
     "distribution": {
       "iterations": 25,
-      "x": { 
+      "x": {
         "distribution": "gaussian",
-        "extent": [ 0, 5 ]
+        "extent": [ -5, 5 ]
       },
       "y": "query.heightmap(variable.worldx, variable.worldz)",
-      "z": { 
+      "z": {
         "distribution": "gaussian",
-        "extent": [ 0, 5 ]
+        "extent": [ -5, 5 ]
       }
     }
   }

@@ -7,8 +7,6 @@
     "places_block": "betterend:flavolite",
     "enforce_survivability_rules": false,
     "enforce_placement_rules": false,
-    "may_replace": [
-      "minecraft:end_stone"
-    ]
+    "may_replace": [ "minecraft:end_stone" ]
   }
 }

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "betterend:dust_wastenlands/end_stone_dust"
+    },
+    "places_block": "diorite",
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false
+  }
+}

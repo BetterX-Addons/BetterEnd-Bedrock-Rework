@@ -1,0 +1,43 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:shears"
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "betterend:tail_moss",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "silk_touch",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "betterend:tail_moss",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

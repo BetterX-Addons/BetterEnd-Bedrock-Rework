@@ -5,39 +5,15 @@
       "identifier": "betterend:pink_moss",
       "menu_category": {
         "category": "nature"
-      },
-      "states": {
-        "betterend:biomes": [
-          "none",
-          "blossoming_spire"
-        ]
-      }      
-    },
-    "permutations": [
-      {
-        "condition": "q.block_state('betterend:biomes') == 'none'",
-        "components": {
-          "tag:none": {}
-        }
-      },
-      {
-        "condition": "q.block_state('betterend:biomes') == 'blossoming_spire'",
-        "components": {
-          "tag:blossoming_spire": {}
-        }
       }
-    ],
+    },
     "components": {
-      "betterend:grass_block": {
-        "feature": "betterend:bonemeal_amber_moss",
-        "shovel_block": "betterend:pink_moss_path"
-      },
-      "minecraft:display_name": "Pink Moss",
+      "betterend:grass_block": {},
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 0.5
+        "explosion_resistance": 8
       },
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1
+        "seconds_to_destroy": 8
       },
       "minecraft:flammable": false,
       "minecraft:map_color": "#b35b00",

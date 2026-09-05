@@ -153,3 +153,4 @@ export function setGateOpenState(block, params = {}) {
     const soundToPlay = newState ? open_sound : close_sound;
     if (soundToPlay) block.dimension.playSound(soundToPlay, block.location);
 }
+

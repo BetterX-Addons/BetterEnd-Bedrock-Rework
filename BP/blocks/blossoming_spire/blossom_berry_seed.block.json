@@ -1,0 +1,172 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:blossom_berry_seed",
+      "states": {
+        "betterend:age": [ 0, 1, 2, 3 ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:age') == 0",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/blossom_berry_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 8, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:blossom_berry_seed_0",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 1",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/blossom_berry_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 8, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:blossom_berry_seed_1",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 2",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/blossom_berry_seed_age_0_1_2.json",
+          "minecraft:geometry": "geometry.cross_no_distortion",
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 8, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:blossom_berry_seed_2",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:age') == 3",
+        "components": {
+          "minecraft:loot": "loot_tables/blocks/blossom_berry_seed_age_3.json",
+          "minecraft:geometry": "geometry.blossom_berry",
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 8, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:blossom_berry_flower",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            },
+            "blossom_berry_stem": {
+              "texture": "betterend:blossom_berry_stem",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            },
+            "blossom_berry_flower": {
+              "texture": "betterend:blossom_berry_flower",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            },
+            "blossom_berry_fruit": {
+              "texture": "betterend:blossom_berry_fruit",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "betterend:age": {
+        "max_size": 3,
+        "random_chance": 0.5,
+        "bone_meal_chance": 0.5
+      },
+      "minecraft:map_color": "#000000",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:collision_box": false,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "betterend:pink_moss" 
+            ]
+          }
+        ]
+      },
+      "minecraft:random_offset": {
+        "x": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        },
+        "z": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        }
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": false,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      },
+      "minecraft:tags": [
+        "minecraft:is_shears_item_destructible",
+        "plant"
+      ]
+    }
+  }
+}

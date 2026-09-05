@@ -1,24 +1,20 @@
 {
   "pools": [
     {
-      "rolls": 1,
       "conditions": [
         {
-          "condition": "any_of",
-          "terms": [
+          "condition": "match_tool",
+          "enchantments": [
             {
-              "condition": "match_tool",
-              "enchantments": [
-                {
-                  "silk_touch": {
-                    "level": 1
-                  }
-                }
-              ]
+              "enchantment": "silk_touch",
+              "levels": {
+                "min": 1
+              }
             }
           ]
         }
       ],
+      "rolls": 1,
       "entries": [
         {
           "type": "item",

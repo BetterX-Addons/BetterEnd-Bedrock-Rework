@@ -23,13 +23,15 @@
           "render_method": "opaque"
         }
       },
-      "minecraft:geometry": "geometry.path",
-      "minecraft:display_name": "Amber Moss Path",
+      "minecraft:geometry": {
+        "identifier": "geometry.path",
+        "culling": "betterend:path_culling"
+      },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 0.5
+        "explosion_resistance": 8
       },
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1
+        "seconds_to_destroy": 8
       },
       "minecraft:collision_box": {
         "size": [ 16, 15, 16 ],

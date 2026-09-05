@@ -7,12 +7,12 @@
     "places_block": {
       "name": "betterend:lanceleaf_seed",
       "states": {
-        "betterend:growth":  5
+        "betterend:growth": 5
       }
     },
     "enforce_survivability_rules": true,
     "enforce_placement_rules": true,
-    "may_replace": [
+    "may_replace": [ 
       "minecraft:air"
     ],
     "may_attach_to": {
@@ -20,7 +20,7 @@
         {
           "name": "betterend:lanceleaf_seed",
           "states": {
-            "betterend:growth":  4
+            "betterend:growth": 4
           }
         }
       ]

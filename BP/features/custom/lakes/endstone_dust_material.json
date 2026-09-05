@@ -4,12 +4,7 @@
     "description": {
       "identifier": "betterend:custom/lakes/endstone_dust_material"
     },
-    "places_block": {
-      "name": "betterend:endstone_dust",
-      "states": {
-        "betterend:biomes": "none"
-      }
-    },
+    "places_block": "betterend:endstone_dust",
     "enforce_survivability_rules": false,
     "enforce_placement_rules": false
   }

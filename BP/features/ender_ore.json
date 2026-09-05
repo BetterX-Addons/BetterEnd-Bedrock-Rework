@@ -10,9 +10,7 @@
       {
         "places_block": "betterend:ender_ore",
         "may_replace": [
-          {
-            "name": "minecraft:end_stone"
-          }
+          "minecraft:end_stone"
         ]
       }
     ]

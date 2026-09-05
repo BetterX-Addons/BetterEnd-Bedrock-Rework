@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:mountains/crystal_column"
+    },
+    "places_feature": "betterend:mountains/fix_surface",
+    "distribution": {
+      "iterations": "temp.terrain = variable.originy > 0 ? (math.sqrt(math.abs(math.sqrt(temp.d1) - math.sqrt(temp.d2))) * ((temp.index == 3) ? 1 : 0) * (q.noise(variable.originx / 64, variable.originz / 64) * 16 + (1 - math.abs(q.noise(variable.originx / 32, variable.originz / 32))) * 6 + q.noise(variable.originx / 32, variable.originz / 32) * 2)) : 0; return temp.terrain;",
+      "x": 0,
+      "y": {
+        "distribution": "fixed_grid",
+        "extent": [ 0, "temp.terrain" ]
+      },
+      "z": 0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "betterend:orango",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.flower"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": "betterend:orango",
+      "minecraft:compostable": {
+        "composting_chance": 100
+      },
+      "minecraft:block_placer": {
+        "block": "betterend:orango",
+        "replace_block_item": true
+      }
+    }
+  }
+}

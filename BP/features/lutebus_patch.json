@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:lutebus_patch"
+    },
+    "places_feature": "betterend:lutebus_single",
+    "distribution": {
+      "iterations": 40,
+      "x": {
+        "distribution": "gaussian",
+        "extent": [ -5, 5 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [ -5, 5 ]
+      }
+    }
+  }
+}

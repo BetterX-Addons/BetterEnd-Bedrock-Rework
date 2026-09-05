@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:amaranita_lantern",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.mushroom"
+      }
+    },
+    "components": {
+      "minecraft:light_emission": 15,
+      "minecraft:map_color": "#7c3d2d",
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.5
+      },
+      "minecraft:support": {
+        "shape": "stair"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "tag:wood": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "minecraft:loot": "loot_tables/blocks/amaranita_lantern.json"
+    }
+  }
+}

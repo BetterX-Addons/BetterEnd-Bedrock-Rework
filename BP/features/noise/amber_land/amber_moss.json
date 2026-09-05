@@ -4,12 +4,7 @@
     "description": {
       "identifier": "betterend:amber_land/amber_moss"
     },
-    "places_block": {
-      "name": "betterend:amber_moss",
-      "states": {
-        "betterend:biomes": "amber_land"
-      }
-    },
+    "places_block": "betterend:amber_moss",
     "enforce_survivability_rules": false,
     "enforce_placement_rules": false
   }

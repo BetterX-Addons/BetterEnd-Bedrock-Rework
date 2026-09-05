@@ -14,10 +14,7 @@
         "block": "betterend:helix_tree_door",
         "replace_block_item": true
       },
-      "minecraft:icon": "betterend:helix_tree_door",
-      "minecraft:display_name": {
-        "value": "Helix Tree Door"
-      }
+      "minecraft:icon": "betterend:helix_tree_door"
     }
   }
 }

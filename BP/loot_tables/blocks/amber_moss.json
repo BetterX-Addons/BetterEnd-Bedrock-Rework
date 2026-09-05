@@ -5,14 +5,11 @@
       "conditions": [
         {
           "condition": "match_tool",
-          "minecraft:match_tool_filter_all": [
-            "minecraft:is_tool",
-            "minecraft:is_pickaxe"
-          ],
           "enchantments": [
             {
-              "silk_touch": {
-                "level": 1
+              "enchantment": "silk_touch",
+              "levels": {
+                "min": 1
               }
             }
           ]
@@ -21,7 +18,8 @@
       "entries": [
         {
           "type": "item",
-          "name": "betterend:amber_moss"
+          "name": "betterend:amber_moss",
+          "count": 1
         }
       ]
     },
@@ -40,15 +38,7 @@
         {
           "type": "item",
           "name": "minecraft:end_stone",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "explosion_decay"
-            }
-          ]
+          "count": 1
         }
       ]
     }

@@ -4,19 +4,35 @@
     "description": {
       "identifier": "betterend:amber_root_single"
     },
-    "places_block": {
-      "name": "betterend:amber_root_seed",
-      "states": {
-        "betterend:growth": 3
+    "places_block": [
+      {
+        "block": {
+          "name": "betterend:amber_root_seed",
+          "states": {
+            "betterend:age": 3,
+            "betterend:random": 0
+          }
+        },
+        "weight": 1
+      },
+      {
+        "block": {
+          "name": "betterend:amber_root_seed",
+          "states": {
+            "betterend:age": 3,
+            "betterend:random": 1
+          }
+        },
+        "weight": 1
       }
-    },
+    ],
+    "enforce_survivability_rules": false,
     "enforce_placement_rules": true,
-    "enforce_survivability_rules": true,
     "may_replace": [
       "minecraft:air"
     ],
     "may_attach_to": {
-      "bottom": [
+      "bottom": [ 
         "betterend:amber_moss"
       ]
     }

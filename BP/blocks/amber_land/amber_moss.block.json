@@ -5,39 +5,15 @@
       "identifier": "betterend:amber_moss",
       "menu_category": {
         "category": "nature"
-      },
-      "states": {
-        "betterend:biomes": [
-          "none",
-          "amber_land"
-        ]
-      }      
-    },
-    "permutations": [
-      {
-        "condition": "q.block_state('betterend:biomes') == 'none'",
-        "components": {
-          "tag:none": {}
-        }
-      },
-      {
-        "condition": "q.block_state('betterend:biomes') == 'amber_land'",
-        "components": {
-          "tag:amber_land": {}
-        }
       }
-    ],
+    },
     "components": {
-      "betterend:grass_block": {
-        "feature": "betterend:bonemeal_amber_moss",
-        "shovel_block": "betterend:amber_moss_path"
-      },
-      "minecraft:display_name": "Amber Moss",
+      "betterend:grass_block": {},
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 0.5
+        "explosion_resistance": 8
       },
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1
+        "seconds_to_destroy": 8
       },
       "minecraft:flammable": false,
       "minecraft:map_color": "#b35b00",

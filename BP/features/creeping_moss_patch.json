@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:creeping_moss_patch"
+    },
+    "places_feature": "betterend:creeping_moss_single",
+    "distribution": {
+      "iterations": 45,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ -5, 5 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ -5, 5 ]
+      }
+    }
+  }
+}

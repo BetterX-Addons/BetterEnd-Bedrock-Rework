@@ -9,7 +9,7 @@
     "replace_rules": [
       {
         "places_block": "betterend:amber_ore",
-        "may_replace": [
+        "may_replace": [ 
           "minecraft:end_stone"
         ]
       }

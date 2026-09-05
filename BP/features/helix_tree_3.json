@@ -6,6 +6,7 @@
     },
     "structure_name": "mystructure:amber_land/helix_tree3",
     "facing_direction": "random",
+    "adjustment_radius": 1,
     "constraints": {
       "grounded": {},
       "block_intersection": {

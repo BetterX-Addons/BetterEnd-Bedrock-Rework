@@ -20,7 +20,7 @@ const SignRotationBlockComponent = {
         const playerYRotation = player.getRotation().y;
         const rotation = getPreciseRotation(playerYRotation);
 
-        event.permutationToPlace = event.permutationToPlace.withState("wiki:rotation", rotation);
+        event.permutationToPlace = event.permutationToPlace.withState("betterend:rotation", rotation);
     },
 };
 
@@ -47,7 +47,7 @@ const HangingSignRotationBlockComponent = {
         const rotation = getPreciseRotation(playerYRotation);
 
 
-        event.permutationToPlace = event.permutationToPlace.withState("wiki:rotation", rotation);
+        event.permutationToPlace = event.permutationToPlace.withState("betterend:rotation", rotation);
     },
 };
 

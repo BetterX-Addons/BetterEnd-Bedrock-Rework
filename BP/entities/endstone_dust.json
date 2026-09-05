@@ -97,9 +97,7 @@
           ]
         },
         "add": {
-          "component_groups": [
-            "custom:on_ground"
-          ]
+          "component_groups": [ "custom:on_ground" ]
         }
       },
       "turnIntoBlock:event": {

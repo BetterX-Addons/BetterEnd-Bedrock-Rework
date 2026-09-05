@@ -1,11 +1,11 @@
-import { EquipmentSlot } from "@minecraft/server";
+import { EquipmentSlot, GameMode } from "@minecraft/server";
 const boneMeal = "minecraft:bone_meal";
 const growthParticle = "minecraft:crop_growth_emitter";
 export const seedPlantComponent = {
   onRandomTick({ block }, { params }) {
     const max = params.max_size;
     const chance = params.random_chance ?? 0.5;
-    const growth = block.permutation.getState("betterend:growth");
+    const growth = block.permutation.getState("betterend:age");
     if (growth >= max) return;
     if (Math.random() > chance) return;
     setSize(block, growth);
@@ -14,7 +14,8 @@ export const seedPlantComponent = {
     const equipment = player?.getComponent("equippable");
     const item = equipment?.getEquipment(EquipmentSlot.Mainhand);
     if (item?.typeId !== boneMeal) return;
-    const growth = block.permutation.getState("betterend:growth");
+    const isCreative = player.getGameMode() === GameMode.Creative;
+    const growth = block.permutation.getState("betterend:age");
     const max = params.max_size;
     const chance = params.bone_meal_chance ?? 0.5;
     if (growth >= max) {
@@ -22,11 +23,13 @@ export const seedPlantComponent = {
       return;
     }
     spawnParticles(block);
-    if (item.amount <= 1) {
-      equipment?.setEquipment(EquipmentSlot.Mainhand, undefined);
-    } else {
-      item.amount -= 1;
-      equipment?.setEquipment(EquipmentSlot.Mainhand, item);
+    if (!isCreative) {
+      if (item.amount <= 1) {
+        equipment?.setEquipment(EquipmentSlot.Mainhand, undefined);
+      } else {
+        item.amount -= 1;
+        equipment?.setEquipment(EquipmentSlot.Mainhand, item);
+      }
     }
     if (Math.random() > chance) return;
     setSize(block, growth);
@@ -40,7 +43,6 @@ function spawnParticles(block) {
     z: loc.z + 0.5
   });
 }
-
 function setSize(block, growth) {
-  block.setPermutation(block.permutation.withState("betterend:growth", growth + 1));
+  block.setPermutation(block.permutation.withState("betterend:age", growth + 1));
 }

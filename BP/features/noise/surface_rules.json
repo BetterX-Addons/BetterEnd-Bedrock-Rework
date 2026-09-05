@@ -7,7 +7,21 @@
     "features": [
       "betterend:amber_land/amber_land_condition",
       "betterend:blossoming_spire/blossoming_spire_condition",
-      "betterend:chorus_forest/chorus_forest_condition"
+      "betterend:chorus_forest/chorus_forest_condition",
+      "betterend:mountains/crystal_column",
+      "betterend:dragon_graveyards/dragon_graveyards_condition",
+      "betterend:dry_shrubland/dry_shrubland_condition",
+      "betterend:dust_wastenlands/dust_wastenlands_condition",
+      "betterend:foggy_mushroomland/foggy_mushroomland_condition",
+      "betterend:glowing_grasslands/glowing_grasslands_condition",
+      "betterend:lantern_woods/lantern_woods_condition",
+      "betterend:megalake_grove/megalake_grove_condition",
+      "betterend:neon_oasis/neon_oasis_condition",
+      "betterend:painted_mountains/painted_mountains_condition",
+      "betterend:shadow_forest/shadow_forest_condition",
+      "betterend:sulphur_springs/sulphur_springs_condition",
+      "betterend:umbra_valley/umbra_valley_condition",
+      "betterend:umbrella_jungle/umbrella_jungle_condition"
     ]
   }
 }

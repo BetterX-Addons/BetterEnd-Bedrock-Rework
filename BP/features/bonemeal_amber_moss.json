@@ -7,17 +7,17 @@
     "places_feature": "betterend:amber_grass_single",
     "distribution": {
       "iterations": 9,
-      "x": { 
+      "x": {
         "distribution": "gaussian",
-        "extent": [ -1, 2 ] 
+        "extent": [ -3, 3 ]
       },
-      "y": { 
+      "y": {
         "distribution": "gaussian",
-        "extent": [ -1, 1 ] 
+        "extent": [ -1, 1 ]
       },
-      "z": { 
+      "z": {
         "distribution": "gaussian",
-        "extent": [ -1, 2 ] 
+        "extent": [ -3, 3 ]
       }
     }
   }

@@ -16,14 +16,18 @@
           "default": 75
         },
         "minecraft:density_limit": {
-          "surface":20
+          "surface": 20
         },
         "minecraft:herd": {
-          "min_size":1,
-          "max_size":2
+          "min_size": 1,
+          "max_size": 2
         },
         "minecraft:biome_filter": [
-          {"test": "has_biome_tag", "operator":"==", "value": "the_end"}
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "the_end"
+          }
         ]
       }
     ]

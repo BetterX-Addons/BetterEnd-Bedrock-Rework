@@ -1,0 +1,144 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:globulagus",
+      "states": {
+        "betterend:random": [ 0, 1, 2, 3 ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:random') == 0",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -6.5, 0, -6.5 ],
+            "size": [ 13, 11, 13 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:globulagus",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          },
+          "minecraft:geometry": "geometry.crop_block"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 1",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -6.5, 0, -6.5 ],
+            "size": [ 13, 11, 13 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:globulagus",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          },
+          "minecraft:geometry": "geometry.crop_block_inverted"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 2",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 10, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:globulagus",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          },
+          "minecraft:geometry": "geometry.cross"
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:random') == 3",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -4, 0, -4 ],
+            "size": [ 8, 10, 8 ]
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:globulagus",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": false,
+              "face_dimming": false,
+              "emissive": true
+            }
+          },
+          "minecraft:geometry": "geometry.cross_inverted"
+        }
+      }
+    ],
+    "components": {
+      "tag:minecraft:is_shears_item_destructible": {},
+      "betterend:random": {
+        "max_states": 4
+      },
+      "betterend:bonemeal_drop": {},
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/blocks/globulagus.json",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:movable": {
+        "movement_type": "popped"
+      },
+      "minecraft:replaceable": {},
+      "minecraft:collision_box": false,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "up" ],
+            "block_filter": [ "betterend:sangnum" ]
+          }
+        ]
+      },
+      "minecraft:random_offset": {
+        "x": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        },
+        "z": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        }
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": false,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      }
+    }
+  }
+}

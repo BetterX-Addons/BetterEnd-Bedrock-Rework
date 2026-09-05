@@ -7,22 +7,17 @@
     "places_block": {
       "name": "betterend:lanceleaf_seed",
       "states": {
-        "betterend:growth":  4
+        "betterend:growth": 4
       }
     },
     "enforce_survivability_rules": true,
     "enforce_placement_rules": true,
-    "may_replace": [
-      "minecraft:air"
+    "may_replace": [ 
+      "minecraft:air" 
     ],
     "may_attach_to": {
-      "bottom": [
-        {
-          "name": "betterend:amber_moss",
-          "states": {
-            "betterend:biomes": "amber_land"
-          }
-        }
+      "bottom": [ 
+        "betterend:amber_moss" 
       ]
     }
   }

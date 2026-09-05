@@ -7,8 +7,10 @@
         "betterend:random": [ 0, 1, 2 ]
       },
       "traits": {
-        "minecraft:placement_direction": {
-          "enabled_states": [ "minecraft:facing_direction" ]
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
         }
       }
     },
@@ -16,36 +18,23 @@
       {
         "condition": "q.block_state('betterend:random') == 0",
         "components": {
-          "minecraft:geometry": "geometry.bulb_moss_01"
+          "minecraft:geometry": "geometry.glowing_pillar_leaves_01"
         }
       },
       {
         "condition": "q.block_state('betterend:random') == 1",
         "components": {
-          "minecraft:geometry": "geometry.bulb_moss_02"
+          "minecraft:geometry": "geometry.glowing_pillar_leaves_02"
         }
       },
       {
         "condition": "q.block_state('betterend:random') == 2",
         "components": {
-          "minecraft:geometry": "geometry.bulb_moss_03"
+          "minecraft:geometry": "geometry.glowing_pillar_leaves_03"
         }
       },
       {
-        "condition": "q.block_state('minecraft:facing_direction') == 'down'",
-        "components": {
-          "minecraft:selection_box": {
-            "origin": [ -8, 0, -8 ],
-            "size": [ 16, 6, 16 ]
-          },
-          "minecraft:geometry": "geometry.glowing_pillar_leaves_up",
-          "minecraft:transformation": {
-            "rotation": [ 0, 0, 0 ]
-          }
-        }
-      },
-      {
-        "condition": "q.block_state('minecraft:facing_direction') == 'up'",
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, -8 ],
@@ -58,7 +47,20 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:facing_direction') == 'north'",
+        "condition": "q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [ -8, 0, -8 ],
+            "size": [ 16, 6, 16 ]
+          },
+          "minecraft:geometry": "geometry.glowing_pillar_leaves_up",
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'north'",
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, 2 ],
@@ -70,7 +72,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:facing_direction') == 'south'",
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, 2 ],
@@ -82,7 +84,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:facing_direction') == 'east'",
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, 2 ],
@@ -94,7 +96,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:facing_direction') == 'west'",
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:selection_box": {
             "origin": [ -8, 0, 2 ],
@@ -111,7 +113,7 @@
       "betterend:random": {
         "max_states": 3
       },
-      "minecraft:geometry": "geometry.bulb_moss_01",
+      "minecraft:geometry": "geometry.glowing_pillar_leaves_01",
       "minecraft:material_instances": {
         "*": {
           "texture": "betterend:glowing_pillar_leaves",
@@ -125,6 +127,7 @@
         "origin": [ -8, 0, 0 ],
         "size": [ 16, 16, 8 ]
       },
+      "minecraft:collision_box": false,
       "minecraft:loot": "loot_tables/blocks/glowing_pillar_leaves.json",
       "minecraft:map_color": "#ffb300",
       "minecraft:placement_filter": {
@@ -136,7 +139,6 @@
           }
         ]
       },
-      "minecraft:collision_box": false,
       "minecraft:destructible_by_explosion": true,
       "minecraft:destructible_by_mining": true,
       "minecraft:light_emission": 15,
@@ -144,7 +146,7 @@
         "detection_rules": [
           {
             "liquid_type": "water",
-            "can_contain_liquid": true,
+            "can_contain_liquid": false,
             "on_liquid_touches": "broken"
           }
         ]

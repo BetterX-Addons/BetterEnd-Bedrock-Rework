@@ -3,7 +3,7 @@
   "header": {
     "name": "BetterEnd BP",
     "description": "By BetterX Addons",
-    "min_engine_version": [ 1, 26, 0 ],
+    "min_engine_version": [ 1, 26, 40 ],
     "uuid": "ee3b63c5-87df-4f29-bec1-4222e5cc5c26",
     "version": [ 1, 0, 0 ],
     "pack_scope": "world"
@@ -33,7 +33,7 @@
     },
     {
       "module_name": "@minecraft/server-ui",
-      "version": "2.0.0"
+      "version": "2.1.0"
     }
   ],
   "metadata": {

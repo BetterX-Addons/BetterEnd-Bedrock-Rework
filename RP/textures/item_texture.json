@@ -2,14 +2,143 @@
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.items",
   "texture_data": {
+    "betterend:purple_polypore": {
+      "textures": "textures/items/purple_polypore"
+    },
+    "betterend:tenanea_outer_leaves": {
+      "textures": "textures/blocks/tenanea_outer_leaves"
+    },
+    "betterend:amaranita_fur": {
+      "textures": "textures/blocks/amaranita_fur"
+    },
+    "betterend:tail_moss": {
+      "textures": "textures/blocks/tail_moss"
+    },
+    "betterend:twisted_moss": {
+      "textures": "textures/blocks/twisted_moss"
+    },
+    "betterend:chorus_mushroom_seed": {
+      "textures": "textures/items/chorus_mushroom_seed"
+    },
+    "betterend:chorus_mushroom_raw": {
+      "textures": "textures/items/chorus_mushroom_raw"
+    },
+    "betterend:blossom_berry_seed": {
+      "textures": "textures/items/blossom_berry_seed"
+    },
+    "betterend:blossom_berry": {
+      "textures": "textures/items/blossom_berry"
+    },
+     "betterend:blossom_berry_jelly": {
+      "textures": "textures/items/blossom_berry_jelly"
+    },
+    "betterend:end_lotus_door": {
+      "textures": "textures/items/end_lotus_door"
+    },
+    "betterend:end_lotus_sign": {
+      "textures": "textures/items/end_lotus_sign"
+    },
+    "betterend:end_lotus_hanging_sign": {
+      "textures": "textures/items/end_lotus_hanging_sign"
+    },
+    "betterend:tenanea_ladder": {
+      "textures": "textures/blocks/tenanea_ladder"
+    },
+    "betterend:pythadendron_ladder": {
+      "textures": "textures/blocks/pythadendron_ladder"
+    },
+    "betterend:mossy_glowshroom_ladder": {
+      "textures": "textures/blocks/mossy_glowshroom_ladder"
+    },
+    "betterend:jellyshroom_ladder": {
+      "textures": "textures/blocks/jellyshroom_ladder"
+    },
+    "betterend:umbrella_tree_ladder": {
+      "textures": "textures/blocks/umbrella_tree_ladder"
+    },
+    "betterend:lacugrove_ladder": {
+      "textures": "textures/blocks/lacugrove_ladder"
+    },
+    "betterend:dragon_tree_ladder": {
+      "textures": "textures/blocks/dragon_tree_ladder"
+    },
+    "betterend:end_lotus_ladder": {
+      "textures": "textures/blocks/end_lotus_ladder"
+    },
+    "betterend:lucernia_ladder": {
+      "textures": "textures/blocks/lucernia_ladder"
+    },
+    "betterend:globulagus": {
+      "textures": "textures/blocks/globulagus"
+    },
+    "betterend:creeping_moss": {
+      "textures": "textures/items/creeping_moss"
+    },
+    "betterend:lutebus": {
+      "textures": "textures/blocks/lutebus"
+    },
+    "betterend:lamellarium": {
+      "textures": "textures/blocks/lamellarium"
+    },
+    "betterend:aeridium": {
+      "textures": "textures/blocks/aeridium"
+    },
+    "betterend:orango": {
+      "textures": "textures/blocks/orango"
+    },
+    "betterend:small_amaranita_mushroom": {
+      "textures": "textures/items/small_amaranita_mushroom"
+    },
+    "betterend:clawfern": {
+      "textures": "textures/blocks/clawfern"
+    },
+    "betterend:crystal_grass": {
+      "textures": "textures/blocks/crystal_grass_5"
+    },
+    "betterend:crystal_moss_cover": {
+      "textures": "textures/blocks/crystal_moss_cover"
+    },
+    "betterend:bushy_grass": {
+      "textures": "textures/blocks/bushy_grass_1"
+    },
+    "betterend:flammalix": {
+      "textures": "textures/items/flammalix"
+    },
+    "betterend:inflexia": {
+      "textures": "textures/blocks/inflexia"
+    },
+    "betterend:chorus_grass": {
+      "textures": "textures/blocks/chorus_grass_01"
+    },
     "betterend:charnia_cyan": {
-      "textures": "textures/blocks/charnia_cyan"
+      "textures": "textures/items/charnia_cyan"
+    },
+    "betterend:charnia_green": {
+      "textures": "textures/items/charnia_green"
+    },
+    "betterend:charnia_purple": {
+      "textures": "textures/items/charnia_purple"
+    },
+    "betterend:charnia_orange": {
+      "textures": "textures/items/charnia_orange"
+    },
+    "betterend:charnia_red": {
+      "textures": "textures/items/charnia_red"
+    },
+    "betterend:charnia_light_blue": {
+      "textures": "textures/items/charnia_light_blue"
     },
     "betterend:amber_grass": {
       "textures": "textures/blocks/amber_grass"
     },
+    "betterend:glowing_pillar_leaves": {
+      "textures": "textures/blocks/glowing_pillar_leaves"
+    },
     "betterend:raw_amber": {
       "textures": "textures/items/raw_amber"
+    },
+    "betterend:helix_tree_ladder": {
+      "textures": "textures/blocks/helix_tree_ladder"
     },
     "betterend:helix_tree_sign": {
       "textures": "textures/items/helix_tree_sign"
@@ -25,6 +154,120 @@
     },
     "betterend:ender_shard": {
       "textures": "textures/items/ender_shard"
+    },
+    "betterend:crystal_shards": {
+      "textures": "textures/items/crystal_shards"
+    },
+    "betterend:bulb_moss": {
+      "textures": "textures/blocks/bulb_moss_leaves"
+    },
+    "betterend:amber_root_seed": {
+      "textures": "textures/items/amber_root_seed"
+    },
+    "betterend:amber_root_raw": {
+      "textures": "textures/items/amber_root_raw"
+    },
+    "betterend:glowing_pillar_seed": {
+      "textures": "textures/items/glowing_pillar_seed"
+    },
+    "betterend:lanceleaf_seed": {
+      "textures": "textures/items/lanceleaf_seed"
+    },
+    "betterend:helix_tree_sapling": {
+      "textures": "textures/blocks/helix_tree_sapling"
+    },
+    "betterend:tenanea_door": {
+      "textures": "textures/items/tenanea_door"
+    },
+    "betterend:tenanea_sign": {
+      "textures": "textures/items/tenanea_sign"
+    },
+    "betterend:tenanea_hanging_sign": {
+      "textures": "textures/items/tenanea_hanging_sign"
+    },
+    "betterend:tenanea_sapling": {
+      "textures": "textures/blocks/tenanea_sapling"
+    },
+    "betterend:pythadendron_door": {
+      "textures": "textures/items/pythadendron_door"
+    },
+    "betterend:pythadendron_sign": {
+      "textures": "textures/items/pythadendron_sign"
+    },
+    "betterend:pythadendron_hanging_sign": {
+      "textures": "textures/items/pythadendron_hanging_sign"
+    },
+    "betterend:pythadendron_sapling": {
+      "textures": "textures/blocks/pythadendron_sapling"
+    },
+    "betterend:mossy_glowshroom_door": {
+      "textures": "textures/items/mossy_glowshroom_door"
+    },
+    "betterend:mossy_glowshroom_sign": {
+      "textures": "textures/items/mossy_glowshroom_sign"
+    },
+    "betterend:mossy_glowshroom_hanging_sign": {
+      "textures": "textures/items/mossy_glowshroom_hanging_sign"
+    },
+    "betterend:mossy_glowshroom_sapling": {
+      "textures": "textures/blocks/mossy_glowshroom_sapling"
+    },
+    "betterend:lucernia_door": {
+      "textures": "textures/items/lucernia_door"
+    },
+    "betterend:lucernia_sign": {
+      "textures": "textures/items/lucernia_sign"
+    },
+    "betterend:lucernia_hanging_sign": {
+      "textures": "textures/items/lucernia_hanging_sign"
+    },
+    "betterend:lucernia_sapling": {
+      "textures": "textures/blocks/lucernia_sapling"
+    },
+    "betterend:lacugrove_door": {
+      "textures": "textures/items/lacugrove_door"
+    },
+    "betterend:lacugrove_sign": {
+      "textures": "textures/items/lacugrove_sign"
+    },
+    "betterend:lacugrove_hanging_sign": {
+      "textures": "textures/items/lacugrove_hanging_sign"
+    },
+    "betterend:lacugrove_sapling": {
+      "textures": "textures/blocks/lacugrove_sapling"
+    },
+    "betterend:dragon_tree_door": {
+      "textures": "textures/items/dragon_tree_door"
+    },
+    "betterend:dragon_tree_sign": {
+      "textures": "textures/items/dragon_tree_sign"
+    },
+    "betterend:dragon_tree_hanging_sign": {
+      "textures": "textures/items/dragon_tree_hanging_sign"
+    },
+    "betterend:dragon_tree_sapling": {
+      "textures": "textures/blocks/dragon_tree_sapling"
+    },
+    "betterend:umbrella_tree_door": {
+      "textures": "textures/items/umbrella_tree_door"
+    },
+    "betterend:umbrella_tree_sign": {
+      "textures": "textures/items/umbrella_tree_sign"
+    },
+    "betterend:umbrella_tree_hanging_sign": {
+      "textures": "textures/items/umbrella_tree_hanging_sign"
+    },
+    "betterend:umbrella_tree_sapling": {
+      "textures": "textures/blocks/umbrella_tree_sapling"
+    },
+    "betterend:jellyshroom_door": {
+      "textures": "textures/items/jellyshroom_door"
+    },
+    "betterend:jellyshroom_sign": {
+      "textures": "textures/items/jellyshroom_sign"
+    },
+    "betterend:jellyshroom_hanging_sign": {
+      "textures": "textures/items/jellyshroom_hanging_sign"
     }
   }
 }

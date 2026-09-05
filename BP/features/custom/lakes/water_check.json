@@ -1,4 +1,4 @@
-{ 
+{
   "format_version": "1.26.0",
   "minecraft:scatter_feature": {
     "description": {
@@ -10,6 +10,6 @@
       "x": "-temp.radius",
       "y": "-temp.radius",
       "z": "-temp.radius"
-    } 
+    }
   }
 }

@@ -120,7 +120,7 @@
 				"sway_amplitude": 0.0
 			},
 			"minecraft:physics": {
-				"has_gravity": true
+				"has_gravity": false
 			},
 			"minecraft:pushable": {
 				"is_pushable": true,

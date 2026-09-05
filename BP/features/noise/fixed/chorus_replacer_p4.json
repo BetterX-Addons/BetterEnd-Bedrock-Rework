@@ -1,10 +1,10 @@
 {
   "format_version": "1.26.0",
   "minecraft:aggregate_feature": {
-    "description": { 
+    "description": {
       "identifier": "betterend:fixed/chorus_replacer_p4"
     },
-    "features": [ 
+    "features": [
       "betterend:fixed/chorus_replacer_p5",
       "betterend:fixed/chorus_replacer_p6",
       "betterend:fixed/chorus_replacer_p7",

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "betterend:aeridium",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.flower"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": "betterend:aeridium",
+      "minecraft:compostable": {
+        "composting_chance": 100
+      },
+      "minecraft:block_placer": {
+        "block": "betterend:aeridium",
+        "replace_block_item": true
+      }
+    }
+  }
+}

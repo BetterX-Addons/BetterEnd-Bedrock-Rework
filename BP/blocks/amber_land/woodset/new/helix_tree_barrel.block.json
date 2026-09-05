@@ -1,0 +1,137 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:helix_tree_barrel",
+      "states": {
+        "betterend:open": [ false, true ]
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [ "minecraft:block_face" ]
+        }
+      },
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "!q.block_state('betterend:open')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.barrel",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "north": {
+              "texture": "betterend:helix_tree_barrel_bottom",
+              "render_method": "opaque"
+            },
+            "south": {
+              "texture": "betterend:helix_tree_barrel_top",
+              "render_method": "opaque"
+            },
+            "east": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "west": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('betterend:open')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.barrel",
+            "culling": "betterend:block_culling"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "up": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "down": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "north": {
+              "texture": "betterend:helix_tree_barrel_bottom",
+              "render_method": "opaque"
+            },
+            "south": {
+              "texture": "betterend:helix_tree_barrel_top_open",
+              "render_method": "opaque"
+            },
+            "east": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            },
+            "west": {
+              "texture": "betterend:helix_tree_barrel_side",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north' || query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 90, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'west' || query.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 90 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'up' || query.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      }
+    ],
+    "components": {
+      "betterend:barrel": {},
+      "minecraft:map_color": "#6d3028",
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 5,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "tag:betterend:barrel": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
+  }
+}

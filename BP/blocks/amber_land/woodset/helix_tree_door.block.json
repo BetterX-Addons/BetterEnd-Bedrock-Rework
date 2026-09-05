@@ -18,42 +18,12 @@
         }
       }
     },
-    "components": {
-      "betterend:door_config": {
-        "open_sound": "open.cherry_wood_door",
-        "close_sound": "close.cherry_wood_door"
-      },
-      "minecraft:redstone_consumer": {
-        "min_power": 0,
-        "propogates_power": false
-      },
-      "minecraft:flammable": {
-        "destroy_chance_modifier": 5,
-        "catch_chance_modifier": 5
-      },
-      "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1.75
-      },
-      "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 15
-      },
-      "minecraft:support": {
-        "shape": "stair"
-      },
-      "minecraft:connection_rule": {
-        "accepts_connections_from": "none"
-      },
-      "tag:minecraft:is_axe_item_destructible": {},
-      "minecraft:loot": "loot_tables/empty.json",
-      "tag:one_way_collidable": {},
-      "tag:wood": {}
-    },
     "permutations": [
       {
         "condition": "query.block_state('betterend:upper_block_bit')== false",
         "components": {
           "minecraft:geometry": {
-            "identifier": "geometry.nb_door",
+            "identifier": "geometry.door",
             "bone_visibility": {
               "open": "query.block_state('betterend:open_bit')== true && query.block_state('betterend:door_hinge_bit')== false",
               "close": "query.block_state('betterend:open_bit')== false && query.block_state('betterend:door_hinge_bit')== false",
@@ -69,7 +39,7 @@
               "render_method": "alpha_test_single_sided"
             },
             "up": {
-              "texture": "blank",
+              "texture": "betterend:blank",
               "ambient_occlusion": true,
               "face_dimming": true,
               "render_method": "alpha_test_single_sided"
@@ -93,7 +63,7 @@
         "condition": "query.block_state('betterend:upper_block_bit')== true",
         "components": {
           "minecraft:geometry": {
-            "identifier": "geometry.nb_door",
+            "identifier": "geometry.door",
             "bone_visibility": {
               "open": "query.block_state('betterend:open_bit')== true && query.block_state('betterend:door_hinge_bit')== false",
               "close": "query.block_state('betterend:open_bit')== false && query.block_state('betterend:door_hinge_bit')== false",
@@ -109,7 +79,7 @@
               "render_method": "alpha_test_single_sided"
             },
             "down": {
-              "texture": "blank",
+              "texture": "betterend:blank",
               "ambient_occlusion": true,
               "face_dimming": true,
               "render_method": "alpha_test_single_sided"
@@ -206,6 +176,39 @@
           }
         }
       }
-    ]
+    ],
+    "components": {
+      "betterend:door_config": {
+        "open_sound": "random.door_open",
+        "close_sound": "random.door_close"
+      },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:redstone_consumer": {
+        "min_power": 0,
+        "propogates_power": false
+      },
+      "minecraft:flammable": {
+        "destroy_chance_modifier": 20,
+        "catch_chance_modifier": 5
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "can_contain_liquid": true,
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
+      "tag:one_way_collidable": {},
+      "tag:minecraft:is_axe_item_destructible": {},
+      "tag:wood": {}
+    }
   }
 }

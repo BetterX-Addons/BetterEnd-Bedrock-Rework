@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:amber_land_fog",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      }
+    },
+    "components": {
+      "tag:betterend:amber_land": {},
+      "tag:minecraft:not_feature_replaceable": {},
+      "minecraft:friction": 0.4,
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": false,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:blank",
+          "face_dimming": false,
+          "ambient_occlusion": false,
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:destructible_by_mining": false
+    }
+  }
+}

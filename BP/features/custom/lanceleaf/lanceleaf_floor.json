@@ -4,16 +4,8 @@
     "description": {
       "identifier": "betterend:lanceleaf_floor"
     },
-    "feature_to_snap": "betterend:lanceleaf_1", 
+    "feature_to_snap": "betterend:lanceleaf_full",
     "vertical_search_range": 12,
-    "surface": "floor",
-    "allowed_surface_blocks": [
-      {
-        "name": "betterend:amber_moss",
-        "states": {
-          "betterend:biomes": "amber_land"
-        }
-      }
-    ]
+    "surface": "floor"
   }
 }

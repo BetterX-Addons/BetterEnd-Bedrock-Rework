@@ -4,7 +4,7 @@
     "description": {
       "identifier": "betterend:fixed/chorus_replacer_p6"
     },
-    "places_feature":"betterend:fixed/chorus_replacer_p2",
+    "places_feature": "betterend:fixed/chorus_replacer_p2",
     "distribution": {
       "iterations": 1,
       "x": 1,

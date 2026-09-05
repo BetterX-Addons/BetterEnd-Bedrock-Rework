@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:bushy_grass_patch"
+    },
+    "places_feature": "betterend:bushy_grass_single",
+    "distribution": {
+      "iterations": 25,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ -5, 5 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ -5, 5 ]
+      }
+    }
+  }
+}

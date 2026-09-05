@@ -1,0 +1,70 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "betterend:small_amaranita_mushroom"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.small_amaranita_mushroom",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "betterend:small_amaranita_mushroom",
+          "render_method": "alpha_test_single_sided",
+          "ambient_occlusion": false,
+          "face_dimming": false,
+          "emissive": true
+        }
+      },
+      "tag:minecraft:is_shears_item_destructible": {},
+      "betterend:bonemeal_drop": {},
+      "minecraft:map_color": "#b35b00",
+      "minecraft:loot": "loot_tables/blocks/small_amaranita_mushroom.json",
+      "minecraft:destructible_by_explosion": true,
+      "minecraft:destructible_by_mining": true,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:movable": {
+        "movement_type": "popped"
+      },
+      "minecraft:replaceable": {},
+      "minecraft:collision_box": false,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [ "up" ],
+            "block_filter": [ "betterend:sangnum" ]
+          }
+        ]
+      },
+      "minecraft:random_offset": {
+        "x": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        },
+        "z": {
+          "range": {
+            "min": -2,
+            "max": 2
+          },
+          "steps": 8
+        }
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": false,
+            "on_liquid_touches": "broken"
+          }
+        ]
+      }
+    }
+  }
+}

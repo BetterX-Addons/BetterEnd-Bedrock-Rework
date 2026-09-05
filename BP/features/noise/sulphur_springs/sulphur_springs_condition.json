@@ -1,0 +1,15 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "betterend:sulphur_springs/sulphur_springs_condition"
+    },
+    "distribution": {
+      "iterations": "temp.x = variable.originx; temp.z = variable.originz; temp.value = (query.noise(temp.x * 0.03, temp.z * 0.03) + query.noise(temp.x * 0.1, temp.z * 0.1) * 0.3 + math.random(-0.1, 0.1) + 1.4) * 1.071; return temp.index == 12 && (temp.value < 0.857 ? 0 : temp.value < 1.178 ? 1 : temp.value < 2.036 ? 2 : 3);",
+      "x": 0,
+      "y": -1,
+      "z": 0
+    },
+    "places_feature": "betterend:sulphur_springs/sulphuric_rock"
+  }
+}
