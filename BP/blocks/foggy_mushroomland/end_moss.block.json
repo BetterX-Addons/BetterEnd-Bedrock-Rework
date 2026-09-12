@@ -5,8 +5,32 @@
       "identifier": "betterend:end_moss",
       "menu_category": {
         "category": "nature"
+      },
+      "states": {
+        "betterend:biome": [
+          "betterend:neon_oasis", "betterend:foggy_mushroomland", "betterend:megalakes",
+          "betterend:glowing_grasslands"
+        ]
       }
     },
+    "permutations": [
+      {
+        "condition": "q.block_state('betterend:biome') == 'betterend:neon_oasis'",
+        "components": { "tag:betterend:neon_oasis": {} }
+      },
+      {
+        "condition": "q.block_state('betterend:biome') == 'betterend:foggy_mushroomland'",
+        "components": { "tag:betterend:foggy_mushroomland": {} }
+      },
+      {
+        "condition": "q.block_state('betterend:biome') == 'betterend:megalakes'",
+        "components": { "tag:betterend:megalakes": {} }
+      },
+      {
+        "condition": "q.block_state('betterend:biome') == 'betterend:glowing_grasslands'",
+        "components": { "tag:betterend:glowing_grasslands": {} }
+      }
+    ],
     "components": {
       "betterend:grass_block": {},
       "minecraft:destructible_by_explosion": {
