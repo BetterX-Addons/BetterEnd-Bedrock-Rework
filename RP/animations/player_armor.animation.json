@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.armor.base.skybox": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "stars1"
+					},
+					{
+						"effect": "stars2"
+					},
+					{
+						"effect": "stars3"
+					},
+					{
+						"effect": "stars4"
+					}
+				]
+			}
+		}
+	}
+}
