@@ -55,7 +55,7 @@
 					"value": 3
 				}
 			},
-			"slime_megalake": {
+			"betterend:slime_megalake": {
 				"minecraft:behavior.move_to_block": {
 					"start_chance": 1,
 					"search_range": 32,
@@ -318,7 +318,7 @@
 					"component_groups": [
 						"betterend:slime_amber",
 						"betterend:slime_chorus",
-						"slime_megalake",
+						"betterend:slime_megalake",
 						"betterend:slime_normal"
 					]
 				}
@@ -333,7 +333,7 @@
 					"component_groups": [
 						"betterend:slime_foggy",
 						"betterend:slime_chorus",
-						"slime_megalake",
+						"betterend:slime_megalake",
 						"betterend:slime_normal"
 					]
 				}
@@ -348,15 +348,15 @@
 					"component_groups": [
 						"betterend:slime_amber",
 						"betterend:slime_foggy",
-						"slime_megalake",
+						"betterend:slime_megalake",
 						"betterend:slime_normal"
 					]
 				}
 			},
-			"slime_megalake": {
+			"betterend:slime_megalake": {
 				"add": {
 					"component_groups": [
-						"slime_megalake"
+						"betterend:slime_megalake"
 					]
 				},
 				"remove": {

@@ -13,12 +13,34 @@ export class EntityUtils {
         this.location = entity.location;
     }
 
-    sulphurVariant() {
-        if (this.typeId !== 'betterend:cubozoa'/*&& this.typeId !== 'betterend:end_fish'*/) return;
+    slimesTexture() {
+        if (this.typeId !== 'minecraft:slime') return;
         const events = {
             normal: "betterend:normal",
             sulphur: "betterend:sulphur"
         };
+    }
+
+    fishesTexture() {
+        if (this.typeId !== 'betterend:cubozoa'/*&& this.typeId !== 'betterend:end_fish'*/) return;
+        const conditions = [
+            {
+                block: "betterend:amber_moss",
+                texture: "betterend:slime_amber"
+            },
+            {
+                block: "betterend:end_moss",
+                texture: "betterend:slime_foggy"
+            },
+            {
+                block: "betterend:chorus_nylium",
+                texture: "betterend:slime_chorus"
+            },
+            {
+                block: "betterend:end_moss"
+            }
+            megalake: "betterend:slime_megalake",
+        ];
         const groundBlocks = [];
         for (let i = -1; i > -12; i--) {
             const offset = { x: this.location.x, y: this.location.y + i, z: this.location.z };

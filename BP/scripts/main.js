@@ -64,7 +64,8 @@ system.runInterval(() => {
       // ==========================================
 
       const utils = new EntityUtils(entity);
-      utils.sulphurVariant();
+      utils.fishesTexture();
+      utils.slimesTexture();
     }
   }
 }, 20);
