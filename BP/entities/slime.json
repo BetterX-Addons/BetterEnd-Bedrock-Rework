@@ -8,12 +8,12 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"slime_normal": {
+			"betterend:slime_normal": {
 				"minecraft:mark_variant": {
 					"value": 0
 				}
 			},
-			"slime_amber": {
+			"betterend:slime_amber": {
 				"minecraft:behavior.move_to_block": {
 					"start_chance": 1,
 					"search_range": 32,
@@ -27,7 +27,7 @@
 					"value": 1
 				}
 			},
-			"slime_chorus": {
+			"betterend:slime_chorus": {
 				"minecraft:behavior.move_to_block": {
 					"start_chance": 1,
 					"search_range": 32,
@@ -41,7 +41,7 @@
 					"value": 2
 				}
 			},
-			"slime_foggy": {
+			"betterend:slime_foggy": {
 				"minecraft:behavior.move_to_block": {
 					"start_chance": 1,
 					"search_range": 32,
@@ -308,48 +308,48 @@
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {
-			"slime_foggy": {
+			"betterend:slime_foggy": {
 				"add": {
 					"component_groups": [
-						"slime_foggy"
+						"betterend:slime_foggy"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"slime_amber",
-						"slime_chorus",
+						"betterend:slime_amber",
+						"betterend:slime_chorus",
 						"slime_megalake",
-						"slime_normal"
+						"betterend:slime_normal"
 					]
 				}
 			},
-			"slime_amber": {
+			"betterend:slime_amber": {
 				"add": {
 					"component_groups": [
-						"slime_amber"
+						"betterend:slime_amber"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"slime_foggy",
-						"slime_chorus",
+						"betterend:slime_foggy",
+						"betterend:slime_chorus",
 						"slime_megalake",
-						"slime_normal"
+						"betterend:slime_normal"
 					]
 				}
 			},
-			"slime_chorus": {
+			"betterend:slime_chorus": {
 				"add": {
 					"component_groups": [
-						"slime_chorus"
+						"betterend:slime_chorus"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"slime_amber",
-						"slime_foggy",
+						"betterend:slime_amber",
+						"betterend:slime_foggy",
 						"slime_megalake",
-						"slime_normal"
+						"betterend:slime_normal"
 					]
 				}
 			},
@@ -361,17 +361,17 @@
 				},
 				"remove": {
 					"component_groups": [
-						"slime_amber",
-						"slime_chorus",
-						"slime_foggy",
-						"slime_normal"
+						"betterend:slime_amber",
+						"betterend:slime_chorus",
+						"betterend:slime_foggy",
+						"betterend:slime_normal"
 					]
 				}
 			},
 			"minecraft:entity_born": {
 				"add": {
 					"component_groups": [
-						"slime_normal"
+						"betterend:slime_normal"
 					]
 				}
 			},
@@ -382,7 +382,7 @@
 						"trigger": "spawn_small",
 						"add": {
 							"component_groups": [
-								"slime_normal"
+								"betterend:slime_normal"
 							]
 						}
 					},
@@ -391,7 +391,7 @@
 						"trigger": "spawn_medium",
 						"add": {
 							"component_groups": [
-								"slime_normal"
+								"betterend:slime_normal"
 							]
 						}
 					},
@@ -400,7 +400,7 @@
 						"trigger": "spawn_large",
 						"add": {
 							"component_groups": [
-								"slime_normal"
+								"betterend:slime_normal"
 							]
 						}
 					}
@@ -409,7 +409,7 @@
 			"spawn_small": {
 				"add": {
 					"component_groups": [
-						"slime_normal",
+						"betterend:slime_normal",
 						"minecraft:slime_small",
 						"minecraft:slime_calm"
 					]
@@ -418,7 +418,7 @@
 			"spawn_medium": {
 				"add": {
 					"component_groups": [
-						"slime_normal",
+						"betterend:slime_normal",
 						"minecraft:slime_medium",
 						"minecraft:slime_calm"
 					]
@@ -427,7 +427,7 @@
 			"spawn_large": {
 				"add": {
 					"component_groups": [
-						"slime_normal",
+						"betterend:slime_normal",
 						"minecraft:slime_large",
 						"minecraft:slime_calm"
 					]
