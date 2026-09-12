@@ -3,6 +3,12 @@
   "minecraft:block": {
     "description": {
       "identifier": "betterend:endstone_dust",
+      "states": {
+        "betterend:biome": [
+          "betterend:dust_wasteland", "betterend:neon_oasis", "betterend:foggy_mushroomland",
+          "betterend:megalakes"
+        ]
+      },
       "menu_category": {
         "category": "nature"
       }
