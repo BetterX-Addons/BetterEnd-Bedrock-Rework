@@ -1,11 +1,10 @@
-import { BlockVolume, BlockVolumeBase, Dimension, Entity, Vector3 } from "@minecraft/server";
+import { BlockVolume, BlockVolumeBase, Dimension, Entity } from "@minecraft/server";
 
 export class EntityUtils {
     /**
      * @param {Entity} entity
      * @param {string} typeId
      * @param {Dimension} dimension
-     * @param {Vector3} location
     */
     constructor(entity) {
         this.entity = entity;

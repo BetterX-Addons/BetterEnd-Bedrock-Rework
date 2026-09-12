@@ -9,7 +9,9 @@
 		},
 		"component_groups": {
 			"slime_normal": {
-				"minecraft:is_shaking": {}
+				"minecraft:mark_variant": {
+					"value": 0
+				}
 			},
 			"slime_amber": {
 				"minecraft:behavior.move_to_block": {
@@ -21,7 +23,9 @@
 						"betterend:amber_moss"
 					]
 				},
-				"minecraft:is_sheared": {}
+				"minecraft:mark_variant": {
+					"value": 1
+				}
 			},
 			"slime_chorus": {
 				"minecraft:behavior.move_to_block": {
@@ -33,7 +37,9 @@
 						"betterend:chorus_nylium"
 					]
 				},
-				"minecraft:is_illager_captain": {}
+				"minecraft:mark_variant": {
+					"value": 2
+				}
 			},
 			"slime_foggy": {
 				"minecraft:behavior.move_to_block": {
@@ -45,7 +51,9 @@
 						"betterend:end_moss"
 					]
 				},
-				"minecraft:is_saddled": {}
+				"minecraft:mark_variant": {
+					"value": 3
+				}
 			},
 			"slime_megalake": {
 				"minecraft:behavior.move_to_block": {
@@ -57,7 +65,9 @@
 						"betterend:end_moss_lakes"
 					]
 				},
-				"minecraft:is_stunned": {}
+				"minecraft:mark_variant": {
+					"value": 4
+				}
 			},
 			"minecraft:slime_large": {
 				"minecraft:variant": {
